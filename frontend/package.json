@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:pages": "node scripts/copy-predictions.mjs && VITE_STATIC=1 VITE_BASE=/indian-stock-signals/ vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "test": "vitest run"

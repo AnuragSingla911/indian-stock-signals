@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: process.env.VITE_BASE || '/',
   server: { port: 3000 },
   test: {
     environment: 'jsdom',

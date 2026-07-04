@@ -27,6 +27,7 @@ dev = [
 
 [project.scripts]
 iss-pipeline = "iss.pipeline:main"
+iss-evaluate = "iss.evaluate:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,16 +1,19 @@
-.PHONY: help setup setup-ml setup-backend setup-frontend pipeline pipeline-offline api web \
-        test test-ml test-backend test-frontend lint build docker docker-down clean
+.PHONY: help setup setup-ml setup-backend setup-frontend pipeline pipeline-offline evaluate \
+        api web test test-ml test-backend test-frontend lint build build-pages docker \
+        docker-down clean
 
 help:
 	@echo "Indian Stock Signals - make targets:"
 	@echo "  setup            Install ml, backend and frontend deps"
 	@echo "  pipeline         Run ML pipeline (live data) -> predictions.json"
 	@echo "  pipeline-offline Run ML pipeline offline (deterministic sample data)"
+	@echo "  evaluate         Walk-forward out-of-sample model metrics"
 	@echo "  api              Start FastAPI backend on :8000"
 	@echo "  web              Start React dev server on :3000"
 	@echo "  test             Run all tests (ml + backend + frontend)"
 	@echo "  lint             Lint ml + backend + frontend"
 	@echo "  build            Build frontend production bundle"
+	@echo "  build-pages      Build static frontend for GitHub Pages"
 	@echo "  docker           docker compose up --build"
 
 setup: setup-ml setup-backend setup-frontend
@@ -29,6 +32,9 @@ pipeline:
 
 pipeline-offline:
 	cd ml && . .venv/bin/activate && ISS_OFFLINE=1 iss-pipeline -v
+
+evaluate:
+	cd ml && . .venv/bin/activate && iss-evaluate -v
 
 api:
 	cd backend && . .venv/bin/activate && uvicorn app.main:app --reload --port 8000
@@ -54,6 +60,9 @@ lint:
 
 build:
 	cd frontend && npm run build
+
+build-pages:
+	cd frontend && npm run build:pages
 
 docker:
 	docker compose up --build
