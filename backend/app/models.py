@@ -34,6 +34,7 @@ class Predictions(BaseModel):
     horizon_days: int
     universe_size: int
     model_trained: bool
+    model_name: str = ""
     model_samples: int
     disclaimer: str
     sectors: list[SectorBlock]
@@ -44,6 +45,7 @@ class Meta(BaseModel):
     horizon_days: int
     universe_size: int
     model_trained: bool
+    model_name: str = ""
     disclaimer: str
 
 

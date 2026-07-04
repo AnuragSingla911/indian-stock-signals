@@ -31,6 +31,12 @@ class SignalModel:
     def trained(self) -> bool:
         return self.estimator is not None
 
+    @property
+    def name(self) -> str:
+        if self.estimator is not None:
+            return type(self.estimator).__name__
+        return "LogisticHeuristicFallback"
+
 
 def _sigmoid(x: np.ndarray) -> np.ndarray:
     return 1.0 / (1.0 + np.exp(-x))
