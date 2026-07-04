@@ -86,6 +86,28 @@ def technical_features(close: pd.Series, volume: pd.Series | None = None) -> dic
     return out
 
 
+def technical_panel_dated(
+    close: pd.Series, horizon: int, step: int = 21, min_history: int = 260
+) -> list[tuple[dict[str, float], int, pd.Timestamp, float]]:
+    """Build (features, label, as_of_date, forward_return) samples at historical points.
+
+    Label = 1 if forward `horizon`-day return > 0. No look-ahead: features use only data up
+    to t; label/return use strictly future prices. The as-of date enables walk-forward
+    (time-ordered) evaluation.
+    """
+    close = close.dropna()
+    samples: list[tuple[dict[str, float], int, pd.Timestamp, float]] = []
+    n = len(close)
+    if n < min_history + horizon + 1:
+        return samples
+    for t in range(min_history, n - horizon, step):
+        window = close.iloc[: t + 1]
+        feats = technical_features(window)
+        fwd = float(close.iloc[t + horizon] / close.iloc[t] - 1.0)
+        samples.append((feats, int(fwd > 0), pd.Timestamp(close.index[t]), fwd))
+    return samples
+
+
 def technical_panel(
     close: pd.Series, horizon: int, step: int = 21, min_history: int = 260
 ) -> list[tuple[dict[str, float], int]]:
@@ -94,17 +116,7 @@ def technical_panel(
     Label = 1 if forward `horizon`-day return > 0. No look-ahead: features use only data up
     to t; label uses strictly future prices.
     """
-    close = close.dropna()
-    samples: list[tuple[dict[str, float], int]] = []
-    n = len(close)
-    if n < min_history + horizon + 1:
-        return samples
-    for t in range(min_history, n - horizon, step):
-        window = close.iloc[: t + 1]
-        feats = technical_features(window)
-        fwd = close.iloc[t + horizon] / close.iloc[t] - 1.0
-        samples.append((feats, int(fwd > 0)))
-    return samples
+    return [(f, y) for f, y, _, _ in technical_panel_dated(close, horizon, step, min_history)]
 
 
 def build_feature_frame(

@@ -16,6 +16,8 @@ ml/data/model.joblib
 node_modules/
 frontend/dist/
 frontend/coverage/
+# Build artifact copied from the pipeline for static (GitHub Pages) builds.
+frontend/public/predictions.json
 
 # Env / editor / OS
 .env

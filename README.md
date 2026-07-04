@@ -94,11 +94,30 @@ CI (`.github/workflows/ci.yml`) runs all of the above offline on every push/PR.
 via cron / a GitHub Action) to refresh rankings. The API picks up file changes automatically (cache
 keyed by mtime).
 
+## Model evaluation
+
+Out-of-sample **walk-forward** validation (train on the past, test on the next block) reports how
+the model would have performed on unseen data:
+
+```bash
+iss-evaluate -v --folds 5            # prints AUC, accuracy, Brier, log-loss, information coefficient
+# ISS_OFFLINE=1 iss-evaluate         # deterministic offline run
+```
+
+Metrics: **ROC AUC** and **accuracy** (classification), **Brier score / log-loss** (probability
+calibration), and the **information coefficient** (Spearman rank corr between predicted score and
+realized forward return). On this small, near-efficient dataset expect AUC only modestly above 0.5 —
+a reminder this is a screening tool, not a price oracle.
+
 ## Deployment
 
 - **Backend:** any container host (Render, Railway, Fly.io, ECS) using `backend/Dockerfile`.
-- **Frontend:** static hosting (Netlify, Vercel, Cloudflare Pages, S3+CDN) from `npm run build`,
-  or the provided nginx image. Set `VITE_API_BASE` to your API URL at build time.
+- **Frontend (API-backed):** static hosting (Netlify, Vercel, Cloudflare Pages, S3+CDN) from
+  `npm run build`, or the provided nginx image. Set `VITE_API_BASE` to your API URL at build time.
+- **Frontend (static / GitHub Pages, no backend):** `npm run build:pages` bundles the latest
+  `predictions.json` and builds under the `/indian-stock-signals/` base path. Publish `dist/` to the
+  `gh-pages` branch and enable Pages → served at
+  `https://<user>.github.io/indian-stock-signals/`.
 
 ## Methodology & honesty
 
