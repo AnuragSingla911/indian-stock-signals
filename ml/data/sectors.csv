@@ -1,0 +1,11 @@
+sector,index_ticker,display_name
+IT,^CNXIT,Information Technology
+Banking,^NSEBANK,Banking & Financials
+FMCG,^CNXFMCG,FMCG
+Auto,^CNXAUTO,Automobile
+Pharma,^CNXPHARMA,Pharma & Healthcare
+Energy,^CNXENERGY,Energy & Oil/Gas
+Metal,^CNXMETAL,Metals & Mining
+Realty,^CNXREALTY,Realty
+Infra,^CNXINFRA,Infrastructure & Capital Goods
+ConsumerDurables,,Consumer Durables

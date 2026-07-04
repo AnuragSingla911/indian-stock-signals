@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# ML artifacts / caches
+ml/data/price_cache/
+ml/data/model.joblib
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/coverage/
+
+# Env / editor / OS
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# BMAD local output (planning/implementation artifacts are generated per-run)
+_bmad-output/

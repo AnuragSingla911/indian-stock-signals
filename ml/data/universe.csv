@@ -1,0 +1,97 @@
+symbol,sector,name
+TCS,IT,Tata Consultancy Services
+INFY,IT,Infosys
+WIPRO,IT,Wipro
+HCLTECH,IT,HCL Technologies
+TECHM,IT,Tech Mahindra
+LTIM,IT,LTIMindtree
+PERSISTENT,IT,Persistent Systems
+COFORGE,IT,Coforge
+MPHASIS,IT,Mphasis
+HDFCBANK,Banking,HDFC Bank
+ICICIBANK,Banking,ICICI Bank
+SBIN,Banking,State Bank of India
+KOTAKBANK,Banking,Kotak Mahindra Bank
+AXISBANK,Banking,Axis Bank
+INDUSINDBK,Banking,IndusInd Bank
+BANKBARODA,Banking,Bank of Baroda
+PNB,Banking,Punjab National Bank
+IDFCFIRSTB,Banking,IDFC First Bank
+FEDERALBNK,Banking,Federal Bank
+HINDUNILVR,FMCG,Hindustan Unilever
+ITC,FMCG,ITC
+NESTLEIND,FMCG,Nestle India
+BRITANNIA,FMCG,Britannia Industries
+DABUR,FMCG,Dabur India
+MARICO,FMCG,Marico
+GODREJCP,FMCG,Godrej Consumer Products
+TATACONSUM,FMCG,Tata Consumer Products
+COLPAL,FMCG,Colgate-Palmolive India
+VBL,FMCG,Varun Beverages
+MARUTI,Auto,Maruti Suzuki India
+TATAMOTORS,Auto,Tata Motors
+M&M,Auto,Mahindra & Mahindra
+BAJAJ-AUTO,Auto,Bajaj Auto
+EICHERMOT,Auto,Eicher Motors
+HEROMOTOCO,Auto,Hero MotoCorp
+TVSMOTOR,Auto,TVS Motor Company
+ASHOKLEY,Auto,Ashok Leyland
+BALKRISIND,Auto,Balkrishna Industries
+BOSCHLTD,Auto,Bosch
+SUNPHARMA,Pharma,Sun Pharmaceutical
+DRREDDY,Pharma,Dr. Reddy's Laboratories
+CIPLA,Pharma,Cipla
+DIVISLAB,Pharma,Divi's Laboratories
+AUROPHARMA,Pharma,Aurobindo Pharma
+LUPIN,Pharma,Lupin
+TORNTPHARM,Pharma,Torrent Pharmaceuticals
+ALKEM,Pharma,Alkem Laboratories
+BIOCON,Pharma,Biocon
+ZYDUSLIFE,Pharma,Zydus Lifesciences
+RELIANCE,Energy,Reliance Industries
+ONGC,Energy,Oil & Natural Gas Corporation
+NTPC,Energy,NTPC
+POWERGRID,Energy,Power Grid Corporation
+COALINDIA,Energy,Coal India
+IOC,Energy,Indian Oil Corporation
+BPCL,Energy,Bharat Petroleum
+GAIL,Energy,GAIL India
+TATAPOWER,Energy,Tata Power
+ADANIGREEN,Energy,Adani Green Energy
+TATASTEEL,Metal,Tata Steel
+JSWSTEEL,Metal,JSW Steel
+HINDALCO,Metal,Hindalco Industries
+VEDL,Metal,Vedanta
+JINDALSTEL,Metal,Jindal Steel & Power
+NMDC,Metal,NMDC
+SAIL,Metal,Steel Authority of India
+NATIONALUM,Metal,National Aluminium
+APLAPOLLO,Metal,APL Apollo Tubes
+HINDZINC,Metal,Hindustan Zinc
+DLF,Realty,DLF
+GODREJPROP,Realty,Godrej Properties
+OBEROIRLTY,Realty,Oberoi Realty
+PRESTIGE,Realty,Prestige Estates Projects
+PHOENIXLTD,Realty,Phoenix Mills
+BRIGADE,Realty,Brigade Enterprises
+SOBHA,Realty,Sobha
+MAHLIFE,Realty,Mahindra Lifespace Developers
+LT,Infra,Larsen & Toubro
+SIEMENS,Infra,Siemens
+ABB,Infra,ABB India
+BEL,Infra,Bharat Electronics
+HAL,Infra,Hindustan Aeronautics
+CUMMINSIND,Infra,Cummins India
+THERMAX,Infra,Thermax
+ADANIPORTS,Infra,Adani Ports & SEZ
+BHEL,Infra,Bharat Heavy Electricals
+HAVELLS,ConsumerDurables,Havells India
+VOLTAS,ConsumerDurables,Voltas
+CROMPTON,ConsumerDurables,Crompton Greaves Consumer
+BLUESTARCO,ConsumerDurables,Blue Star
+WHIRLPOOL,ConsumerDurables,Whirlpool of India
+DIXON,ConsumerDurables,Dixon Technologies
+TITAN,ConsumerDurables,Titan Company
+BATAINDIA,ConsumerDurables,Bata India
+PGHH,ConsumerDurables,Procter & Gamble Hygiene
+KAJARIACER,ConsumerDurables,Kajaria Ceramics

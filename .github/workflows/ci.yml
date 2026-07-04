@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    name: Python (ml + backend)
+    runs-on: ubuntu-latest
+    env:
+      ISS_OFFLINE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ml
+        run: pip install -e "ml/.[dev]"
+      - name: Lint ml
+        run: |
+          ruff check ml/src ml/tests
+          mypy ml/src
+      - name: Test ml
+        run: cd ml && pytest -q
+      - name: Run pipeline (offline) to refresh predictions
+        run: cd ml && iss-pipeline -v
+
+      - name: Install backend
+        run: pip install -e "backend/.[dev]"
+      - name: Lint backend
+        run: |
+          ruff check backend/app backend/tests
+          mypy backend/app
+      - name: Test backend
+        run: cd backend && pytest -q
+
+  frontend:
+    name: Frontend (React)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install
+        run: cd frontend && npm install
+      - name: Lint
+        run: cd frontend && npm run lint
+      - name: Test
+        run: cd frontend && npm test
+      - name: Build
+        run: cd frontend && npm run build
