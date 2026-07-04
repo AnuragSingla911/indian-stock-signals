@@ -62,8 +62,8 @@ def _collect(
     return X[order], y[order], fwd_arr[order]
 
 
-def evaluate(n_folds: int = 5, horizon: int | None = None, step: int = 21) -> EvalMetrics:
-    from sklearn.ensemble import GradientBoostingClassifier
+def evaluate(n_folds: int = 5, horizon: int | None = None, step: int | None = None) -> EvalMetrics:
+    from sklearn.ensemble import HistGradientBoostingClassifier
     from sklearn.metrics import (
         accuracy_score,
         brier_score_loss,
@@ -72,6 +72,7 @@ def evaluate(n_folds: int = 5, horizon: int | None = None, step: int = 21) -> Ev
     )
 
     horizon = horizon or CONFIG.horizon_days
+    step = step if step is not None else CONFIG.train_step
     symbols = [s.symbol for s in load_universe()]
     log.info("Fetching price history for %d symbols", len(symbols))
     prices = get_price_history(symbols)
@@ -88,8 +89,14 @@ def evaluate(n_folds: int = 5, horizon: int | None = None, step: int = 21) -> Ev
         y_tr = y[:tr_end]
         if len(set(y_tr.tolist())) < 2 or te_end <= tr_end:
             continue
-        clf = GradientBoostingClassifier(
-            n_estimators=120, max_depth=3, learning_rate=0.05, subsample=0.8, random_state=42
+        clf = HistGradientBoostingClassifier(
+            max_iter=400,
+            learning_rate=0.05,
+            max_depth=3,
+            l2_regularization=1.0,
+            early_stopping=True,
+            validation_fraction=0.1,
+            random_state=42,
         )
         clf.fit(X[:tr_end], y_tr)
         preds[tr_end:te_end] = clf.predict_proba(X[tr_end:te_end])[:, 1]
