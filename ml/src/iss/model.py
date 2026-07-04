@@ -1,8 +1,11 @@
 """ML signal: probability that a stock's forward return over the horizon is positive.
 
-A GradientBoostingClassifier is trained on pooled historical cross-sections using only
-technical features (no look-ahead). When training data is insufficient (e.g. offline/CI),
-a deterministic logistic fallback keeps the pipeline fully functional.
+A histogram-based gradient-boosting classifier (sklearn's ``HistGradientBoostingClassifier``,
+the LightGBM-style GBDT) is trained on pooled historical cross-sections using only technical
+features (no look-ahead). Gradient-boosted trees are the empirically strongest, most robust
+model family for tabular cross-sectional equity signals (e.g. Gu, Kelly & Xiu 2020, "Empirical
+Asset Pricing via Machine Learning"; Krauss et al. 2017). When training data is insufficient
+(e.g. offline/CI), a deterministic logistic fallback keeps the pipeline fully functional.
 """
 
 from __future__ import annotations
@@ -13,6 +16,7 @@ from dataclasses import dataclass
 import numpy as np
 import pandas as pd
 
+from .config import CONFIG
 from .features import TECH_FEATURES, technical_panel
 
 log = logging.getLogger("iss.model")
@@ -32,7 +36,10 @@ def _sigmoid(x: np.ndarray) -> np.ndarray:
     return 1.0 / (1.0 + np.exp(-x))
 
 
-def train_model(prices: dict[str, pd.DataFrame], horizon: int, step: int = 21) -> SignalModel:
+def train_model(
+    prices: dict[str, pd.DataFrame], horizon: int, step: int | None = None
+) -> SignalModel:
+    step = step if step is not None else CONFIG.train_step
     rows: list[list[float]] = []
     labels: list[int] = []
     for df in prices.values():
@@ -45,12 +52,18 @@ def train_model(prices: dict[str, pd.DataFrame], horizon: int, step: int = 21) -
         return SignalModel(estimator=None, n_samples=len(labels))
 
     try:
-        from sklearn.ensemble import GradientBoostingClassifier
+        from sklearn.ensemble import HistGradientBoostingClassifier
 
         X = np.array(rows, dtype=float)
         y = np.array(labels, dtype=int)
-        clf = GradientBoostingClassifier(
-            n_estimators=120, max_depth=3, learning_rate=0.05, subsample=0.8, random_state=42
+        clf = HistGradientBoostingClassifier(
+            max_iter=400,
+            learning_rate=0.05,
+            max_depth=3,
+            l2_regularization=1.0,
+            early_stopping=True,
+            validation_fraction=0.1,
+            random_state=42,
         )
         clf.fit(X, y)
         return SignalModel(estimator=clf, n_samples=len(labels))

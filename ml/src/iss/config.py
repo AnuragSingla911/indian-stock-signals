@@ -39,9 +39,13 @@ def offline() -> bool:
 @dataclass(frozen=True)
 class Config:
     horizon_days: int = 21
-    lookback_days: int = 400  # trading history to request
+    lookback_days: int = 1500  # ~6y of trading history to request (more ML training data)
     top_sectors: int = 5
     stocks_per_sector: int = 5
+
+    # Sampling stride (trading days) for building ML training/eval windows. A smaller step
+    # yields more (overlapping) samples from the same history.
+    train_step: int = 10
 
     # Factor-group weights for the cross-sectional composite (sum need not be 1).
     weights: dict[str, float] = field(

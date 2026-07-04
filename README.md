@@ -90,9 +90,14 @@ CI (`.github/workflows/ci.yml`) runs all of the above offline on every push/PR.
 
 ## Refreshing the data
 
-`predictions.json` is a snapshot. Re-run `make pipeline` (or schedule the offline/online pipeline
-via cron / a GitHub Action) to refresh rankings. The API picks up file changes automatically (cache
-keyed by mtime).
+`predictions.json` is a snapshot. Re-run `make pipeline` to refresh rankings locally. The API picks
+up file changes automatically (cache keyed by mtime).
+
+**Automated 6-hourly refresh (zero infra cost):** `.github/workflows/refresh.yml` is a scheduled
+GitHub Action (`cron: 0 */6 * * *`) that pulls live market data, regenerates `predictions.json`,
+rebuilds the static site and redeploys it to the `gh-pages` branch. It runs entirely on
+GitHub-hosted runners, which are free for public repositories — no servers to pay for. Trigger it
+manually anytime from the repo's **Actions** tab ("Run workflow").
 
 ## Model evaluation
 
@@ -106,8 +111,20 @@ iss-evaluate -v --folds 5            # prints AUC, accuracy, Brier, log-loss, in
 
 Metrics: **ROC AUC** and **accuracy** (classification), **Brier score / log-loss** (probability
 calibration), and the **information coefficient** (Spearman rank corr between predicted score and
-realized forward return). On this small, near-efficient dataset expect AUC only modestly above 0.5 —
-a reminder this is a screening tool, not a price oracle.
+realized forward return).
+
+**Model:** the ML signal is a histogram-based gradient-boosting classifier
+(`HistGradientBoostingClassifier`, the LightGBM-style GBDT). Gradient-boosted trees are the
+empirically strongest, most robust family for tabular cross-sectional equity signals (Gu, Kelly &
+Xiu 2020; Krauss et al. 2017), which is why they are used here rather than a deep net.
+
+**Training data:** ~6 years of daily history per name (`lookback_days=1500`) across the universe,
+sliced into overlapping horizon windows (`train_step=10`) → **~13k labeled samples** (up from ~0.9k).
+A committed snapshot of the walk-forward metrics lives in `docs/model-evaluation.json`.
+
+Honest reality: even with the best-proven model and far more data, out-of-sample AUC hovers around
+0.5 and the information coefficient is ~0 on this near-efficient market. More data makes the estimate
+*more honest*, not the edge larger — this is a transparent screening tool, not a price oracle.
 
 ## Deployment
 
