@@ -114,6 +114,7 @@ def run() -> dict:
         "horizon_days": CONFIG.horizon_days,
         "universe_size": len(symbols),
         "model_trained": model.trained,
+        "model_name": model.name,
         "model_samples": model.n_samples,
         "disclaimer": DISCLAIMER,
         "sectors": payload_sectors,

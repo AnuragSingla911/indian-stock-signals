@@ -1,8 +1,9 @@
 {
-  "generated_at": "2026-07-04T19:01:36Z",
+  "generated_at": "2026-07-04T19:13:00Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
+  "model_name": "HistGradientBoostingClassifier",
   "model_samples": 13122,
   "disclaimer": "Educational and informational use only. This is NOT investment advice, a recommendation, or a solicitation to buy or sell any security. Markets are risky and model signals do not guarantee future results. Consult a SEBI-registered adviser before investing.",
   "sectors": [

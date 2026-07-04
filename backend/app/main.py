@@ -65,6 +65,7 @@ def meta() -> Meta:
         horizon_days=p.horizon_days,
         universe_size=p.universe_size,
         model_trained=p.model_trained,
+        model_name=p.model_name,
         disclaimer=p.disclaimer,
     )
 
