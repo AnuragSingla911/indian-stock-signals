@@ -1,0 +1,56 @@
+name: Refresh data & deploy
+
+# Regenerates predictions from live market data every 6 hours and redeploys the
+# static site to GitHub Pages. Runs entirely on GitHub-hosted runners — free for
+# public repos, so there is zero infrastructure cost.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # every 6 hours (UTC)
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+# Avoid overlapping runs.
+concurrency:
+  group: refresh-deploy
+  cancel-in-progress: true
+
+permissions:
+  contents: write # needed to push the built site to the gh-pages branch
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install ML package
+        run: pip install -e ./ml
+
+      - name: Regenerate predictions from live data
+        run: iss-pipeline -v
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install frontend deps
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build static site (bundles fresh predictions.json)
+        working-directory: frontend
+        run: npm run build:pages
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/dist
+          publish_branch: gh-pages
