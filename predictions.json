@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T13:27:15Z",
+  "generated_at": "2026-07-05T19:15:13Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -286,7 +286,7 @@
             "momentum": 0.95,
             "trend": 0.23,
             "quality": 0.77,
-            "value": -0.92,
+            "value": -0.93,
             "lowvol": -0.79
           },
           "rationale": "Ranks highly on very strong 6-month return, very strong earnings growth, strong price vs 200-DMA; composite score 62/100; model up-probability 55%. Watch: weak volume trend.",
@@ -389,7 +389,7 @@
             "momentum": 0.2,
             "trend": 0.21,
             "quality": 0.01,
-            "value": 1.16,
+            "value": 1.15,
             "lowvol": 0.55
           },
           "rationale": "Ranks highly on strong valuation (P/E), strong valuation (P/B), strong 50/200-DMA trend; composite score 78/100; model up-probability 56%.",
@@ -408,7 +408,7 @@
             "momentum": -0.38,
             "trend": -0.32,
             "quality": 0.28,
-            "value": 3.17,
+            "value": 3.16,
             "lowvol": 0.01
           },
           "rationale": "Ranks highly on very strong valuation (P/B), very strong valuation (P/E), very strong profit margin; composite score 76/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
