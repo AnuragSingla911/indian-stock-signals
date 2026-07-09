@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T09:41:40Z",
+  "generated_at": "2026-07-09T14:54:57Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -11,7 +11,7 @@
       "sector": "Realty",
       "display_name": "Realty",
       "sector_score": 100.0,
-      "sector_rationale": "Realty: 3M sector momentum up 36.3%; 88% of constituents above their 200-DMA.",
+      "sector_rationale": "Realty: 3M sector momentum up 36.4%; 88% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "PHOENIXLTD",
@@ -20,11 +20,11 @@
           "composite_score": 96.9,
           "up_probability": 0.6,
           "factors": {
-            "momentum": 0.91,
-            "trend": 1.73,
+            "momentum": 0.92,
+            "trend": 1.74,
             "quality": 0.23,
             "value": -0.67,
-            "lowvol": 0.15
+            "lowvol": 0.14
           },
           "rationale": "Ranks highly on very strong price vs 50-DMA, very strong volume trend, very strong price vs 200-DMA; composite score 97/100; model up-probability 60%.",
           "chart_links": {
@@ -39,8 +39,8 @@
           "composite_score": 91.7,
           "up_probability": 0.568,
           "factors": {
-            "momentum": 0.23,
-            "trend": 1.43,
+            "momentum": 0.24,
+            "trend": 1.44,
             "quality": 0.8,
             "value": -0.19,
             "lowvol": 0.29
@@ -59,7 +59,7 @@
           "up_probability": 0.593,
           "factors": {
             "momentum": 0.41,
-            "trend": 0.93,
+            "trend": 0.92,
             "quality": 1.56,
             "value": -0.53,
             "lowvol": -0.74
@@ -77,10 +77,10 @@
           "composite_score": 50.0,
           "up_probability": 0.56,
           "factors": {
-            "momentum": -0.08,
+            "momentum": -0.09,
             "trend": 0.37,
             "quality": 0.53,
-            "value": -0.2,
+            "value": -0.19,
             "lowvol": -0.72
           },
           "rationale": "Ranks highly on very strong price vs 50-DMA, very strong profit margin, strong 3-month return; composite score 50/100; model up-probability 56%. Watch: weak 12-1 month momentum.",
@@ -97,7 +97,7 @@
           "up_probability": 0.564,
           "factors": {
             "momentum": -0.22,
-            "trend": 0.45,
+            "trend": 0.44,
             "quality": 0.57,
             "value": -0.29,
             "lowvol": -0.59
@@ -142,11 +142,11 @@
           "composite_score": 95.8,
           "up_probability": 0.568,
           "factors": {
-            "momentum": 1.3,
-            "trend": 0.97,
+            "momentum": 1.29,
+            "trend": 0.96,
             "quality": -0.02,
             "value": -0.19,
-            "lowvol": 0.48
+            "lowvol": 0.49
           },
           "rationale": "Ranks highly on very strong 3-month return, very strong price vs 200-DMA, very strong 6-month return; composite score 96/100; model up-probability 57%.",
           "chart_links": {
@@ -165,7 +165,7 @@
             "trend": 1.19,
             "quality": -0.48,
             "value": 0.09,
-            "lowvol": 0.17
+            "lowvol": 0.18
           },
           "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, strong 3-month return; composite score 95/100; model up-probability 57%.",
           "chart_links": {
@@ -180,8 +180,8 @@
           "composite_score": 87.5,
           "up_probability": 0.568,
           "factors": {
-            "momentum": 0.67,
-            "trend": 0.59,
+            "momentum": 0.66,
+            "trend": 0.58,
             "quality": 0.36,
             "value": -0.19,
             "lowvol": 0.83
@@ -196,16 +196,16 @@
           "symbol": "SUNPHARMA",
           "yahoo_symbol": "SUNPHARMA.NS",
           "name": "Sun Pharmaceutical",
-          "composite_score": 71.9,
+          "composite_score": 72.9,
           "up_probability": 0.57,
           "factors": {
-            "momentum": 0.73,
-            "trend": 0.26,
+            "momentum": 0.72,
+            "trend": 0.25,
             "quality": -0.02,
             "value": -0.51,
             "lowvol": 0.8
           },
-          "rationale": "Ranks highly on strong 3-month return, strong 50/200-DMA trend, strong price vs 50-DMA; composite score 72/100; model up-probability 57%. Watch: very weak volume trend.",
+          "rationale": "Ranks highly on strong 3-month return, strong 50/200-DMA trend, strong price vs 200-DMA; composite score 73/100; model up-probability 57%. Watch: very weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SUNPHARMA",
             "yahoo": "https://finance.yahoo.com/quote/SUNPHARMA.NS"
@@ -217,7 +217,7 @@
       "sector": "Infra",
       "display_name": "Infrastructure & Capital Goods",
       "sector_score": 80.0,
-      "sector_rationale": "Infrastructure & Capital Goods: 3M sector momentum up 7.5%; 78% of constituents above their 200-DMA.",
+      "sector_rationale": "Infrastructure & Capital Goods: 3M sector momentum up 7.6%; 78% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "ADANIPORTS",
@@ -283,11 +283,11 @@
           "composite_score": 64.6,
           "up_probability": 0.584,
           "factors": {
-            "momentum": 2.13,
-            "trend": 0.79,
+            "momentum": 2.15,
+            "trend": 0.81,
             "quality": -0.49,
             "value": -0.8,
-            "lowvol": -2.76
+            "lowvol": -2.77
           },
           "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 3-month return; composite score 65/100; model up-probability 58%. Watch: very weak low volatility.",
           "chart_links": {
@@ -306,7 +306,7 @@
             "trend": 0.16,
             "quality": 0.77,
             "value": -0.92,
-            "lowvol": -0.79
+            "lowvol": -0.78
           },
           "rationale": "Ranks highly on very strong 6-month return, very strong earnings growth, strong price vs 200-DMA; composite score 59/100; model up-probability 57%. Watch: weak volume trend.",
           "chart_links": {
@@ -320,7 +320,7 @@
       "sector": "Metal",
       "display_name": "Metals & Mining",
       "sector_score": 70.0,
-      "sector_rationale": "Metals & Mining: 3M sector momentum up 9.4%; 60% of constituents above their 200-DMA.",
+      "sector_rationale": "Metals & Mining: 3M sector momentum up 9.6%; 60% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "JSWSTEEL",
@@ -329,10 +329,10 @@
           "composite_score": 99.0,
           "up_probability": 0.567,
           "factors": {
-            "momentum": 0.39,
+            "momentum": 0.38,
             "trend": -0.03,
             "quality": 2.06,
-            "value": 0.45,
+            "value": 0.43,
             "lowvol": 1.35
           },
           "rationale": "Ranks highly on very strong earnings growth, strong low volatility, strong 50/200-DMA trend; composite score 99/100; model up-probability 57%.",
@@ -345,16 +345,16 @@
           "symbol": "NMDC",
           "yahoo_symbol": "NMDC.NS",
           "name": "NMDC",
-          "composite_score": 72.9,
+          "composite_score": 74.0,
           "up_probability": 0.549,
           "factors": {
             "momentum": 0.47,
             "trend": 0.0,
             "quality": 0.31,
-            "value": 1.02,
+            "value": 1.01,
             "lowvol": -0.06
           },
-          "rationale": "Ranks highly on very strong valuation (P/E), strong 12-1 month momentum, strong 50/200-DMA trend; composite score 73/100; model up-probability 55%. Watch: weak price vs 50-DMA.",
+          "rationale": "Ranks highly on strong valuation (P/E), strong 12-1 month momentum, strong 50/200-DMA trend; composite score 74/100; model up-probability 55%. Watch: weak price vs 50-DMA.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:NMDC",
             "yahoo": "https://finance.yahoo.com/quote/NMDC.NS"
@@ -389,7 +389,7 @@
             "momentum": 0.57,
             "trend": 0.23,
             "quality": -0.78,
-            "value": 0.85,
+            "value": 0.84,
             "lowvol": -0.1
           },
           "rationale": "Ranks highly on very strong 12-1 month momentum, strong valuation (P/B), strong 50/200-DMA trend; composite score 58/100; model up-probability 56%. Watch: weak price vs 50-DMA.",
@@ -408,7 +408,7 @@
             "momentum": 0.47,
             "trend": 0.04,
             "quality": 0.61,
-            "value": 0.74,
+            "value": 0.72,
             "lowvol": -1.7
           },
           "rationale": "Ranks highly on very strong 12-1 month momentum, very strong profit margin, strong valuation (P/E); composite score 57/100; model up-probability 56%. Watch: very weak low volatility.",
@@ -452,10 +452,10 @@
           "up_probability": 0.564,
           "factors": {
             "momentum": -0.01,
-            "trend": 0.14,
+            "trend": 0.15,
             "quality": 0.43,
-            "value": 0.67,
-            "lowvol": 1.13
+            "value": 0.68,
+            "lowvol": 1.14
           },
           "rationale": "Ranks highly on very strong profit margin, strong low volatility, strong 50/200-DMA trend; composite score 82/100; model up-probability 56%.",
           "chart_links": {
@@ -490,7 +490,7 @@
           "up_probability": 0.564,
           "factors": {
             "momentum": 0.26,
-            "trend": 0.06,
+            "trend": 0.07,
             "quality": 0.01,
             "value": 1.17,
             "lowvol": 0.58
@@ -511,7 +511,7 @@
             "momentum": 0.26,
             "trend": 0.22,
             "quality": 0.42,
-            "value": 0.4,
+            "value": 0.41,
             "lowvol": 0.41
           },
           "rationale": "Ranks highly on very strong profit margin, strong valuation (P/B), strong 3-month return; composite score 76/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
