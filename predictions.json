@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T02:33:25Z",
+  "generated_at": "2026-07-12T08:14:22Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -11,7 +11,7 @@
       "sector": "Realty",
       "display_name": "Realty",
       "sector_score": 100.0,
-      "sector_rationale": "Realty: 3M sector momentum up 36.8%; 88% of constituents above their 200-DMA.",
+      "sector_rationale": "Realty: 3M sector momentum up 25.9%; 88% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "PHOENIXLTD",
@@ -22,7 +22,7 @@
           "factors": {
             "momentum": 0.83,
             "trend": 1.79,
-            "quality": 0.22,
+            "quality": 0.23,
             "value": -0.68,
             "lowvol": 0.18
           },
@@ -41,7 +41,7 @@
           "factors": {
             "momentum": 0.33,
             "trend": 1.53,
-            "quality": 0.8,
+            "quality": 0.81,
             "value": -0.21,
             "lowvol": 0.23
           },
@@ -60,7 +60,7 @@
           "factors": {
             "momentum": 0.64,
             "trend": 1.07,
-            "quality": 1.53,
+            "quality": 1.56,
             "value": -0.54,
             "lowvol": -0.79
           },
@@ -79,7 +79,7 @@
           "factors": {
             "momentum": 0.14,
             "trend": 0.65,
-            "quality": 0.52,
+            "quality": 0.54,
             "value": -0.23,
             "lowvol": -0.89
           },
@@ -125,7 +125,7 @@
           "factors": {
             "momentum": 1.25,
             "trend": 1.11,
-            "quality": -0.23,
+            "quality": -0.22,
             "value": -0.89,
             "lowvol": 0.92
           },
@@ -144,7 +144,7 @@
           "factors": {
             "momentum": 1.17,
             "trend": 0.8,
-            "quality": -0.03,
+            "quality": -0.01,
             "value": -0.15,
             "lowvol": 0.47
           },
@@ -163,7 +163,7 @@
           "factors": {
             "momentum": 1.17,
             "trend": 1.01,
-            "quality": -0.49,
+            "quality": -0.48,
             "value": 0.13,
             "lowvol": 0.15
           },
@@ -182,7 +182,7 @@
           "factors": {
             "momentum": 0.58,
             "trend": 0.48,
-            "quality": 0.36,
+            "quality": 0.37,
             "value": -0.18,
             "lowvol": 0.83
           },
@@ -201,7 +201,7 @@
           "factors": {
             "momentum": 0.62,
             "trend": 0.17,
-            "quality": -0.03,
+            "quality": -0.02,
             "value": -0.5,
             "lowvol": 0.8
           },
@@ -217,7 +217,7 @@
       "sector": "Infra",
       "display_name": "Infrastructure & Capital Goods",
       "sector_score": 80.0,
-      "sector_rationale": "Infrastructure & Capital Goods: 3M sector momentum up 10.7%; 89% of constituents above their 200-DMA.",
+      "sector_rationale": "Infrastructure & Capital Goods: 3M sector momentum up 4.0%; 89% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "ADANIPORTS",
@@ -228,7 +228,7 @@
           "factors": {
             "momentum": 1.38,
             "trend": 0.42,
-            "quality": 0.39,
+            "quality": 0.4,
             "value": -0.31,
             "lowvol": 0.45
           },
@@ -247,7 +247,7 @@
           "factors": {
             "momentum": 1.77,
             "trend": 0.61,
-            "quality": 0.27,
+            "quality": 0.28,
             "value": -0.86,
             "lowvol": -0.59
           },
@@ -266,7 +266,7 @@
           "factors": {
             "momentum": 2.09,
             "trend": 0.61,
-            "quality": -0.39,
+            "quality": -0.38,
             "value": -0.65,
             "lowvol": -1.42
           },
@@ -285,7 +285,7 @@
           "factors": {
             "momentum": 2.03,
             "trend": 0.79,
-            "quality": -0.49,
+            "quality": -0.48,
             "value": -0.79,
             "lowvol": -2.55
           },
@@ -304,7 +304,7 @@
           "factors": {
             "momentum": 0.67,
             "trend": 0.11,
-            "quality": 0.75,
+            "quality": 0.77,
             "value": -0.92,
             "lowvol": -0.78
           },
@@ -320,7 +320,7 @@
       "sector": "Metal",
       "display_name": "Metals & Mining",
       "sector_score": 70.0,
-      "sector_rationale": "Metals & Mining: 3M sector momentum up 13.1%; 60% of constituents above their 200-DMA.",
+      "sector_rationale": "Metals & Mining: 3M sector momentum up 5.0%; 60% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "JSWSTEEL",
@@ -331,7 +331,7 @@
           "factors": {
             "momentum": 0.38,
             "trend": 0.01,
-            "quality": 2.04,
+            "quality": 2.07,
             "value": 0.42,
             "lowvol": 1.32
           },
@@ -350,7 +350,7 @@
           "factors": {
             "momentum": 0.38,
             "trend": -0.02,
-            "quality": 0.3,
+            "quality": 0.31,
             "value": 1.02,
             "lowvol": -0.06
           },
@@ -369,7 +369,7 @@
           "factors": {
             "momentum": 0.15,
             "trend": -0.02,
-            "quality": -0.37,
+            "quality": -0.35,
             "value": 0.23,
             "lowvol": 1.0
           },
@@ -388,7 +388,7 @@
           "factors": {
             "momentum": 0.58,
             "trend": 0.16,
-            "quality": -0.79,
+            "quality": -0.78,
             "value": 0.85,
             "lowvol": -0.09
           },
@@ -407,7 +407,7 @@
           "factors": {
             "momentum": 0.39,
             "trend": 0.06,
-            "quality": 0.61,
+            "quality": 0.62,
             "value": 0.71,
             "lowvol": -1.71
           },
@@ -420,104 +420,104 @@
       ]
     },
     {
-      "sector": "Auto",
-      "display_name": "Automobile",
+      "sector": "Banking",
+      "display_name": "Banking & Financials",
       "sector_score": 60.0,
-      "sector_rationale": "Automobile: 3M sector momentum up 13.5%; 50% of constituents above their 200-DMA.",
+      "sector_rationale": "Banking & Financials: 3M sector momentum up 4.2%; 60% of constituents above their 200-DMA.",
       "stocks": [
         {
-          "symbol": "TATAMOTORS",
-          "yahoo_symbol": "TATAMOTORS.NS",
-          "name": "Tata Motors",
-          "composite_score": 88.5,
-          "up_probability": 0.568,
+          "symbol": "FEDERALBNK",
+          "yahoo_symbol": "FEDERALBNK.NS",
+          "name": "Federal Bank",
+          "composite_score": 100.0,
+          "up_probability": 0.572,
           "factors": {
-            "momentum": 1.08,
-            "trend": 0.56,
-            "quality": 0.02,
-            "value": -0.5,
-            "lowvol": 0.73
-          },
-          "rationale": "Ranks highly on very strong 12-1 month momentum, strong 6-month return, strong price vs 200-DMA; composite score 88/100; model up-probability 57%.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TATAMOTORS",
-            "yahoo": "https://finance.yahoo.com/quote/TATAMOTORS.NS"
-          }
-        },
-        {
-          "symbol": "BAJAJ-AUTO",
-          "yahoo_symbol": "BAJAJ-AUTO.NS",
-          "name": "Bajaj Auto",
-          "composite_score": 75.0,
-          "up_probability": 0.568,
-          "factors": {
-            "momentum": 0.38,
-            "trend": 0.28,
-            "quality": 0.34,
-            "value": -0.4,
-            "lowvol": 0.85
-          },
-          "rationale": "Ranks highly on strong 50/200-DMA trend, strong low volatility, above-average 12-1 month momentum; composite score 75/100; model up-probability 57%.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BAJAJ_AUTO",
-            "yahoo": "https://finance.yahoo.com/quote/BAJAJ-AUTO.NS"
-          }
-        },
-        {
-          "symbol": "BOSCHLTD",
-          "yahoo_symbol": "BOSCHLTD.NS",
-          "name": "Bosch",
-          "composite_score": 71.9,
-          "up_probability": 0.569,
-          "factors": {
-            "momentum": 0.44,
-            "trend": 0.91,
-            "quality": -0.17,
-            "value": -0.64,
-            "lowvol": 0.49
-          },
-          "rationale": "Ranks highly on strong price vs 50-DMA, strong 50/200-DMA trend, strong price vs 200-DMA; composite score 72/100; model up-probability 57%.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BOSCHLTD",
-            "yahoo": "https://finance.yahoo.com/quote/BOSCHLTD.NS"
-          }
-        },
-        {
-          "symbol": "EICHERMOT",
-          "yahoo_symbol": "EICHERMOT.NS",
-          "name": "Eicher Motors",
-          "composite_score": 67.7,
-          "up_probability": 0.568,
-          "factors": {
-            "momentum": 0.32,
-            "trend": 0.53,
+            "momentum": 1.44,
+            "trend": 0.5,
             "quality": 0.26,
-            "value": -0.57,
-            "lowvol": 0.38
+            "value": 0.46,
+            "lowvol": 1.26
           },
-          "rationale": "Ranks highly on strong volume trend, strong 12-1 month momentum, strong 50/200-DMA trend; composite score 68/100; model up-probability 57%.",
+          "rationale": "Ranks highly on very strong 12-1 month momentum, very strong 6-month return, very strong price vs 200-DMA; composite score 100/100; model up-probability 57%. Watch: very weak volume trend.",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:EICHERMOT",
-            "yahoo": "https://finance.yahoo.com/quote/EICHERMOT.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:FEDERALBNK",
+            "yahoo": "https://finance.yahoo.com/quote/FEDERALBNK.NS"
           }
         },
         {
-          "symbol": "HEROMOTOCO",
-          "yahoo_symbol": "HEROMOTOCO.NS",
-          "name": "Hero MotoCorp",
-          "composite_score": 44.8,
-          "up_probability": 0.574,
+          "symbol": "AXISBANK",
+          "yahoo_symbol": "AXISBANK.NS",
+          "name": "Axis Bank",
+          "composite_score": 83.3,
+          "up_probability": 0.571,
           "factors": {
-            "momentum": -0.36,
-            "trend": -0.36,
-            "quality": 0.0,
-            "value": 0.01,
-            "lowvol": 0.89
+            "momentum": 0.05,
+            "trend": 0.16,
+            "quality": 0.43,
+            "value": 0.66,
+            "lowvol": 1.06
           },
-          "rationale": "Ranks highly on strong low volatility, above-average volume trend, above-average 12-1 month momentum; composite score 45/100; model up-probability 57%. Watch: weak 50/200-DMA trend.",
+          "rationale": "Ranks highly on very strong profit margin, strong low volatility, strong 50/200-DMA trend; composite score 83/100; model up-probability 57%.",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HEROMOTOCO",
-            "yahoo": "https://finance.yahoo.com/quote/HEROMOTOCO.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:AXISBANK",
+            "yahoo": "https://finance.yahoo.com/quote/AXISBANK.NS"
+          }
+        },
+        {
+          "symbol": "INDUSINDBK",
+          "yahoo_symbol": "INDUSINDBK.NS",
+          "name": "IndusInd Bank",
+          "composite_score": 81.2,
+          "up_probability": 0.573,
+          "factors": {
+            "momentum": 0.87,
+            "trend": 1.04,
+            "quality": -0.74,
+            "value": 0.53,
+            "lowvol": -0.25
+          },
+          "rationale": "Ranks highly on very strong valuation (P/B), very strong 3-month return, strong price vs 50-DMA; composite score 81/100; model up-probability 57%. Watch: weak return on equity.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:INDUSINDBK",
+            "yahoo": "https://finance.yahoo.com/quote/INDUSINDBK.NS"
+          }
+        },
+        {
+          "symbol": "SBIN",
+          "yahoo_symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "composite_score": 80.2,
+          "up_probability": 0.571,
+          "factors": {
+            "momentum": 0.28,
+            "trend": 0.08,
+            "quality": 0.02,
+            "value": 1.17,
+            "lowvol": 0.55
+          },
+          "rationale": "Ranks highly on strong valuation (P/E), strong valuation (P/B), strong 12-1 month momentum; composite score 80/100; model up-probability 57%. Watch: weak volume trend.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SBIN",
+            "yahoo": "https://finance.yahoo.com/quote/SBIN.NS"
+          }
+        },
+        {
+          "symbol": "IDFCFIRSTB",
+          "yahoo_symbol": "IDFCFIRSTB.NS",
+          "name": "IDFC First Bank",
+          "composite_score": 79.2,
+          "up_probability": 0.57,
+          "factors": {
+            "momentum": 0.4,
+            "trend": 0.16,
+            "quality": 0.42,
+            "value": 0.4,
+            "lowvol": 0.44
+          },
+          "rationale": "Ranks highly on very strong profit margin, very strong 3-month return, strong valuation (P/B); composite score 79/100; model up-probability 57%. Watch: weak 50/200-DMA trend.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:IDFCFIRSTB",
+            "yahoo": "https://finance.yahoo.com/quote/IDFCFIRSTB.NS"
           }
         }
       ]
