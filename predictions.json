@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T13:10:09Z",
+  "generated_at": "2026-07-18T19:01:50Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -18,11 +18,11 @@
           "yahoo_symbol": "PHOENIXLTD.NS",
           "name": "Phoenix Mills",
           "composite_score": 96.9,
-          "up_probability": 0.562,
+          "up_probability": 0.56,
           "factors": {
             "momentum": 0.91,
             "trend": 1.6,
-            "quality": 0.31,
+            "quality": 0.33,
             "value": -0.67,
             "lowvol": 0.11
           },
@@ -36,16 +36,16 @@
           "symbol": "OBEROIRLTY",
           "yahoo_symbol": "OBEROIRLTY.NS",
           "name": "Oberoi Realty",
-          "composite_score": 95.8,
-          "up_probability": 0.551,
+          "composite_score": 94.8,
+          "up_probability": 0.546,
           "factors": {
             "momentum": 0.38,
             "trend": 1.48,
-            "quality": 0.92,
+            "quality": 0.93,
             "value": -0.18,
             "lowvol": 0.12
           },
-          "rationale": "Ranks highly on very strong profit margin, very strong volume trend, strong price vs 50-DMA; composite score 96/100; model up-probability 55%.",
+          "rationale": "Ranks highly on very strong profit margin, very strong volume trend, strong price vs 50-DMA; composite score 95/100; model up-probability 55%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:OBEROIRLTY",
             "yahoo": "https://finance.yahoo.com/quote/OBEROIRLTY.NS"
@@ -55,16 +55,16 @@
           "symbol": "PRESTIGE",
           "yahoo_symbol": "PRESTIGE.NS",
           "name": "Prestige Estates Projects",
-          "composite_score": 80.2,
-          "up_probability": 0.592,
+          "composite_score": 79.2,
+          "up_probability": 0.587,
           "factors": {
             "momentum": 0.51,
             "trend": 0.87,
-            "quality": 1.03,
+            "quality": 1.04,
             "value": -0.54,
             "lowvol": -0.88
           },
-          "rationale": "Ranks highly on very strong earnings growth, very strong price vs 50-DMA, very strong 3-month return; composite score 80/100; model up-probability 59%. Watch: weak 50/200-DMA trend.",
+          "rationale": "Ranks highly on very strong earnings growth, very strong price vs 50-DMA, very strong 3-month return; composite score 79/100; model up-probability 59%. Watch: weak 50/200-DMA trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PRESTIGE",
             "yahoo": "https://finance.yahoo.com/quote/PRESTIGE.NS"
@@ -74,16 +74,16 @@
           "symbol": "GODREJPROP",
           "yahoo_symbol": "GODREJPROP.NS",
           "name": "Godrej Properties",
-          "composite_score": 63.5,
-          "up_probability": 0.585,
+          "composite_score": 65.6,
+          "up_probability": 0.592,
           "factors": {
             "momentum": 0.27,
             "trend": 0.63,
-            "quality": 0.67,
+            "quality": 0.68,
             "value": -0.22,
             "lowvol": -0.92
           },
-          "rationale": "Ranks highly on very strong price vs 50-DMA, very strong profit margin, strong 3-month return; composite score 64/100; model up-probability 58%. Watch: weak 12-1 month momentum.",
+          "rationale": "Ranks highly on very strong price vs 50-DMA, very strong profit margin, strong 3-month return; composite score 66/100; model up-probability 59%. Watch: weak 12-1 month momentum.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:GODREJPROP",
             "yahoo": "https://finance.yahoo.com/quote/GODREJPROP.NS"
@@ -93,16 +93,16 @@
           "symbol": "MAHLIFE",
           "yahoo_symbol": "MAHLIFE.NS",
           "name": "Mahindra Lifespace Developers",
-          "composite_score": 60.4,
-          "up_probability": 0.55,
+          "composite_score": 59.4,
+          "up_probability": 0.543,
           "factors": {
             "momentum": 0.32,
             "trend": 0.25,
-            "quality": -0.11,
-            "value": 0.19,
+            "quality": -0.09,
+            "value": 0.2,
             "lowvol": 0.14
           },
-          "rationale": "Ranks highly on strong 3-month return, strong price vs 50-DMA, strong profit margin; composite score 60/100; model up-probability 55%. Watch: weak 50/200-DMA trend.",
+          "rationale": "Ranks highly on strong 3-month return, strong price vs 50-DMA, strong profit margin; composite score 59/100; model up-probability 54%. Watch: weak 50/200-DMA trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:MAHLIFE",
             "yahoo": "https://finance.yahoo.com/quote/MAHLIFE.NS"
@@ -120,16 +120,16 @@
           "symbol": "ZYDUSLIFE",
           "yahoo_symbol": "ZYDUSLIFE.NS",
           "name": "Zydus Lifesciences",
-          "composite_score": 94.8,
-          "up_probability": 0.583,
+          "composite_score": 95.8,
+          "up_probability": 0.589,
           "factors": {
             "momentum": 1.22,
             "trend": 0.63,
-            "quality": -0.04,
+            "quality": -0.03,
             "value": -0.15,
             "lowvol": 0.36
           },
-          "rationale": "Ranks highly on very strong 3-month return, strong 6-month return, strong price vs 200-DMA; composite score 95/100; model up-probability 58%.",
+          "rationale": "Ranks highly on very strong 3-month return, strong 6-month return, strong price vs 200-DMA; composite score 96/100; model up-probability 59%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ZYDUSLIFE",
             "yahoo": "https://finance.yahoo.com/quote/ZYDUSLIFE.NS"
@@ -139,38 +139,19 @@
           "symbol": "TORNTPHARM",
           "yahoo_symbol": "TORNTPHARM.NS",
           "name": "Torrent Pharmaceuticals",
-          "composite_score": 90.6,
-          "up_probability": 0.575,
+          "composite_score": 91.7,
+          "up_probability": 0.579,
           "factors": {
             "momentum": 1.08,
             "trend": 1.29,
-            "quality": -0.32,
+            "quality": -0.31,
             "value": -0.89,
             "lowvol": 0.59
           },
-          "rationale": "Ranks highly on very strong volume trend, strong 3-month return, strong price vs 200-DMA; composite score 91/100; model up-probability 57%. Watch: weak valuation (P/B).",
+          "rationale": "Ranks highly on very strong volume trend, strong 3-month return, strong price vs 200-DMA; composite score 92/100; model up-probability 58%. Watch: weak valuation (P/B).",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TORNTPHARM",
             "yahoo": "https://finance.yahoo.com/quote/TORNTPHARM.NS"
-          }
-        },
-        {
-          "symbol": "AUROPHARMA",
-          "yahoo_symbol": "AUROPHARMA.NS",
-          "name": "Aurobindo Pharma",
-          "composite_score": 85.4,
-          "up_probability": 0.567,
-          "factors": {
-            "momentum": 1.16,
-            "trend": 0.69,
-            "quality": -0.51,
-            "value": 0.14,
-            "lowvol": 0.18
-          },
-          "rationale": "Ranks highly on very strong 6-month return, strong price vs 200-DMA, strong 12-1 month momentum; composite score 85/100; model up-probability 57%.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:AUROPHARMA",
-            "yahoo": "https://finance.yahoo.com/quote/AUROPHARMA.NS"
           }
         },
         {
@@ -178,7 +159,7 @@
           "yahoo_symbol": "LUPIN.NS",
           "name": "Lupin",
           "composite_score": 84.4,
-          "up_probability": 0.567,
+          "up_probability": 0.57,
           "factors": {
             "momentum": 0.56,
             "trend": 0.33,
@@ -193,19 +174,38 @@
           }
         },
         {
+          "symbol": "AUROPHARMA",
+          "yahoo_symbol": "AUROPHARMA.NS",
+          "name": "Aurobindo Pharma",
+          "composite_score": 83.3,
+          "up_probability": 0.567,
+          "factors": {
+            "momentum": 1.16,
+            "trend": 0.69,
+            "quality": -0.5,
+            "value": 0.15,
+            "lowvol": 0.18
+          },
+          "rationale": "Ranks highly on very strong 6-month return, strong price vs 200-DMA, strong 12-1 month momentum; composite score 83/100; model up-probability 57%.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:AUROPHARMA",
+            "yahoo": "https://finance.yahoo.com/quote/AUROPHARMA.NS"
+          }
+        },
+        {
           "symbol": "DIVISLAB",
           "yahoo_symbol": "DIVISLAB.NS",
           "name": "Divi's Laboratories",
-          "composite_score": 79.2,
-          "up_probability": 0.546,
+          "composite_score": 76.0,
+          "up_probability": 0.535,
           "factors": {
             "momentum": 0.53,
             "trend": 0.88,
-            "quality": 0.13,
+            "quality": 0.14,
             "value": -0.83,
             "lowvol": 1.03
           },
-          "rationale": "Ranks highly on strong 3-month return, strong low volatility, strong 50/200-DMA trend; composite score 79/100; model up-probability 55%. Watch: weak valuation (P/E).",
+          "rationale": "Ranks highly on strong 3-month return, strong low volatility, strong 50/200-DMA trend; composite score 76/100; model up-probability 53%. Watch: weak valuation (P/B).",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:DIVISLAB",
             "yahoo": "https://finance.yahoo.com/quote/DIVISLAB.NS"
@@ -223,73 +223,73 @@
           "symbol": "BHEL",
           "yahoo_symbol": "BHEL.NS",
           "name": "Bharat Heavy Electricals",
-          "composite_score": 97.9,
-          "up_probability": 0.581,
+          "composite_score": 99.0,
+          "up_probability": 0.585,
           "factors": {
             "momentum": 2.53,
             "trend": 1.24,
-            "quality": -0.32,
-            "value": -0.63,
+            "quality": -0.3,
+            "value": -0.62,
             "lowvol": -1.42
           },
-          "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 12-1 month momentum; composite score 98/100; model up-probability 58%. Watch: weak low volatility.",
+          "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 12-1 month momentum; composite score 99/100; model up-probability 58%. Watch: weak low volatility.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BHEL",
             "yahoo": "https://finance.yahoo.com/quote/BHEL.NS"
           }
         },
         {
-          "symbol": "ADANIPORTS",
-          "yahoo_symbol": "ADANIPORTS.NS",
-          "name": "Adani Ports & SEZ",
-          "composite_score": 93.8,
-          "up_probability": 0.573,
-          "factors": {
-            "momentum": 1.21,
-            "trend": 0.31,
-            "quality": 0.36,
-            "value": -0.33,
-            "lowvol": 0.54
-          },
-          "rationale": "Ranks highly on very strong profit margin, strong 6-month return, strong price vs 200-DMA; composite score 94/100; model up-probability 57%. Watch: weak volume trend.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ADANIPORTS",
-            "yahoo": "https://finance.yahoo.com/quote/ADANIPORTS.NS"
-          }
-        },
-        {
           "symbol": "ABB",
           "yahoo_symbol": "ABB.NS",
           "name": "ABB India",
-          "composite_score": 92.7,
-          "up_probability": 0.543,
+          "composite_score": 93.8,
+          "up_probability": 0.55,
           "factors": {
             "momentum": 1.33,
             "trend": 1.08,
-            "quality": 1.43,
+            "quality": 1.45,
             "value": -0.95,
             "lowvol": -1.22
           },
-          "rationale": "Ranks highly on very strong earnings growth, very strong 6-month return, very strong price vs 200-DMA; composite score 93/100; model up-probability 54%. Watch: weak low volatility.",
+          "rationale": "Ranks highly on very strong earnings growth, very strong 6-month return, very strong price vs 200-DMA; composite score 94/100; model up-probability 55%. Watch: weak low volatility.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ABB",
             "yahoo": "https://finance.yahoo.com/quote/ABB.NS"
           }
         },
         {
+          "symbol": "ADANIPORTS",
+          "yahoo_symbol": "ADANIPORTS.NS",
+          "name": "Adani Ports & SEZ",
+          "composite_score": 92.7,
+          "up_probability": 0.573,
+          "factors": {
+            "momentum": 1.21,
+            "trend": 0.31,
+            "quality": 0.37,
+            "value": -0.32,
+            "lowvol": 0.54
+          },
+          "rationale": "Ranks highly on very strong profit margin, strong 6-month return, strong price vs 200-DMA; composite score 93/100; model up-probability 57%. Watch: weak volume trend.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ADANIPORTS",
+            "yahoo": "https://finance.yahoo.com/quote/ADANIPORTS.NS"
+          }
+        },
+        {
           "symbol": "CUMMINSIND",
           "yahoo_symbol": "CUMMINSIND.NS",
           "name": "Cummins India",
-          "composite_score": 91.7,
-          "up_probability": 0.56,
+          "composite_score": 85.4,
+          "up_probability": 0.558,
           "factors": {
             "momentum": 1.65,
             "trend": 0.58,
-            "quality": 0.05,
-            "value": -0.17,
+            "quality": 0.29,
+            "value": -0.86,
             "lowvol": -0.6
           },
-          "rationale": "Ranks highly on very strong 12-1 month momentum, very strong 6-month return, strong price vs 200-DMA; composite score 92/100; model up-probability 56%.",
+          "rationale": "Ranks highly on very strong 12-1 month momentum, very strong 6-month return, strong price vs 200-DMA; composite score 85/100; model up-probability 56%. Watch: weak valuation (P/B).",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:CUMMINSIND",
             "yahoo": "https://finance.yahoo.com/quote/CUMMINSIND.NS"
@@ -300,7 +300,7 @@
           "yahoo_symbol": "THERMAX.NS",
           "name": "Thermax",
           "composite_score": 52.1,
-          "up_probability": 0.558,
+          "up_probability": 0.56,
           "factors": {
             "momentum": 1.79,
             "trend": 0.58,
@@ -331,8 +331,8 @@
           "factors": {
             "momentum": 1.86,
             "trend": 0.88,
-            "quality": 0.52,
-            "value": 0.4,
+            "quality": 0.54,
+            "value": 0.41,
             "lowvol": 0.69
           },
           "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 12-1 month momentum; composite score 100/100; model up-probability 58%. Watch: weak volume trend.",
@@ -342,16 +342,35 @@
           }
         },
         {
+          "symbol": "AXISBANK",
+          "yahoo_symbol": "AXISBANK.NS",
+          "name": "Axis Bank",
+          "composite_score": 80.2,
+          "up_probability": 0.566,
+          "factors": {
+            "momentum": 0.04,
+            "trend": 0.17,
+            "quality": 0.41,
+            "value": 0.65,
+            "lowvol": 0.99
+          },
+          "rationale": "Ranks highly on very strong profit margin, strong low volatility, strong 50/200-DMA trend; composite score 80/100; model up-probability 57%.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:AXISBANK",
+            "yahoo": "https://finance.yahoo.com/quote/AXISBANK.NS"
+          }
+        },
+        {
           "symbol": "IDFCFIRSTB",
           "yahoo_symbol": "IDFCFIRSTB.NS",
           "name": "IDFC First Bank",
           "composite_score": 77.1,
-          "up_probability": 0.577,
+          "up_probability": 0.583,
           "factors": {
             "momentum": 0.44,
             "trend": -0.06,
-            "quality": 0.31,
-            "value": 0.38,
+            "quality": 0.34,
+            "value": 0.4,
             "lowvol": 0.47
           },
           "rationale": "Ranks highly on very strong profit margin, strong 3-month return, strong valuation (P/B); composite score 77/100; model up-probability 58%. Watch: weak 50/200-DMA trend.",
@@ -361,60 +380,41 @@
           }
         },
         {
-          "symbol": "AXISBANK",
-          "yahoo_symbol": "AXISBANK.NS",
-          "name": "Axis Bank",
-          "composite_score": 76.0,
-          "up_probability": 0.566,
+          "symbol": "SBIN",
+          "yahoo_symbol": "SBIN.NS",
+          "name": "State Bank of India",
+          "composite_score": 74.0,
+          "up_probability": 0.604,
           "factors": {
-            "momentum": 0.04,
-            "trend": 0.17,
-            "quality": 0.4,
-            "value": 0.26,
-            "lowvol": 0.99
+            "momentum": 0.2,
+            "trend": -0.38,
+            "quality": -0.03,
+            "value": 1.15,
+            "lowvol": 0.5
           },
-          "rationale": "Ranks highly on very strong profit margin, strong low volatility, strong 50/200-DMA trend; composite score 76/100; model up-probability 57%.",
+          "rationale": "Ranks highly on strong valuation (P/E), strong valuation (P/B), strong 12-1 month momentum; composite score 74/100; model up-probability 60%. Watch: weak volume trend.",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:AXISBANK",
-            "yahoo": "https://finance.yahoo.com/quote/AXISBANK.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SBIN",
+            "yahoo": "https://finance.yahoo.com/quote/SBIN.NS"
           }
         },
         {
           "symbol": "PNB",
           "yahoo_symbol": "PNB.NS",
           "name": "Punjab National Bank",
-          "composite_score": 72.9,
-          "up_probability": 0.552,
+          "composite_score": 69.8,
+          "up_probability": 0.545,
           "factors": {
             "momentum": -0.54,
             "trend": -0.65,
-            "quality": 0.24,
-            "value": 3.12,
+            "quality": 0.25,
+            "value": 3.14,
             "lowvol": 0.52
           },
-          "rationale": "Ranks highly on very strong valuation (P/B), very strong valuation (P/E), strong profit margin; composite score 73/100; model up-probability 55%. Watch: weak 50/200-DMA trend.",
+          "rationale": "Ranks highly on very strong valuation (P/B), very strong valuation (P/E), very strong profit margin; composite score 70/100; model up-probability 55%. Watch: weak 50/200-DMA trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PNB",
             "yahoo": "https://finance.yahoo.com/quote/PNB.NS"
-          }
-        },
-        {
-          "symbol": "SBIN",
-          "yahoo_symbol": "SBIN.NS",
-          "name": "State Bank of India",
-          "composite_score": 69.8,
-          "up_probability": 0.589,
-          "factors": {
-            "momentum": 0.2,
-            "trend": -0.38,
-            "quality": -0.04,
-            "value": 1.14,
-            "lowvol": 0.5
-          },
-          "rationale": "Ranks highly on strong valuation (P/E), strong valuation (P/B), strong 12-1 month momentum; composite score 70/100; model up-probability 59%. Watch: weak volume trend.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SBIN",
-            "yahoo": "https://finance.yahoo.com/quote/SBIN.NS"
           }
         }
       ]
@@ -429,16 +429,16 @@
           "symbol": "JSWSTEEL",
           "yahoo_symbol": "JSWSTEEL.NS",
           "name": "JSW Steel",
-          "composite_score": 83.3,
-          "up_probability": 0.567,
+          "composite_score": 86.5,
+          "up_probability": 0.568,
           "factors": {
             "momentum": 0.22,
             "trend": 0.09,
-            "quality": 0.33,
-            "value": 0.5,
+            "quality": 0.35,
+            "value": 0.54,
             "lowvol": 1.34
           },
-          "rationale": "Ranks highly on strong low volatility, strong earnings growth, strong valuation (P/E); composite score 83/100; model up-probability 57%.",
+          "rationale": "Ranks highly on strong low volatility, strong earnings growth, strong valuation (P/E); composite score 86/100; model up-probability 57%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:JSWSTEEL",
             "yahoo": "https://finance.yahoo.com/quote/JSWSTEEL.NS"
@@ -449,15 +449,15 @@
           "yahoo_symbol": "NMDC.NS",
           "name": "NMDC",
           "composite_score": 70.8,
-          "up_probability": 0.56,
+          "up_probability": 0.567,
           "factors": {
             "momentum": 0.23,
             "trend": -0.13,
-            "quality": 0.36,
-            "value": 1.05,
+            "quality": 0.37,
+            "value": 1.06,
             "lowvol": -0.0
           },
-          "rationale": "Ranks highly on very strong valuation (P/E), strong 12-1 month momentum, strong 50/200-DMA trend; composite score 71/100; model up-probability 56%. Watch: weak price vs 50-DMA.",
+          "rationale": "Ranks highly on very strong valuation (P/E), strong 12-1 month momentum, strong 50/200-DMA trend; composite score 71/100; model up-probability 57%. Watch: weak price vs 50-DMA.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:NMDC",
             "yahoo": "https://finance.yahoo.com/quote/NMDC.NS"
@@ -468,15 +468,15 @@
           "yahoo_symbol": "TATASTEEL.NS",
           "name": "Tata Steel",
           "composite_score": 57.3,
-          "up_probability": 0.565,
+          "up_probability": 0.569,
           "factors": {
             "momentum": -0.05,
             "trend": -0.16,
             "quality": -0.07,
-            "value": 0.26,
+            "value": 0.27,
             "lowvol": 0.88
           },
-          "rationale": "Ranks highly on strong earnings growth, strong 50/200-DMA trend, strong 12-1 month momentum; composite score 57/100; model up-probability 56%. Watch: weak price vs 50-DMA.",
+          "rationale": "Ranks highly on strong earnings growth, strong 50/200-DMA trend, strong 12-1 month momentum; composite score 57/100; model up-probability 57%. Watch: weak price vs 50-DMA.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TATASTEEL",
             "yahoo": "https://finance.yahoo.com/quote/TATASTEEL.NS"
@@ -487,12 +487,12 @@
           "yahoo_symbol": "HINDALCO.NS",
           "name": "Hindalco Industries",
           "composite_score": 53.1,
-          "up_probability": 0.56,
+          "up_probability": 0.562,
           "factors": {
             "momentum": 0.36,
             "trend": -0.13,
-            "quality": -0.95,
-            "value": 0.88,
+            "quality": -0.94,
+            "value": 0.89,
             "lowvol": 0.06
           },
           "rationale": "Ranks highly on very strong 12-1 month momentum, strong valuation (P/B), strong 50/200-DMA trend; composite score 53/100; model up-probability 56%. Watch: very weak price vs 50-DMA.",
@@ -505,8 +505,8 @@
           "symbol": "HINDZINC",
           "yahoo_symbol": "HINDZINC.NS",
           "name": "Hindustan Zinc",
-          "composite_score": 47.9,
-          "up_probability": 0.54,
+          "composite_score": 44.8,
+          "up_probability": 0.532,
           "factors": {
             "momentum": -0.34,
             "trend": -0.77,
@@ -514,7 +514,7 @@
             "value": -0.13,
             "lowvol": -0.69
           },
-          "rationale": "Ranks highly on very strong return on equity, very strong profit margin, strong 12-1 month momentum; composite score 48/100; model up-probability 54%. Watch: very weak price vs 50-DMA.",
+          "rationale": "Ranks highly on very strong return on equity, very strong profit margin, strong 12-1 month momentum; composite score 45/100; model up-probability 53%. Watch: very weak price vs 50-DMA.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HINDZINC",
             "yahoo": "https://finance.yahoo.com/quote/HINDZINC.NS"
