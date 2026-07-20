@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T19:03:54Z",
+  "generated_at": "2026-07-20T02:45:56Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -80,7 +80,7 @@
             "momentum": 0.27,
             "trend": 0.63,
             "quality": 0.67,
-            "value": -0.21,
+            "value": -0.22,
             "lowvol": -0.92
           },
           "rationale": "Ranks highly on very strong price vs 50-DMA, very strong profit margin, strong 3-month return; composite score 62/100; model up-probability 57%. Watch: weak 12-1 month momentum.",
@@ -205,7 +205,7 @@
             "value": -0.83,
             "lowvol": 1.03
           },
-          "rationale": "Ranks highly on strong 3-month return, strong low volatility, strong 50/200-DMA trend; composite score 77/100; model up-probability 56%. Watch: weak valuation (P/E).",
+          "rationale": "Ranks highly on strong 3-month return, strong low volatility, strong 50/200-DMA trend; composite score 77/100; model up-probability 56%. Watch: weak valuation (P/B).",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:DIVISLAB",
             "yahoo": "https://finance.yahoo.com/quote/DIVISLAB.NS"
@@ -229,7 +229,7 @@
             "momentum": 2.53,
             "trend": 1.24,
             "quality": -0.3,
-            "value": -0.61,
+            "value": -0.62,
             "lowvol": -1.42
           },
           "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 12-1 month momentum; composite score 98/100; model up-probability 58%. Watch: weak low volatility.",
@@ -248,7 +248,7 @@
             "momentum": 1.33,
             "trend": 1.08,
             "quality": 1.45,
-            "value": -0.94,
+            "value": -0.95,
             "lowvol": -1.22
           },
           "rationale": "Ranks highly on very strong earnings growth, very strong 6-month return, very strong price vs 200-DMA; composite score 95/100; model up-probability 55%. Watch: weak low volatility.",
@@ -286,7 +286,7 @@
             "momentum": 1.65,
             "trend": 0.58,
             "quality": 0.28,
-            "value": -0.85,
+            "value": -0.86,
             "lowvol": -0.6
           },
           "rationale": "Ranks highly on very strong 12-1 month momentum, very strong 6-month return, strong price vs 200-DMA; composite score 86/100; model up-probability 56%. Watch: weak valuation (P/B).",
@@ -332,7 +332,7 @@
             "momentum": 1.86,
             "trend": 0.88,
             "quality": 0.53,
-            "value": 0.41,
+            "value": 0.42,
             "lowvol": 0.69
           },
           "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 12-1 month momentum; composite score 100/100; model up-probability 57%. Watch: weak volume trend.",
@@ -351,7 +351,7 @@
             "momentum": 0.04,
             "trend": 0.17,
             "quality": 0.5,
-            "value": 0.64,
+            "value": 0.65,
             "lowvol": 0.99
           },
           "rationale": "Ranks highly on very strong profit margin, strong low volatility, strong 50/200-DMA trend; composite score 81/100; model up-probability 57%.",
@@ -370,7 +370,7 @@
             "momentum": -0.54,
             "trend": -0.65,
             "quality": 0.62,
-            "value": 3.12,
+            "value": 3.13,
             "lowvol": 0.52
           },
           "rationale": "Ranks highly on very strong valuation (P/B), very strong valuation (P/E), very strong profit margin; composite score 80/100; model up-probability 57%. Watch: weak 50/200-DMA trend.",
@@ -408,7 +408,7 @@
             "momentum": 0.7,
             "trend": 0.95,
             "quality": -0.74,
-            "value": 0.5,
+            "value": 0.51,
             "lowvol": -0.27
           },
           "rationale": "Ranks highly on very strong valuation (P/B), very strong 3-month return, strong price vs 50-DMA; composite score 71/100; model up-probability 55%. Watch: weak return on equity.",
