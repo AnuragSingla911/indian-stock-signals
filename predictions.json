@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T08:26:13Z",
+  "generated_at": "2026-07-22T13:48:15Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -11,22 +11,22 @@
       "sector": "Pharma",
       "display_name": "Pharma & Healthcare",
       "sector_score": 100.0,
-      "sector_rationale": "Pharma & Healthcare: 3M sector momentum up 14.6%; 90% of constituents above their 200-DMA.",
+      "sector_rationale": "Pharma & Healthcare: 3M sector momentum up 14.8%; 90% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "TORNTPHARM",
           "yahoo_symbol": "TORNTPHARM.NS",
           "name": "Torrent Pharmaceuticals",
-          "composite_score": 94.8,
-          "up_probability": 0.568,
+          "composite_score": 99.0,
+          "up_probability": 0.572,
           "factors": {
-            "momentum": 1.22,
-            "trend": 1.54,
-            "quality": -0.32,
+            "momentum": 1.29,
+            "trend": 1.63,
+            "quality": -0.31,
             "value": -0.91,
-            "lowvol": 0.32
+            "lowvol": 0.35
           },
-          "rationale": "Ranks highly on very strong volume trend, very strong price vs 200-DMA, very strong 3-month return; composite score 95/100; model up-probability 57%. Watch: weak valuation (P/B).",
+          "rationale": "Ranks highly on very strong volume trend, very strong price vs 200-DMA, very strong 3-month return; composite score 99/100; model up-probability 57%. Watch: weak valuation (P/B).",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TORNTPHARM",
             "yahoo": "https://finance.yahoo.com/quote/TORNTPHARM.NS"
@@ -36,11 +36,11 @@
           "symbol": "ZYDUSLIFE",
           "yahoo_symbol": "ZYDUSLIFE.NS",
           "name": "Zydus Lifesciences",
-          "composite_score": 87.5,
+          "composite_score": 88.5,
           "up_probability": 0.568,
           "factors": {
-            "momentum": 1.1,
-            "trend": 0.42,
+            "momentum": 1.11,
+            "trend": 0.43,
             "quality": -0.04,
             "value": -0.14,
             "lowvol": 0.36
@@ -58,13 +58,13 @@
           "composite_score": 83.3,
           "up_probability": 0.562,
           "factors": {
-            "momentum": 0.57,
-            "trend": 1.0,
+            "momentum": 0.59,
+            "trend": 1.02,
             "quality": 0.13,
             "value": -0.84,
             "lowvol": 1.03
           },
-          "rationale": "Ranks highly on strong price vs 50-DMA, strong 3-month return, strong low volatility; composite score 83/100; model up-probability 56%. Watch: weak valuation (P/B).",
+          "rationale": "Ranks highly on strong price vs 50-DMA, strong 3-month return, strong price vs 200-DMA; composite score 83/100; model up-probability 56%. Watch: weak valuation (P/B).",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:DIVISLAB",
             "yahoo": "https://finance.yahoo.com/quote/DIVISLAB.NS"
@@ -77,11 +77,11 @@
           "composite_score": 80.2,
           "up_probability": 0.562,
           "factors": {
-            "momentum": 0.84,
-            "trend": 0.38,
-            "quality": 0.0,
+            "momentum": 0.85,
+            "trend": 0.4,
+            "quality": -0.0,
             "value": -0.51,
-            "lowvol": 0.92
+            "lowvol": 0.93
           },
           "rationale": "Ranks highly on strong 3-month return, strong 50/200-DMA trend, strong low volatility; composite score 80/100; model up-probability 56%.",
           "chart_links": {
@@ -90,22 +90,22 @@
           }
         },
         {
-          "symbol": "LUPIN",
-          "yahoo_symbol": "LUPIN.NS",
-          "name": "Lupin",
+          "symbol": "AUROPHARMA",
+          "yahoo_symbol": "AUROPHARMA.NS",
+          "name": "Aurobindo Pharma",
           "composite_score": 79.2,
-          "up_probability": 0.563,
+          "up_probability": 0.552,
           "factors": {
-            "momentum": 0.53,
-            "trend": 0.26,
-            "quality": 0.54,
-            "value": -0.15,
-            "lowvol": 0.52
+            "momentum": 1.08,
+            "trend": 0.63,
+            "quality": -0.5,
+            "value": 0.14,
+            "lowvol": 0.08
           },
-          "rationale": "Ranks highly on strong 50/200-DMA trend, strong earnings growth, strong 12-1 month momentum; composite score 79/100; model up-probability 56%. Watch: weak volume trend.",
+          "rationale": "Ranks highly on very strong 6-month return, strong price vs 200-DMA, strong 12-1 month momentum; composite score 79/100; model up-probability 55%.",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:LUPIN",
-            "yahoo": "https://finance.yahoo.com/quote/LUPIN.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:AUROPHARMA",
+            "yahoo": "https://finance.yahoo.com/quote/AUROPHARMA.NS"
           }
         }
       ]
@@ -114,22 +114,22 @@
       "sector": "Realty",
       "display_name": "Realty",
       "sector_score": 90.0,
-      "sector_rationale": "Realty: 3M sector momentum up 14.9%; 75% of constituents above their 200-DMA.",
+      "sector_rationale": "Realty: 3M sector momentum up 14.8%; 75% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "PHOENIXLTD",
           "yahoo_symbol": "PHOENIXLTD.NS",
           "name": "Phoenix Mills",
-          "composite_score": 93.8,
-          "up_probability": 0.557,
+          "composite_score": 94.8,
+          "up_probability": 0.555,
           "factors": {
-            "momentum": 0.87,
-            "trend": 1.52,
-            "quality": 0.32,
+            "momentum": 0.85,
+            "trend": 1.5,
+            "quality": 0.3,
             "value": -0.67,
-            "lowvol": 0.1
+            "lowvol": 0.09
           },
-          "rationale": "Ranks highly on very strong volume trend, strong price vs 50-DMA, strong price vs 200-DMA; composite score 94/100; model up-probability 56%.",
+          "rationale": "Ranks highly on very strong volume trend, strong price vs 50-DMA, strong price vs 200-DMA; composite score 95/100; model up-probability 56%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PHOENIXLTD",
             "yahoo": "https://finance.yahoo.com/quote/PHOENIXLTD.NS"
@@ -143,10 +143,10 @@
           "up_probability": 0.554,
           "factors": {
             "momentum": 0.21,
-            "trend": 1.16,
+            "trend": 1.17,
             "quality": 0.86,
             "value": -0.16,
-            "lowvol": 0.08
+            "lowvol": 0.09
           },
           "rationale": "Ranks highly on very strong profit margin, very strong volume trend, strong 50/200-DMA trend; composite score 86/100; model up-probability 55%.",
           "chart_links": {
@@ -155,57 +155,57 @@
           }
         },
         {
-          "symbol": "PRESTIGE",
-          "yahoo_symbol": "PRESTIGE.NS",
-          "name": "Prestige Estates Projects",
-          "composite_score": 64.6,
-          "up_probability": 0.568,
-          "factors": {
-            "momentum": 0.4,
-            "trend": 0.52,
-            "quality": 1.04,
-            "value": -0.52,
-            "lowvol": -1.06
-          },
-          "rationale": "Ranks highly on very strong earnings growth, very strong price vs 50-DMA, very strong 3-month return; composite score 65/100; model up-probability 57%. Watch: weak low volatility.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PRESTIGE",
-            "yahoo": "https://finance.yahoo.com/quote/PRESTIGE.NS"
-          }
-        },
-        {
           "symbol": "MAHLIFE",
           "yahoo_symbol": "MAHLIFE.NS",
           "name": "Mahindra Lifespace Developers",
-          "composite_score": 63.5,
+          "composite_score": 64.6,
           "up_probability": 0.565,
           "factors": {
             "momentum": 0.35,
             "trend": 0.32,
-            "quality": -0.11,
+            "quality": -0.1,
             "value": 0.2,
             "lowvol": 0.14
           },
-          "rationale": "Ranks highly on strong 3-month return, strong price vs 50-DMA, strong volume trend; composite score 64/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
+          "rationale": "Ranks highly on strong 3-month return, strong price vs 50-DMA, strong volume trend; composite score 65/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:MAHLIFE",
             "yahoo": "https://finance.yahoo.com/quote/MAHLIFE.NS"
           }
         },
         {
+          "symbol": "PRESTIGE",
+          "yahoo_symbol": "PRESTIGE.NS",
+          "name": "Prestige Estates Projects",
+          "composite_score": 62.5,
+          "up_probability": 0.568,
+          "factors": {
+            "momentum": 0.41,
+            "trend": 0.54,
+            "quality": 0.96,
+            "value": -0.53,
+            "lowvol": -1.05
+          },
+          "rationale": "Ranks highly on very strong earnings growth, very strong price vs 50-DMA, very strong 3-month return; composite score 62/100; model up-probability 57%. Watch: weak low volatility.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PRESTIGE",
+            "yahoo": "https://finance.yahoo.com/quote/PRESTIGE.NS"
+          }
+        },
+        {
           "symbol": "GODREJPROP",
           "yahoo_symbol": "GODREJPROP.NS",
           "name": "Godrej Properties",
-          "composite_score": 58.3,
+          "composite_score": 57.3,
           "up_probability": 0.563,
           "factors": {
-            "momentum": 0.28,
-            "trend": 0.58,
-            "quality": 0.67,
-            "value": -0.2,
-            "lowvol": -1.07
+            "momentum": 0.27,
+            "trend": 0.57,
+            "quality": 0.65,
+            "value": -0.21,
+            "lowvol": -1.08
           },
-          "rationale": "Ranks highly on very strong price vs 50-DMA, very strong profit margin, strong 3-month return; composite score 58/100; model up-probability 56%. Watch: weak 12-1 month momentum.",
+          "rationale": "Ranks highly on very strong price vs 50-DMA, very strong profit margin, strong 3-month return; composite score 57/100; model up-probability 56%. Watch: weak 12-1 month momentum.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:GODREJPROP",
             "yahoo": "https://finance.yahoo.com/quote/GODREJPROP.NS"
@@ -217,7 +217,7 @@
       "sector": "Infra",
       "display_name": "Infrastructure & Capital Goods",
       "sector_score": 80.0,
-      "sector_rationale": "Infrastructure & Capital Goods: 3M sector momentum up 0.8%; 78% of constituents above their 200-DMA.",
+      "sector_rationale": "Infrastructure & Capital Goods: 3M sector momentum up 0.6%; 78% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "BHEL",
@@ -226,10 +226,10 @@
           "composite_score": 97.9,
           "up_probability": 0.571,
           "factors": {
-            "momentum": 2.35,
+            "momentum": 2.38,
             "trend": 1.16,
             "quality": -0.3,
-            "value": -0.61,
+            "value": -0.62,
             "lowvol": -1.55
           },
           "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 12-1 month momentum; composite score 98/100; model up-probability 57%. Watch: very weak low volatility.",
@@ -242,16 +242,16 @@
           "symbol": "ABB",
           "yahoo_symbol": "ABB.NS",
           "name": "ABB India",
-          "composite_score": 96.9,
+          "composite_score": 95.8,
           "up_probability": 0.557,
           "factors": {
-            "momentum": 1.23,
-            "trend": 1.1,
-            "quality": 1.44,
-            "value": -0.96,
+            "momentum": 1.2,
+            "trend": 1.07,
+            "quality": 1.37,
+            "value": -0.95,
             "lowvol": -1.07
           },
-          "rationale": "Ranks highly on very strong earnings growth, very strong 6-month return, very strong price vs 200-DMA; composite score 97/100; model up-probability 56%. Watch: weak low volatility.",
+          "rationale": "Ranks highly on very strong earnings growth, very strong 6-month return, very strong price vs 200-DMA; composite score 96/100; model up-probability 56%. Watch: weak low volatility.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ABB",
             "yahoo": "https://finance.yahoo.com/quote/ABB.NS"
@@ -261,16 +261,16 @@
           "symbol": "ADANIPORTS",
           "yahoo_symbol": "ADANIPORTS.NS",
           "name": "Adani Ports & SEZ",
-          "composite_score": 90.6,
+          "composite_score": 91.7,
           "up_probability": 0.563,
           "factors": {
-            "momentum": 1.19,
-            "trend": 0.24,
+            "momentum": 1.15,
+            "trend": 0.19,
             "quality": 0.35,
-            "value": -0.33,
-            "lowvol": 0.53
+            "value": -0.32,
+            "lowvol": 0.51
           },
-          "rationale": "Ranks highly on very strong profit margin, strong 6-month return, strong price vs 200-DMA; composite score 91/100; model up-probability 56%. Watch: weak volume trend.",
+          "rationale": "Ranks highly on very strong profit margin, strong 6-month return, strong price vs 200-DMA; composite score 92/100; model up-probability 56%. Watch: weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ADANIPORTS",
             "yahoo": "https://finance.yahoo.com/quote/ADANIPORTS.NS"
@@ -285,7 +285,7 @@
           "factors": {
             "momentum": 1.57,
             "trend": 0.66,
-            "quality": 0.28,
+            "quality": 0.27,
             "value": -0.87,
             "lowvol": -0.66
           },
@@ -299,16 +299,16 @@
           "symbol": "HAL",
           "yahoo_symbol": "HAL.NS",
           "name": "Hindustan Aeronautics",
-          "composite_score": 50.0,
+          "composite_score": 47.9,
           "up_probability": 0.565,
           "factors": {
-            "momentum": 0.02,
-            "trend": 0.07,
+            "momentum": 0.0,
+            "trend": 0.04,
             "quality": 0.35,
             "value": -0.53,
             "lowvol": 0.21
           },
-          "rationale": "Ranks highly on strong profit margin, strong 50/200-DMA trend, above-average price vs 50-DMA; composite score 50/100; model up-probability 56%. Watch: very weak volume trend.",
+          "rationale": "Ranks highly on strong profit margin, strong 50/200-DMA trend, above-average price vs 50-DMA; composite score 48/100; model up-probability 56%. Watch: very weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HAL",
             "yahoo": "https://finance.yahoo.com/quote/HAL.NS"
@@ -320,32 +320,13 @@
       "sector": "Auto",
       "display_name": "Automobile",
       "sector_score": 70.0,
-      "sector_rationale": "Automobile: 3M sector momentum up 3.5%; 50% of constituents above their 200-DMA.",
+      "sector_rationale": "Automobile: 3M sector momentum up 3.4%; 50% of constituents above their 200-DMA.",
       "stocks": [
-        {
-          "symbol": "BAJAJ-AUTO",
-          "yahoo_symbol": "BAJAJ-AUTO.NS",
-          "name": "Bajaj Auto",
-          "composite_score": 92.7,
-          "up_probability": 0.562,
-          "factors": {
-            "momentum": 0.85,
-            "trend": 0.92,
-            "quality": 0.56,
-            "value": -0.48,
-            "lowvol": 0.33
-          },
-          "rationale": "Ranks highly on strong earnings growth, strong price vs 200-DMA, strong 3-month return; composite score 93/100; model up-probability 56%.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BAJAJ_AUTO",
-            "yahoo": "https://finance.yahoo.com/quote/BAJAJ-AUTO.NS"
-          }
-        },
         {
           "symbol": "TATAMOTORS",
           "yahoo_symbol": "TATAMOTORS.NS",
           "name": "Tata Motors",
-          "composite_score": 88.5,
+          "composite_score": 89.6,
           "up_probability": 0.562,
           "factors": {
             "momentum": 1.05,
@@ -354,26 +335,45 @@
             "value": -0.51,
             "lowvol": 0.64
           },
-          "rationale": "Ranks highly on very strong 12-1 month momentum, strong price vs 200-DMA, strong 50/200-DMA trend; composite score 88/100; model up-probability 56%.",
+          "rationale": "Ranks highly on very strong 12-1 month momentum, strong price vs 200-DMA, strong 50/200-DMA trend; composite score 90/100; model up-probability 56%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TATAMOTORS",
             "yahoo": "https://finance.yahoo.com/quote/TATAMOTORS.NS"
           }
         },
         {
+          "symbol": "BAJAJ-AUTO",
+          "yahoo_symbol": "BAJAJ-AUTO.NS",
+          "name": "Bajaj Auto",
+          "composite_score": 87.5,
+          "up_probability": 0.562,
+          "factors": {
+            "momentum": 0.87,
+            "trend": 0.96,
+            "quality": 0.11,
+            "value": -0.43,
+            "lowvol": 0.3
+          },
+          "rationale": "Ranks highly on strong price vs 200-DMA, strong price vs 50-DMA, strong 3-month return; composite score 88/100; model up-probability 56%.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BAJAJ_AUTO",
+            "yahoo": "https://finance.yahoo.com/quote/BAJAJ-AUTO.NS"
+          }
+        },
+        {
           "symbol": "EICHERMOT",
           "yahoo_symbol": "EICHERMOT.NS",
           "name": "Eicher Motors",
-          "composite_score": 76.0,
+          "composite_score": 77.1,
           "up_probability": 0.565,
           "factors": {
-            "momentum": 0.62,
-            "trend": 0.83,
-            "quality": 0.25,
+            "momentum": 0.63,
+            "trend": 0.84,
+            "quality": 0.24,
             "value": -0.6,
             "lowvol": 0.24
           },
-          "rationale": "Ranks highly on very strong volume trend, strong 12-1 month momentum, strong 50/200-DMA trend; composite score 76/100; model up-probability 56%.",
+          "rationale": "Ranks highly on very strong volume trend, strong 12-1 month momentum, strong 50/200-DMA trend; composite score 77/100; model up-probability 56%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:EICHERMOT",
             "yahoo": "https://finance.yahoo.com/quote/EICHERMOT.NS"
@@ -383,7 +383,7 @@
           "symbol": "BOSCHLTD",
           "yahoo_symbol": "BOSCHLTD.NS",
           "name": "Bosch",
-          "composite_score": 65.6,
+          "composite_score": 63.5,
           "up_probability": 0.563,
           "factors": {
             "momentum": 0.45,
@@ -392,7 +392,7 @@
             "value": -0.65,
             "lowvol": 0.46
           },
-          "rationale": "Ranks highly on strong 50/200-DMA trend, strong price vs 200-DMA, strong price vs 50-DMA; composite score 66/100; model up-probability 56%.",
+          "rationale": "Ranks highly on strong 50/200-DMA trend, strong price vs 200-DMA, strong price vs 50-DMA; composite score 64/100; model up-probability 56%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BOSCHLTD",
             "yahoo": "https://finance.yahoo.com/quote/BOSCHLTD.NS"
@@ -402,16 +402,16 @@
           "symbol": "HEROMOTOCO",
           "yahoo_symbol": "HEROMOTOCO.NS",
           "name": "Hero MotoCorp",
-          "composite_score": 54.2,
+          "composite_score": 53.1,
           "up_probability": 0.565,
           "factors": {
-            "momentum": -0.13,
-            "trend": -0.16,
-            "quality": 0.03,
-            "value": -0.0,
-            "lowvol": 1.01
+            "momentum": -0.14,
+            "trend": -0.17,
+            "quality": 0.02,
+            "value": -0.01,
+            "lowvol": 1.0
           },
-          "rationale": "Ranks highly on strong volume trend, strong low volatility, above-average 12-1 month momentum; composite score 54/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
+          "rationale": "Ranks highly on strong volume trend, strong low volatility, above-average 12-1 month momentum; composite score 53/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HEROMOTOCO",
             "yahoo": "https://finance.yahoo.com/quote/HEROMOTOCO.NS"
@@ -423,7 +423,7 @@
       "sector": "Banking",
       "display_name": "Banking & Financials",
       "sector_score": 60.0,
-      "sector_rationale": "Banking & Financials: 3M sector momentum down 0.6%; 50% of constituents above their 200-DMA.",
+      "sector_rationale": "Banking & Financials: 3M sector momentum down 0.4%; 50% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "FEDERALBNK",
@@ -432,13 +432,13 @@
           "composite_score": 100.0,
           "up_probability": 0.566,
           "factors": {
-            "momentum": 1.61,
-            "trend": 0.93,
-            "quality": 0.53,
-            "value": 0.41,
-            "lowvol": 0.65
+            "momentum": 1.63,
+            "trend": 0.96,
+            "quality": 0.52,
+            "value": 0.4,
+            "lowvol": 0.66
           },
-          "rationale": "Ranks highly on very strong 12-1 month momentum, very strong price vs 200-DMA, very strong price vs 50-DMA; composite score 100/100; model up-probability 57%. Watch: weak volume trend.",
+          "rationale": "Ranks highly on very strong price vs 200-DMA, very strong 12-1 month momentum, very strong price vs 50-DMA; composite score 100/100; model up-probability 57%. Watch: weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:FEDERALBNK",
             "yahoo": "https://finance.yahoo.com/quote/FEDERALBNK.NS"
@@ -448,16 +448,16 @@
           "symbol": "PNB",
           "yahoo_symbol": "PNB.NS",
           "name": "Punjab National Bank",
-          "composite_score": 91.7,
+          "composite_score": 93.8,
           "up_probability": 0.565,
           "factors": {
-            "momentum": -0.36,
-            "trend": -0.08,
-            "quality": 0.62,
-            "value": 3.35,
+            "momentum": -0.37,
+            "trend": -0.09,
+            "quality": 0.51,
+            "value": 3.33,
             "lowvol": 0.15
           },
-          "rationale": "Ranks highly on very strong valuation (P/E), very strong valuation (P/B), very strong profit margin; composite score 92/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
+          "rationale": "Ranks highly on very strong valuation (P/E), very strong valuation (P/B), very strong profit margin; composite score 94/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PNB",
             "yahoo": "https://finance.yahoo.com/quote/PNB.NS"
@@ -470,16 +470,35 @@
           "composite_score": 85.4,
           "up_probability": 0.57,
           "factors": {
-            "momentum": 0.89,
-            "trend": 1.45,
+            "momentum": 0.88,
+            "trend": 1.46,
             "quality": -0.74,
-            "value": 0.45,
-            "lowvol": -0.34
+            "value": 0.46,
+            "lowvol": -0.33
           },
           "rationale": "Ranks highly on very strong price vs 50-DMA, very strong 3-month return, very strong valuation (P/B); composite score 85/100; model up-probability 57%. Watch: weak return on equity.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:INDUSINDBK",
             "yahoo": "https://finance.yahoo.com/quote/INDUSINDBK.NS"
+          }
+        },
+        {
+          "symbol": "IDFCFIRSTB",
+          "yahoo_symbol": "IDFCFIRSTB.NS",
+          "name": "IDFC First Bank",
+          "composite_score": 75.0,
+          "up_probability": 0.565,
+          "factors": {
+            "momentum": 0.46,
+            "trend": -0.1,
+            "quality": 0.33,
+            "value": 0.41,
+            "lowvol": 0.42
+          },
+          "rationale": "Ranks highly on very strong profit margin, strong 3-month return, strong valuation (P/B); composite score 75/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:IDFCFIRSTB",
+            "yahoo": "https://finance.yahoo.com/quote/IDFCFIRSTB.NS"
           }
         },
         {
@@ -489,8 +508,8 @@
           "composite_score": 74.0,
           "up_probability": 0.565,
           "factors": {
-            "momentum": 0.1,
-            "trend": 0.0,
+            "momentum": 0.11,
+            "trend": 0.01,
             "quality": 0.23,
             "value": 0.23,
             "lowvol": 1.24
@@ -499,25 +518,6 @@
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ICICIBANK",
             "yahoo": "https://finance.yahoo.com/quote/ICICIBANK.NS"
-          }
-        },
-        {
-          "symbol": "IDFCFIRSTB",
-          "yahoo_symbol": "IDFCFIRSTB.NS",
-          "name": "IDFC First Bank",
-          "composite_score": 70.8,
-          "up_probability": 0.565,
-          "factors": {
-            "momentum": 0.43,
-            "trend": -0.14,
-            "quality": 0.32,
-            "value": 0.41,
-            "lowvol": 0.4
-          },
-          "rationale": "Ranks highly on very strong profit margin, strong 3-month return, strong valuation (P/B); composite score 71/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:IDFCFIRSTB",
-            "yahoo": "https://finance.yahoo.com/quote/IDFCFIRSTB.NS"
           }
         }
       ]
