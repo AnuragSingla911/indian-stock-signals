@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T13:16:49Z",
+  "generated_at": "2026-07-26T19:07:53Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -42,7 +42,7 @@
             "momentum": 0.32,
             "trend": 1.03,
             "quality": 0.86,
-            "value": -0.14,
+            "value": -0.13,
             "lowvol": 0.06
           },
           "rationale": "Ranks highly on very strong profit margin, very strong volume trend, strong 50/200-DMA trend; composite score 88/100; model up-probability 56%.",
@@ -99,7 +99,7 @@
             "momentum": 0.29,
             "trend": 0.43,
             "quality": 0.64,
-            "value": -0.19,
+            "value": -0.2,
             "lowvol": -1.08
           },
           "rationale": "Ranks highly on very strong profit margin, very strong price vs 50-DMA, strong 6-month return; composite score 55/100; model up-probability 55%. Watch: weak 12-1 month momentum.",
@@ -126,7 +126,7 @@
             "momentum": 1.29,
             "trend": 1.55,
             "quality": -0.31,
-            "value": -0.93,
+            "value": -0.92,
             "lowvol": 0.3
           },
           "rationale": "Ranks highly on very strong volume trend, very strong price vs 200-DMA, very strong 3-month return; composite score 96/100; model up-probability 57%. Watch: weak valuation (P/B).",
@@ -267,7 +267,7 @@
             "momentum": 1.63,
             "trend": 0.71,
             "quality": 0.3,
-            "value": -0.89,
+            "value": -0.88,
             "lowvol": -0.69
           },
           "rationale": "Ranks highly on very strong 12-1 month momentum, very strong 6-month return, very strong price vs 200-DMA; composite score 85/100; model up-probability 56%. Watch: weak valuation (P/B).",
@@ -332,7 +332,7 @@
             "momentum": 1.11,
             "trend": 1.22,
             "quality": 0.12,
-            "value": -0.44,
+            "value": -0.43,
             "lowvol": 0.2
           },
           "rationale": "Ranks highly on very strong 3-month return, very strong price vs 50-DMA, strong price vs 200-DMA; composite score 98/100; model up-probability 57%.",
@@ -435,7 +435,7 @@
             "momentum": 1.76,
             "trend": 1.07,
             "quality": 0.53,
-            "value": 0.4,
+            "value": 0.39,
             "lowvol": 0.62
           },
           "rationale": "Ranks highly on very strong price vs 200-DMA, very strong price vs 50-DMA, very strong 12-1 month momentum; composite score 100/100; model up-probability 59%. Watch: weak volume trend.",
@@ -454,7 +454,7 @@
             "momentum": -0.21,
             "trend": -0.09,
             "quality": 0.5,
-            "value": 3.46,
+            "value": 3.53,
             "lowvol": 0.15
           },
           "rationale": "Ranks highly on very strong valuation (P/E), very strong valuation (P/B), very strong profit margin; composite score 97/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
@@ -473,7 +473,7 @@
             "momentum": 0.5,
             "trend": 0.47,
             "quality": 0.33,
-            "value": 0.38,
+            "value": 0.37,
             "lowvol": 0.61
           },
           "rationale": "Ranks highly on very strong profit margin, very strong 3-month return, strong valuation (P/B); composite score 86/100; model up-probability 56%.",
@@ -492,7 +492,7 @@
             "momentum": 0.54,
             "trend": 1.09,
             "quality": -0.04,
-            "value": 0.61,
+            "value": 0.59,
             "lowvol": -0.4
           },
           "rationale": "Ranks highly on very strong valuation (P/B), strong volume trend, strong 3-month return; composite score 79/100; model up-probability 56%.",
@@ -511,7 +511,7 @@
             "momentum": 0.22,
             "trend": 0.03,
             "quality": 0.23,
-            "value": 0.25,
+            "value": 0.24,
             "lowvol": 1.23
           },
           "rationale": "Ranks highly on strong low volatility, strong price vs 50-DMA, strong profit margin; composite score 74/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
