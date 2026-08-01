@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T02:35:14Z",
+  "generated_at": "2026-08-01T08:17:14Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -164,7 +164,7 @@
             "momentum": 1.29,
             "trend": 1.43,
             "quality": -0.2,
-            "value": -0.93,
+            "value": -0.94,
             "lowvol": 0.04
           },
           "rationale": "Ranks highly on very strong price vs 200-DMA, very strong volume trend, very strong 3-month return; composite score 91/100; model up-probability 56%. Watch: weak valuation (P/B).",
@@ -229,7 +229,7 @@
             "momentum": 0.91,
             "trend": 1.21,
             "quality": 0.17,
-            "value": -0.45,
+            "value": -0.46,
             "lowvol": 0.45
           },
           "rationale": "Ranks highly on very strong price vs 200-DMA, strong price vs 50-DMA, strong 3-month return; composite score 96/100; model up-probability 58%.",
@@ -305,7 +305,7 @@
             "momentum": 0.68,
             "trend": 0.28,
             "quality": -0.11,
-            "value": -0.64,
+            "value": -0.65,
             "lowvol": 0.54
           },
           "rationale": "Ranks highly on strong 3-month return, strong 50/200-DMA trend, strong price vs 200-DMA; composite score 69/100; model up-probability 58%. Watch: weak volume trend.",
@@ -408,7 +408,7 @@
             "momentum": -0.22,
             "trend": 0.16,
             "quality": 0.49,
-            "value": -0.53,
+            "value": -0.54,
             "lowvol": 0.47
           },
           "rationale": "Ranks highly on strong profit margin, strong 50/200-DMA trend, above-average return on equity; composite score 53/100; model up-probability 57%. Watch: weak volume trend.",
@@ -435,7 +435,7 @@
             "momentum": 1.73,
             "trend": 0.7,
             "quality": 0.57,
-            "value": 0.38,
+            "value": 0.37,
             "lowvol": 0.7
           },
           "rationale": "Ranks highly on very strong 12-1 month momentum, very strong price vs 200-DMA, very strong 3-month return; composite score 100/100; model up-probability 58%. Watch: weak volume trend.",
@@ -492,7 +492,7 @@
             "momentum": 0.18,
             "trend": 0.32,
             "quality": 0.29,
-            "value": 0.25,
+            "value": 0.26,
             "lowvol": 1.36
           },
           "rationale": "Ranks highly on strong low volatility, strong profit margin, strong 3-month return; composite score 85/100; model up-probability 57%.",
