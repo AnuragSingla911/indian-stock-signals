@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T13:16:20Z",
+  "generated_at": "2026-08-02T19:07:08Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -20,7 +20,7 @@
           "composite_score": 93.8,
           "up_probability": 0.569,
           "factors": {
-            "momentum": 0.72,
+            "momentum": 0.73,
             "trend": 0.53,
             "quality": 0.93,
             "value": -0.13,
@@ -102,7 +102,7 @@
             "value": -0.38,
             "lowvol": 0.25
           },
-          "rationale": "Ranks highly on very strong volume trend, very strong earnings growth; composite score 47/100; model up-probability 57%. Watch: weak profit margin.",
+          "rationale": "Ranks highly on very strong earnings growth, very strong volume trend; composite score 47/100; model up-probability 57%. Watch: weak profit margin.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SOBHA",
             "yahoo": "https://finance.yahoo.com/quote/SOBHA.NS"
@@ -126,7 +126,7 @@
             "momentum": 0.97,
             "trend": 1.59,
             "quality": 0.69,
-            "value": -0.88,
+            "value": -0.89,
             "lowvol": 0.67
           },
           "rationale": "Ranks highly on very strong price vs 50-DMA, very strong price vs 200-DMA, very strong 3-month return; composite score 99/100; model up-probability 58%. Watch: weak valuation (P/E).",
@@ -326,7 +326,7 @@
           "symbol": "BHEL",
           "yahoo_symbol": "BHEL.NS",
           "name": "Bharat Heavy Electricals",
-          "composite_score": 78.1,
+          "composite_score": 77.1,
           "up_probability": 0.559,
           "factors": {
             "momentum": 1.87,
@@ -335,7 +335,7 @@
             "value": -0.61,
             "lowvol": -1.15
           },
-          "rationale": "Ranks highly on very strong 6-month return, very strong 12-1 month momentum, very strong price vs 200-DMA; composite score 78/100; model up-probability 56%. Watch: weak low volatility.",
+          "rationale": "Ranks highly on very strong 6-month return, very strong 12-1 month momentum, very strong price vs 200-DMA; composite score 77/100; model up-probability 56%. Watch: weak low volatility.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BHEL",
             "yahoo": "https://finance.yahoo.com/quote/BHEL.NS"
@@ -352,7 +352,7 @@
             "trend": 0.25,
             "quality": 0.51,
             "value": -0.88,
-            "lowvol": -0.81
+            "lowvol": -0.82
           },
           "rationale": "Ranks highly on very strong 12-1 month momentum, very strong 6-month return, strong price vs 200-DMA; composite score 72/100; model up-probability 56%. Watch: weak valuation (P/B).",
           "chart_links": {
@@ -383,7 +383,7 @@
           "symbol": "HAL",
           "yahoo_symbol": "HAL.NS",
           "name": "Hindustan Aeronautics",
-          "composite_score": 57.3,
+          "composite_score": 56.2,
           "up_probability": 0.569,
           "factors": {
             "momentum": -0.23,
@@ -392,7 +392,7 @@
             "value": -0.54,
             "lowvol": 0.46
           },
-          "rationale": "Ranks highly on strong profit margin, strong 50/200-DMA trend, above-average return on equity; composite score 57/100; model up-probability 57%. Watch: weak volume trend.",
+          "rationale": "Ranks highly on strong profit margin, strong 50/200-DMA trend, above-average return on equity; composite score 56/100; model up-probability 57%. Watch: weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HAL",
             "yahoo": "https://finance.yahoo.com/quote/HAL.NS"
@@ -492,7 +492,7 @@
             "momentum": 0.18,
             "trend": 0.31,
             "quality": 0.31,
-            "value": 0.25,
+            "value": 0.26,
             "lowvol": 1.35
           },
           "rationale": "Ranks highly on strong low volatility, strong profit margin, strong 3-month return; composite score 83/100; model up-probability 57%.",
