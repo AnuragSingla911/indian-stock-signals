@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T19:07:08Z",
+  "generated_at": "2026-08-03T02:36:22Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -17,16 +17,16 @@
           "symbol": "OBEROIRLTY",
           "yahoo_symbol": "OBEROIRLTY.NS",
           "name": "Oberoi Realty",
-          "composite_score": 93.8,
+          "composite_score": 92.7,
           "up_probability": 0.569,
           "factors": {
-            "momentum": 0.73,
-            "trend": 0.53,
+            "momentum": 0.72,
+            "trend": 0.52,
             "quality": 0.93,
             "value": -0.13,
             "lowvol": 0.17
           },
-          "rationale": "Ranks highly on very strong profit margin, strong 6-month return, strong 50/200-DMA trend; composite score 94/100; model up-probability 57%.",
+          "rationale": "Ranks highly on very strong profit margin, strong 6-month return, strong 50/200-DMA trend; composite score 93/100; model up-probability 57%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:OBEROIRLTY",
             "yahoo": "https://finance.yahoo.com/quote/OBEROIRLTY.NS"
@@ -139,7 +139,7 @@
           "symbol": "SUNPHARMA",
           "yahoo_symbol": "SUNPHARMA.NS",
           "name": "Sun Pharmaceutical",
-          "composite_score": 95.8,
+          "composite_score": 94.8,
           "up_probability": 0.569,
           "factors": {
             "momentum": 0.66,
@@ -148,7 +148,7 @@
             "value": -0.51,
             "lowvol": 1.63
           },
-          "rationale": "Ranks highly on very strong low volatility, strong 6-month return, strong 50/200-DMA trend; composite score 96/100; model up-probability 57%.",
+          "rationale": "Ranks highly on very strong low volatility, strong 6-month return, strong 50/200-DMA trend; composite score 95/100; model up-probability 57%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SUNPHARMA",
             "yahoo": "https://finance.yahoo.com/quote/SUNPHARMA.NS"
@@ -181,7 +181,7 @@
           "up_probability": 0.569,
           "factors": {
             "momentum": 1.13,
-            "trend": 0.24,
+            "trend": 0.23,
             "quality": 0.05,
             "value": -0.12,
             "lowvol": 0.46
@@ -223,16 +223,16 @@
           "symbol": "BAJAJ-AUTO",
           "yahoo_symbol": "BAJAJ-AUTO.NS",
           "name": "Bajaj Auto",
-          "composite_score": 97.9,
+          "composite_score": 96.9,
           "up_probability": 0.562,
           "factors": {
-            "momentum": 0.95,
+            "momentum": 0.94,
             "trend": 1.26,
             "quality": 0.23,
             "value": -0.46,
             "lowvol": 0.45
           },
-          "rationale": "Ranks highly on very strong price vs 200-DMA, strong price vs 50-DMA, strong 3-month return; composite score 98/100; model up-probability 56%.",
+          "rationale": "Ranks highly on very strong price vs 200-DMA, strong price vs 50-DMA, strong 3-month return; composite score 97/100; model up-probability 56%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BAJAJ_AUTO",
             "yahoo": "https://finance.yahoo.com/quote/BAJAJ-AUTO.NS"
@@ -246,7 +246,7 @@
           "up_probability": 0.573,
           "factors": {
             "momentum": 0.98,
-            "trend": 0.52,
+            "trend": 0.51,
             "quality": 0.03,
             "value": -0.51,
             "lowvol": 0.61
@@ -371,7 +371,7 @@
             "trend": -0.08,
             "quality": 0.44,
             "value": -0.25,
-            "lowvol": 0.53
+            "lowvol": 0.54
           },
           "rationale": "Ranks highly on very strong profit margin, strong 12-1 month momentum, strong 50/200-DMA trend; composite score 71/100; model up-probability 57%. Watch: weak price vs 50-DMA.",
           "chart_links": {
@@ -383,7 +383,7 @@
           "symbol": "HAL",
           "yahoo_symbol": "HAL.NS",
           "name": "Hindustan Aeronautics",
-          "composite_score": 56.2,
+          "composite_score": 57.3,
           "up_probability": 0.569,
           "factors": {
             "momentum": -0.23,
@@ -392,7 +392,7 @@
             "value": -0.54,
             "lowvol": 0.46
           },
-          "rationale": "Ranks highly on strong profit margin, strong 50/200-DMA trend, above-average return on equity; composite score 56/100; model up-probability 57%. Watch: weak volume trend.",
+          "rationale": "Ranks highly on strong profit margin, strong 50/200-DMA trend, above-average return on equity; composite score 57/100; model up-probability 57%. Watch: weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HAL",
             "yahoo": "https://finance.yahoo.com/quote/HAL.NS"
@@ -432,7 +432,7 @@
           "composite_score": 100.0,
           "up_probability": 0.562,
           "factors": {
-            "momentum": 1.73,
+            "momentum": 1.72,
             "trend": 0.76,
             "quality": 0.61,
             "value": 0.38,
@@ -448,7 +448,7 @@
           "symbol": "PNB",
           "yahoo_symbol": "PNB.NS",
           "name": "Punjab National Bank",
-          "composite_score": 96.9,
+          "composite_score": 95.8,
           "up_probability": 0.567,
           "factors": {
             "momentum": -0.19,
@@ -457,7 +457,7 @@
             "value": 3.47,
             "lowvol": 0.2
           },
-          "rationale": "Ranks highly on very strong valuation (P/E), very strong valuation (P/B), very strong profit margin; composite score 97/100; model up-probability 57%. Watch: weak 50/200-DMA trend.",
+          "rationale": "Ranks highly on very strong valuation (P/E), very strong valuation (P/B), very strong profit margin; composite score 96/100; model up-probability 57%. Watch: weak 50/200-DMA trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PNB",
             "yahoo": "https://finance.yahoo.com/quote/PNB.NS"
@@ -467,7 +467,7 @@
           "symbol": "IDFCFIRSTB",
           "yahoo_symbol": "IDFCFIRSTB.NS",
           "name": "IDFC First Bank",
-          "composite_score": 94.8,
+          "composite_score": 93.8,
           "up_probability": 0.569,
           "factors": {
             "momentum": 0.66,
@@ -476,7 +476,7 @@
             "value": 0.43,
             "lowvol": 0.43
           },
-          "rationale": "Ranks highly on very strong 3-month return, very strong profit margin, strong valuation (P/B); composite score 95/100; model up-probability 57%. Watch: weak earnings growth.",
+          "rationale": "Ranks highly on very strong 3-month return, very strong profit margin, strong valuation (P/B); composite score 94/100; model up-probability 57%. Watch: weak earnings growth.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:IDFCFIRSTB",
             "yahoo": "https://finance.yahoo.com/quote/IDFCFIRSTB.NS"
@@ -509,7 +509,7 @@
           "up_probability": 0.559,
           "factors": {
             "momentum": 0.6,
-            "trend": 0.87,
+            "trend": 0.86,
             "quality": 0.14,
             "value": 0.59,
             "lowvol": -0.36
