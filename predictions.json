@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T12:42:56Z",
+  "generated_at": "2026-08-08T18:34:43Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -80,7 +80,7 @@
             "momentum": 0.78,
             "trend": 0.11,
             "quality": 0.44,
-            "value": -0.62,
+            "value": -0.61,
             "lowvol": -0.18
           },
           "rationale": "Ranks highly on very strong 12-1 month momentum, strong profit margin, strong 50/200-DMA trend; composite score 66/100; model up-probability 56%. Watch: weak price vs 50-DMA.",
@@ -408,7 +408,7 @@
             "momentum": -0.08,
             "trend": 0.03,
             "quality": -0.15,
-            "value": -0.17,
+            "value": -0.16,
             "lowvol": -0.86
           },
           "rationale": "Ranks highly on strong 3-month return, strong price vs 50-DMA, above-average volume trend; composite score 31/100; model up-probability 56%. Watch: weak 50/200-DMA trend.",
