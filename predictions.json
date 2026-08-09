@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T06:53:12Z",
+  "generated_at": "2026-08-09T12:44:42Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -41,7 +41,7 @@
           "factors": {
             "momentum": 0.5,
             "trend": -0.15,
-            "quality": 0.92,
+            "quality": 0.91,
             "value": -0.09,
             "lowvol": -0.03
           },
