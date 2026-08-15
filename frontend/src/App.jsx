@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { fetchPredictions } from './api.js';
 import Disclaimer from './components/Disclaimer.jsx';
+import InsightsPanel from './components/InsightsPanel.jsx';
 import MetaBar from './components/MetaBar.jsx';
 import SectorCard from './components/SectorCard.jsx';
 
@@ -35,7 +36,7 @@ export default function App() {
       <header className="app-header">
         <h1>🇮🇳 Indian Stock Signals</h1>
         <p className="tagline">
-          Top 5 sectors · 5 stocks each · transparent factor + ML ranking
+          Top 5 sectors · 5 stocks each · factor + ML ranking enriched with news &amp; macro context
         </p>
       </header>
 
@@ -56,6 +57,7 @@ export default function App() {
       {data && (
         <>
           <MetaBar meta={data} />
+          <InsightsPanel insights={data.insights} />
           <main className="sector-grid">
             {data.sectors.map((sector) => (
               <SectorCard key={sector.sector} sector={sector} />

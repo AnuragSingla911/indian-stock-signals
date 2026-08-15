@@ -10,6 +10,28 @@ class ChartLinks(BaseModel):
     yahoo: str
 
 
+class MacroInsight(BaseModel):
+    nifty_1m_return: float
+    usd_inr_1m_change: float
+    brent_1m_return: float
+    summary: str
+    as_of: str
+
+
+class StockHighlight(BaseModel):
+    symbol: str
+    headline: str
+    sentiment: float
+    publisher: str
+    url: str = ""
+    published_at: str = ""
+
+
+class Insights(BaseModel):
+    macro: MacroInsight
+    stock_highlights: list[StockHighlight]
+
+
 class StockPick(BaseModel):
     symbol: str
     yahoo_symbol: str
@@ -19,6 +41,8 @@ class StockPick(BaseModel):
     factors: dict[str, float]
     rationale: str
     chart_links: ChartLinks
+    news_sentiment: float = 0.0
+    news_headline: str | None = None
 
 
 class SectorBlock(BaseModel):
@@ -37,6 +61,7 @@ class Predictions(BaseModel):
     model_name: str = ""
     model_samples: int
     disclaimer: str
+    insights: Insights | None = None
     sectors: list[SectorBlock]
 
 

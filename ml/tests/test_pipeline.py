@@ -6,6 +6,9 @@ def test_pipeline_offline_end_to_end():
     payload = run()
     assert payload["universe_size"] > 0
     assert payload["disclaimer"]
+    assert "insights" in payload
+    assert payload["insights"]["macro"]["summary"]
+    assert isinstance(payload["insights"]["stock_highlights"], list)
     sectors = payload["sectors"]
     assert len(sectors) == CONFIG.top_sectors
 
@@ -21,6 +24,7 @@ def test_pipeline_offline_end_to_end():
             assert 0 <= st["composite_score"] <= 100
             assert 0.0 <= st["up_probability"] <= 1.0
             assert st["rationale"]
+            assert "news_sentiment" in st
             assert st["chart_links"]["tradingview"].startswith("https://")
             assert st["chart_links"]["yahoo"].startswith("https://")
             assert set(st["factors"].keys()) == set(CONFIG.weights.keys())

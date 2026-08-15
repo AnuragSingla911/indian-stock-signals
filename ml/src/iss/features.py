@@ -9,6 +9,8 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
+from .external import StockNews
+
 # Technical features used by both the composite and the ML model.
 TECH_FEATURES = [
     "mom_12_1",
@@ -120,9 +122,11 @@ def technical_panel(
 
 
 def build_feature_frame(
-    prices: dict[str, pd.DataFrame], fundamentals: dict[str, dict]
+    prices: dict[str, pd.DataFrame],
+    fundamentals: dict[str, dict],
+    news: dict[str, StockNews] | None = None,
 ) -> pd.DataFrame:
-    """Assemble a per-symbol raw factor frame (technical + fundamental)."""
+    """Assemble a per-symbol raw factor frame (technical + fundamental + news)."""
     rows: dict[str, dict[str, float]] = {}
     for sym, df in prices.items():
         close = df["Close"]
@@ -139,5 +143,15 @@ def build_feature_frame(
         feats["earnings_growth"] = (
             float(f["earnings_growth"]) if f.get("earnings_growth") is not None else np.nan
         )
+
+        sn = news.get(sym) if news else None
+        if sn is not None:
+            feats["news_sentiment"] = float(getattr(sn, "sentiment", 0.0))
+            count = int(getattr(sn, "article_count", 0))
+            feats["news_volume"] = float(np.log1p(count))
+        else:
+            feats["news_sentiment"] = 0.0
+            feats["news_volume"] = 0.0
+
         rows[sym] = feats
     return pd.DataFrame.from_dict(rows, orient="index")

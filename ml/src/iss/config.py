@@ -50,13 +50,18 @@ class Config:
     # Factor-group weights for the cross-sectional composite (sum need not be 1).
     weights: dict[str, float] = field(
         default_factory=lambda: {
-            "momentum": 0.30,
-            "trend": 0.20,
-            "quality": 0.20,
-            "value": 0.15,
-            "lowvol": 0.15,
+            "momentum": 0.27,
+            "trend": 0.18,
+            "quality": 0.18,
+            "value": 0.14,
+            "lowvol": 0.13,
+            "sentiment": 0.10,
         }
     )
+
+    # News / external context.
+    news_max_headlines: int = 5
+    insights_max_highlights: int = 8
 
     # Blend between factor composite and ML probability signal.
     w_factor: float = 0.7
