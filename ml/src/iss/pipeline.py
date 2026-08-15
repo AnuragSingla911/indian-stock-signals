@@ -17,6 +17,7 @@ from .data import get_fundamentals, get_price_history
 from .external import build_insights, get_macro_context, get_news_features
 from .features import build_feature_frame
 from .model import predict_up_proba, train_model
+from .news_archive import get_news_archive
 from .rationale import sector_rationale, stock_rationale
 from .scoring import (
     FACTOR_LABELS,
@@ -50,14 +51,15 @@ def run() -> dict:
     prices = get_price_history(symbols)
     fundamentals = get_fundamentals(symbols)
     macro = get_macro_context()
-    news = get_news_features(symbols)
+    archive = get_news_archive()
+    news = get_news_features(symbols, prices=prices, archive=archive)
 
     feature_frame = build_feature_frame(prices, fundamentals, news)
     zframe = winsorize_zscore(feature_frame)
     groups = group_scores(zframe)
     z_total = factor_composite(groups, CONFIG.weights)
 
-    model = train_model(prices, horizon=CONFIG.horizon_days)
+    model = train_model(prices, horizon=CONFIG.horizon_days, archive=archive)
     up_proba = predict_up_proba(model, feature_frame)
 
     blended = (

@@ -1,6 +1,7 @@
 """Tests for external news/macro enrichment."""
 
-from iss.external import MacroContext, NewsItem, StockNews, build_insights, score_sentiment
+from iss.external import MacroContext, build_insights, score_sentiment
+from iss.news_types import NewsItem, StockNews
 
 
 def test_score_sentiment_positive():

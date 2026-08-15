@@ -8,87 +8,18 @@ from __future__ import annotations
 
 import hashlib
 import logging
-import re
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import datetime, timezone
 
 import numpy as np
 import pandas as pd
 
 from .config import CONFIG, offline
+from .news_archive import ArchivedArticle, NewsArchive, get_news_archive
+from .news_types import NewsItem, StockNews
+from .sentiment import score_sentiment
 
 log = logging.getLogger("iss.external")
-
-# Simple finance lexicon — positive/negative word lists for headline sentiment.
-_POSITIVE = frozenset(
-    {
-        "beat",
-        "beats",
-        "growth",
-        "profit",
-        "profits",
-        "gain",
-        "gains",
-        "rise",
-        "rises",
-        "rising",
-        "surge",
-        "surges",
-        "record",
-        "strong",
-        "upgrade",
-        "upgraded",
-        "bullish",
-        "outperform",
-        "expansion",
-        "dividend",
-        "buyback",
-        "deal",
-        "win",
-        "wins",
-        "approval",
-        "approved",
-        "launch",
-        "partnership",
-        "recovery",
-        "rebound",
-    }
-)
-_NEGATIVE = frozenset(
-    {
-        "miss",
-        "misses",
-        "loss",
-        "losses",
-        "fall",
-        "falls",
-        "falling",
-        "drop",
-        "drops",
-        "decline",
-        "declines",
-        "weak",
-        "downgrade",
-        "downgraded",
-        "bearish",
-        "underperform",
-        "lawsuit",
-        "fraud",
-        "probe",
-        "investigation",
-        "cut",
-        "cuts",
-        "slump",
-        "concern",
-        "concerns",
-        "warning",
-        "delay",
-        "delays",
-        "default",
-        "bankruptcy",
-        "strike",
-    }
-)
 
 _MACRO_TICKERS = {
     "nifty": "^NSEI",
@@ -96,43 +27,9 @@ _MACRO_TICKERS = {
     "brent": "BZ=F",
 }
 
-_WORD_RE = re.compile(r"[a-z]+")
-
 
 def _seed(symbol: str) -> int:
     return int(hashlib.sha256(symbol.encode()).hexdigest(), 16) % (2**32)
-
-
-def score_sentiment(text: str) -> float:
-    """Lexicon sentiment in [-1, 1]. Neutral text returns 0."""
-    if not text:
-        return 0.0
-    words = _WORD_RE.findall(text.lower())
-    if not words:
-        return 0.0
-    pos = sum(1 for w in words if w in _POSITIVE)
-    neg = sum(1 for w in words if w in _NEGATIVE)
-    total = pos + neg
-    if total == 0:
-        return 0.0
-    return float((pos - neg) / total)
-
-
-@dataclass
-class NewsItem:
-    title: str
-    publisher: str
-    url: str
-    published_at: str
-    sentiment: float
-
-
-@dataclass
-class StockNews:
-    symbol: str
-    sentiment: float
-    article_count: int
-    headlines: list[NewsItem] = field(default_factory=list)
 
 
 @dataclass
@@ -309,17 +206,53 @@ def _synthetic_news(symbols: list[str], max_headlines: int) -> dict[str, StockNe
 
 
 def get_news_features(
-    symbols: list[str], max_headlines: int | None = None
+    symbols: list[str],
+    max_headlines: int | None = None,
+    prices: dict[str, pd.DataFrame] | None = None,
+    archive: NewsArchive | None = None,
 ) -> dict[str, StockNews]:
-    """Return per-symbol news sentiment and recent headlines."""
+    """Return per-symbol news sentiment and recent headlines.
+
+    Uses the on-disk news archive when available; falls back to live yfinance fetch,
+    then deterministic synthetic headlines in offline mode.
+    """
     max_headlines = max_headlines or CONFIG.news_max_headlines
-    if offline():
-        return _synthetic_news(symbols, max_headlines)
-    try:
-        return _fetch_news_live(symbols, max_headlines)
-    except Exception as e:  # noqa: BLE001
-        log.warning("news fetch failed (%s); synthetic fallback", e)
-        return _synthetic_news(symbols, max_headlines)
+    archive = archive or get_news_archive()
+
+    out: dict[str, StockNews] = {}
+    for sym in symbols:
+        close = prices[sym]["Close"] if prices and sym in prices else None
+        sn = archive.to_stock_news(sym, close=close)
+        if sn.article_count > 0:
+            out[sym] = sn
+
+    missing = [s for s in symbols if s not in out]
+    if missing and not offline():
+        try:
+            live = _fetch_news_live(missing, max_headlines)
+            for sym, sn in live.items():
+                out[sym] = sn
+                archive.merge(
+                    sym,
+                    [
+                        ArchivedArticle(
+                            title=h.title,
+                            published_at=h.published_at,
+                            publisher=h.publisher,
+                            url=h.url,
+                            sentiment=h.sentiment,
+                        )
+                        for h in sn.headlines
+                    ],
+                )
+            missing = [s for s in missing if s not in out]
+        except Exception as e:  # noqa: BLE001
+            log.warning("news fetch failed (%s); synthetic fallback", e)
+
+    if missing:
+        synthetic = _synthetic_news(missing, max_headlines)
+        out.update(synthetic)
+    return out
 
 
 def build_insights(

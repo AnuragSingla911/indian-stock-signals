@@ -19,7 +19,8 @@ import pandas as pd
 
 from .config import CONFIG
 from .data import get_price_history
-from .features import TECH_FEATURES, technical_panel_dated
+from .features import ML_FEATURES, technical_panel_dated
+from .news_archive import get_news_archive
 from .universe import load_universe
 
 log = logging.getLogger("iss.evaluate")
@@ -42,15 +43,16 @@ class EvalMetrics:
 def _collect(
     prices: dict[str, pd.DataFrame], horizon: int, step: int
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    archive = get_news_archive()
     rows: list[list[float]] = []
     labels: list[int] = []
     dates: list[pd.Timestamp] = []
     fwds: list[float] = []
-    for df in prices.values():
+    for sym, df in prices.items():
         for feats, label, date, fwd in technical_panel_dated(
-            df["Close"], horizon=horizon, step=step
+            df["Close"], horizon=horizon, step=step, symbol=sym, archive=archive
         ):
-            rows.append([float(feats.get(k, 0.0)) for k in TECH_FEATURES])
+            rows.append([float(feats.get(k, 0.0)) for k in ML_FEATURES])
             labels.append(label)
             dates.append(date)
             fwds.append(fwd)

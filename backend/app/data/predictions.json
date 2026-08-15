@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T18:10:51Z",
+  "generated_at": "2026-08-15T18:18:19Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -12,7 +12,7 @@
       "usd_inr_1m_change": -0.0054,
       "brent_1m_return": 0.03,
       "summary": "Offline macro snapshot: Nifty +1.9% 1M; USD/INR -0.5%; Brent +3.0%.",
-      "as_of": "2026-08-15T18:10:37Z"
+      "as_of": "2026-08-15T18:18:02Z"
     },
     "stock_highlights": [
       {
@@ -48,17 +48,17 @@
         "published_at": "2026-01-01"
       },
       {
-        "symbol": "BLUESTARCO",
-        "headline": "BLUESTARCO wins major contract",
-        "sentiment": 1.0,
+        "symbol": "HAVELLS",
+        "headline": "Regulatory probe weighs on HAVELLS",
+        "sentiment": -1.0,
         "publisher": "SyntheticWire",
         "url": "",
         "published_at": "2026-01-01"
       },
       {
-        "symbol": "HAVELLS",
-        "headline": "Regulatory probe weighs on HAVELLS",
-        "sentiment": -1.0,
+        "symbol": "BLUESTARCO",
+        "headline": "BLUESTARCO wins major contract",
+        "sentiment": 1.0,
         "publisher": "SyntheticWire",
         "url": "",
         "published_at": "2026-01-01"
@@ -114,8 +114,8 @@
           "symbol": "INDUSINDBK",
           "yahoo_symbol": "INDUSINDBK.NS",
           "name": "IndusInd Bank",
-          "composite_score": 81.2,
-          "up_probability": 0.552,
+          "composite_score": 79.2,
+          "up_probability": 0.55,
           "factors": {
             "momentum": 0.03,
             "trend": 0.6,
@@ -126,7 +126,7 @@
           },
           "news_sentiment": 0.0,
           "news_headline": "Regulatory probe weighs on INDUSINDBK",
-          "rationale": "Ranks highly on strong low volatility, strong return on equity, strong 50/200-DMA trend; composite score 81/100; model up-probability 55%. Watch: weak profit margin.",
+          "rationale": "Ranks highly on strong low volatility, strong return on equity, strong 50/200-DMA trend; composite score 79/100; model up-probability 55%. Watch: weak profit margin.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:INDUSINDBK",
             "yahoo": "https://finance.yahoo.com/quote/INDUSINDBK.NS"
@@ -136,8 +136,8 @@
           "symbol": "BANKBARODA",
           "yahoo_symbol": "BANKBARODA.NS",
           "name": "Bank of Baroda",
-          "composite_score": 75.0,
-          "up_probability": 0.509,
+          "composite_score": 77.1,
+          "up_probability": 0.527,
           "factors": {
             "momentum": 0.08,
             "trend": 0.33,
@@ -148,7 +148,7 @@
           },
           "news_sentiment": 0.0,
           "news_headline": "BANKBARODA faces margin pressure",
-          "rationale": "Ranks highly on very strong low volatility, strong profit margin, strong 50/200-DMA trend; composite score 75/100; model up-probability 51%. Watch: weak news coverage.",
+          "rationale": "Ranks highly on very strong low volatility, strong profit margin, strong 50/200-DMA trend; composite score 77/100; model up-probability 53%. Watch: weak news coverage.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BANKBARODA",
             "yahoo": "https://finance.yahoo.com/quote/BANKBARODA.NS"
@@ -159,7 +159,7 @@
           "yahoo_symbol": "KOTAKBANK.NS",
           "name": "Kotak Mahindra Bank",
           "composite_score": 66.7,
-          "up_probability": 0.539,
+          "up_probability": 0.54,
           "factors": {
             "momentum": 0.81,
             "trend": 0.91,
@@ -181,7 +181,7 @@
           "yahoo_symbol": "PNB.NS",
           "name": "Punjab National Bank",
           "composite_score": 65.6,
-          "up_probability": 0.505,
+          "up_probability": 0.504,
           "factors": {
             "momentum": -0.13,
             "trend": 0.07,
@@ -207,32 +207,10 @@
       "sector_rationale": "Consumer Durables: 3M sector momentum up 0.1%; 80% of constituents above their 200-DMA.",
       "stocks": [
         {
-          "symbol": "BLUESTARCO",
-          "yahoo_symbol": "BLUESTARCO.NS",
-          "name": "Blue Star",
-          "composite_score": 94.8,
-          "up_probability": 0.54,
-          "factors": {
-            "momentum": 0.92,
-            "trend": 1.03,
-            "quality": 0.54,
-            "value": -0.88,
-            "lowvol": 0.76,
-            "sentiment": 0.83
-          },
-          "news_sentiment": 1.0,
-          "news_headline": "BLUESTARCO wins major contract",
-          "rationale": "Ranks highly on strong news sentiment, strong 3-month return, strong price vs 200-DMA; composite score 95/100; model up-probability 54%; recent news tone positive. Watch: weak valuation (P/E).",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BLUESTARCO",
-            "yahoo": "https://finance.yahoo.com/quote/BLUESTARCO.NS"
-          }
-        },
-        {
           "symbol": "HAVELLS",
           "yahoo_symbol": "HAVELLS.NS",
           "name": "Havells India",
-          "composite_score": 93.8,
+          "composite_score": 94.8,
           "up_probability": 0.566,
           "factors": {
             "momentum": 0.75,
@@ -244,18 +222,40 @@
           },
           "news_sentiment": 0.0,
           "news_headline": "Regulatory probe weighs on HAVELLS",
-          "rationale": "Ranks highly on very strong earnings growth, strong 12-1 month momentum, strong valuation (P/E); composite score 94/100; model up-probability 57%. Watch: weak return on equity.",
+          "rationale": "Ranks highly on very strong earnings growth, strong 12-1 month momentum, strong valuation (P/E); composite score 95/100; model up-probability 57%. Watch: weak return on equity.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HAVELLS",
             "yahoo": "https://finance.yahoo.com/quote/HAVELLS.NS"
           }
         },
         {
+          "symbol": "BLUESTARCO",
+          "yahoo_symbol": "BLUESTARCO.NS",
+          "name": "Blue Star",
+          "composite_score": 93.8,
+          "up_probability": 0.538,
+          "factors": {
+            "momentum": 0.92,
+            "trend": 1.03,
+            "quality": 0.54,
+            "value": -0.88,
+            "lowvol": 0.76,
+            "sentiment": 0.83
+          },
+          "news_sentiment": 1.0,
+          "news_headline": "BLUESTARCO wins major contract",
+          "rationale": "Ranks highly on strong news sentiment, strong 3-month return, strong price vs 200-DMA; composite score 94/100; model up-probability 54%; recent news tone positive. Watch: weak valuation (P/E).",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BLUESTARCO",
+            "yahoo": "https://finance.yahoo.com/quote/BLUESTARCO.NS"
+          }
+        },
+        {
           "symbol": "VOLTAS",
           "yahoo_symbol": "VOLTAS.NS",
           "name": "Voltas",
-          "composite_score": 79.2,
-          "up_probability": 0.537,
+          "composite_score": 81.2,
+          "up_probability": 0.548,
           "factors": {
             "momentum": 1.17,
             "trend": 0.11,
@@ -266,7 +266,7 @@
           },
           "news_sentiment": 0.67,
           "news_headline": "Analysts upgrade VOLTAS on margin expansion",
-          "rationale": "Ranks highly on very strong 12-1 month momentum, strong profit margin, strong 50/200-DMA trend; composite score 79/100; model up-probability 54%; recent news tone positive. Watch: weak return on equity.",
+          "rationale": "Ranks highly on very strong 12-1 month momentum, strong profit margin, strong 50/200-DMA trend; composite score 81/100; model up-probability 55%; recent news tone positive. Watch: weak return on equity.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:VOLTAS",
             "yahoo": "https://finance.yahoo.com/quote/VOLTAS.NS"
@@ -276,8 +276,8 @@
           "symbol": "BATAINDIA",
           "yahoo_symbol": "BATAINDIA.NS",
           "name": "Bata India",
-          "composite_score": 77.1,
-          "up_probability": 0.542,
+          "composite_score": 76.0,
+          "up_probability": 0.54,
           "factors": {
             "momentum": 0.72,
             "trend": 0.17,
@@ -288,32 +288,32 @@
           },
           "news_sentiment": 0.33,
           "news_headline": "BATAINDIA wins major contract",
-          "rationale": "Ranks highly on strong earnings growth, strong price vs 200-DMA, strong 50/200-DMA trend; composite score 77/100; model up-probability 54%; recent news tone positive. Watch: very weak volume trend.",
+          "rationale": "Ranks highly on strong earnings growth, strong price vs 200-DMA, strong 50/200-DMA trend; composite score 76/100; model up-probability 54%; recent news tone positive. Watch: very weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BATAINDIA",
             "yahoo": "https://finance.yahoo.com/quote/BATAINDIA.NS"
           }
         },
         {
-          "symbol": "PGHH",
-          "yahoo_symbol": "PGHH.NS",
-          "name": "Procter & Gamble Hygiene",
+          "symbol": "DIXON",
+          "yahoo_symbol": "DIXON.NS",
+          "name": "Dixon Technologies",
           "composite_score": 70.8,
-          "up_probability": 0.527,
+          "up_probability": 0.492,
           "factors": {
-            "momentum": 0.08,
-            "trend": -0.16,
-            "quality": 0.66,
-            "value": -0.1,
-            "lowvol": 1.03,
-            "sentiment": -0.32
+            "momentum": -0.3,
+            "trend": 0.21,
+            "quality": 0.88,
+            "value": -0.78,
+            "lowvol": 1.65,
+            "sentiment": 0.48
           },
-          "news_sentiment": 0.0,
-          "news_headline": "Regulatory probe weighs on PGHH",
-          "rationale": "Ranks highly on very strong return on equity, strong profit margin, strong low volatility; composite score 71/100; model up-probability 53%. Watch: weak volume trend.",
+          "news_sentiment": 1.0,
+          "news_headline": "DIXON wins major contract",
+          "rationale": "Ranks highly on very strong low volatility, very strong return on equity, strong news sentiment; composite score 71/100; model up-probability 49%; recent news tone positive. Watch: weak valuation (P/E).",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PGHH",
-            "yahoo": "https://finance.yahoo.com/quote/PGHH.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:DIXON",
+            "yahoo": "https://finance.yahoo.com/quote/DIXON.NS"
           }
         }
       ]
@@ -329,7 +329,7 @@
           "yahoo_symbol": "GAIL.NS",
           "name": "GAIL India",
           "composite_score": 100.0,
-          "up_probability": 0.554,
+          "up_probability": 0.556,
           "factors": {
             "momentum": 1.58,
             "trend": 1.32,
@@ -340,7 +340,7 @@
           },
           "news_sentiment": 0.75,
           "news_headline": "GAIL wins major contract",
-          "rationale": "Ranks highly on very strong price vs 50-DMA, very strong 12-1 month momentum, very strong price vs 200-DMA; composite score 100/100; model up-probability 55%; recent news tone positive.",
+          "rationale": "Ranks highly on very strong price vs 50-DMA, very strong 12-1 month momentum, very strong price vs 200-DMA; composite score 100/100; model up-probability 56%; recent news tone positive.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:GAIL",
             "yahoo": "https://finance.yahoo.com/quote/GAIL.NS"
@@ -351,7 +351,7 @@
           "yahoo_symbol": "ONGC.NS",
           "name": "Oil & Natural Gas Corporation",
           "composite_score": 97.9,
-          "up_probability": 0.513,
+          "up_probability": 0.527,
           "factors": {
             "momentum": -0.14,
             "trend": 0.12,
@@ -362,7 +362,7 @@
           },
           "news_sentiment": 0.67,
           "news_headline": "ONGC wins major contract",
-          "rationale": "Ranks highly on very strong valuation (P/B), very strong valuation (P/E), very strong return on equity; composite score 98/100; model up-probability 51%; recent news tone positive.",
+          "rationale": "Ranks highly on very strong valuation (P/B), very strong valuation (P/E), very strong return on equity; composite score 98/100; model up-probability 53%; recent news tone positive.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ONGC",
             "yahoo": "https://finance.yahoo.com/quote/ONGC.NS"
@@ -373,7 +373,7 @@
           "yahoo_symbol": "POWERGRID.NS",
           "name": "Power Grid Corporation",
           "composite_score": 92.7,
-          "up_probability": 0.563,
+          "up_probability": 0.553,
           "factors": {
             "momentum": 0.35,
             "trend": 0.41,
@@ -384,7 +384,7 @@
           },
           "news_sentiment": 1.0,
           "news_headline": "POWERGRID wins major contract",
-          "rationale": "Ranks highly on very strong low volatility, very strong earnings growth, strong profit margin; composite score 93/100; model up-probability 56%; recent news tone positive.",
+          "rationale": "Ranks highly on very strong low volatility, very strong earnings growth, strong profit margin; composite score 93/100; model up-probability 55%; recent news tone positive.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:POWERGRID",
             "yahoo": "https://finance.yahoo.com/quote/POWERGRID.NS"
@@ -394,8 +394,8 @@
           "symbol": "IOC",
           "yahoo_symbol": "IOC.NS",
           "name": "Indian Oil Corporation",
-          "composite_score": 76.0,
-          "up_probability": 0.534,
+          "composite_score": 75.0,
+          "up_probability": 0.531,
           "factors": {
             "momentum": 1.56,
             "trend": 1.22,
@@ -406,7 +406,7 @@
           },
           "news_sentiment": -1.0,
           "news_headline": "Regulatory probe weighs on IOC",
-          "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 3-month return; composite score 76/100; model up-probability 53%; recent news tone negative. Watch: very weak news sentiment.",
+          "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 3-month return; composite score 75/100; model up-probability 53%; recent news tone negative. Watch: very weak news sentiment.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:IOC",
             "yahoo": "https://finance.yahoo.com/quote/IOC.NS"
@@ -416,8 +416,8 @@
           "symbol": "NTPC",
           "yahoo_symbol": "NTPC.NS",
           "name": "NTPC",
-          "composite_score": 54.2,
-          "up_probability": 0.537,
+          "composite_score": 53.1,
+          "up_probability": 0.538,
           "factors": {
             "momentum": 0.46,
             "trend": 0.82,
@@ -428,7 +428,7 @@
           },
           "news_sentiment": 1.0,
           "news_headline": "NTPC wins major contract",
-          "rationale": "Ranks highly on strong news sentiment, strong profit margin, strong 50/200-DMA trend; composite score 54/100; model up-probability 54%; recent news tone positive. Watch: very weak low volatility.",
+          "rationale": "Ranks highly on strong news sentiment, strong profit margin, strong 50/200-DMA trend; composite score 53/100; model up-probability 54%; recent news tone positive. Watch: very weak low volatility.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:NTPC",
             "yahoo": "https://finance.yahoo.com/quote/NTPC.NS"
@@ -447,7 +447,7 @@
           "yahoo_symbol": "MAHLIFE.NS",
           "name": "Mahindra Lifespace Developers",
           "composite_score": 99.0,
-          "up_probability": 0.564,
+          "up_probability": 0.551,
           "factors": {
             "momentum": 2.45,
             "trend": 1.18,
@@ -458,7 +458,7 @@
           },
           "news_sentiment": 1.0,
           "news_headline": "MAHLIFE wins major contract",
-          "rationale": "Ranks highly on very strong price vs 200-DMA, very strong 12-1 month momentum, very strong 6-month return; composite score 99/100; model up-probability 56%; recent news tone positive. Watch: weak news coverage.",
+          "rationale": "Ranks highly on very strong price vs 200-DMA, very strong 12-1 month momentum, very strong 6-month return; composite score 99/100; model up-probability 55%; recent news tone positive. Watch: weak news coverage.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:MAHLIFE",
             "yahoo": "https://finance.yahoo.com/quote/MAHLIFE.NS"
@@ -468,8 +468,8 @@
           "symbol": "OBEROIRLTY",
           "yahoo_symbol": "OBEROIRLTY.NS",
           "name": "Oberoi Realty",
-          "composite_score": 71.9,
-          "up_probability": 0.519,
+          "composite_score": 72.9,
+          "up_probability": 0.535,
           "factors": {
             "momentum": 0.52,
             "trend": -0.22,
@@ -480,7 +480,7 @@
           },
           "news_sentiment": 0.0,
           "news_headline": "Regulatory probe weighs on OBEROIRLTY",
-          "rationale": "Ranks highly on very strong valuation (P/E), strong 12-1 month momentum, strong 50/200-DMA trend; composite score 72/100; model up-probability 52%. Watch: weak volume trend.",
+          "rationale": "Ranks highly on very strong valuation (P/E), strong 12-1 month momentum, strong 50/200-DMA trend; composite score 73/100; model up-probability 54%. Watch: weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:OBEROIRLTY",
             "yahoo": "https://finance.yahoo.com/quote/OBEROIRLTY.NS"
@@ -491,7 +491,7 @@
           "yahoo_symbol": "GODREJPROP.NS",
           "name": "Godrej Properties",
           "composite_score": 61.5,
-          "up_probability": 0.522,
+          "up_probability": 0.521,
           "factors": {
             "momentum": -0.5,
             "trend": -0.55,
@@ -512,8 +512,8 @@
           "symbol": "PRESTIGE",
           "yahoo_symbol": "PRESTIGE.NS",
           "name": "Prestige Estates Projects",
-          "composite_score": 32.3,
-          "up_probability": 0.522,
+          "composite_score": 35.4,
+          "up_probability": 0.539,
           "factors": {
             "momentum": -0.16,
             "trend": -0.56,
@@ -524,7 +524,7 @@
           },
           "news_sentiment": 1.0,
           "news_headline": "PRESTIGE reports strong quarterly growth",
-          "rationale": "Ranks highly on strong news sentiment, strong valuation (P/E), strong earnings growth; composite score 32/100; model up-probability 52%; recent news tone positive. Watch: very weak return on equity.",
+          "rationale": "Ranks highly on strong news sentiment, strong valuation (P/E), strong earnings growth; composite score 35/100; model up-probability 54%; recent news tone positive. Watch: very weak return on equity.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PRESTIGE",
             "yahoo": "https://finance.yahoo.com/quote/PRESTIGE.NS"
@@ -535,7 +535,7 @@
           "yahoo_symbol": "PHOENIXLTD.NS",
           "name": "Phoenix Mills",
           "composite_score": 29.2,
-          "up_probability": 0.525,
+          "up_probability": 0.524,
           "factors": {
             "momentum": -0.93,
             "trend": -1.15,
@@ -564,8 +564,8 @@
           "symbol": "JSWSTEEL",
           "yahoo_symbol": "JSWSTEEL.NS",
           "name": "JSW Steel",
-          "composite_score": 90.6,
-          "up_probability": 0.581,
+          "composite_score": 91.7,
+          "up_probability": 0.589,
           "factors": {
             "momentum": 1.03,
             "trend": 0.8,
@@ -576,7 +576,7 @@
           },
           "news_sentiment": -0.33,
           "news_headline": "Regulatory probe weighs on JSWSTEEL",
-          "rationale": "Ranks highly on very strong 12-1 month momentum, strong price vs 200-DMA, strong valuation (P/B); composite score 91/100; model up-probability 58%; recent news tone negative.",
+          "rationale": "Ranks highly on very strong 12-1 month momentum, strong price vs 200-DMA, strong valuation (P/B); composite score 92/100; model up-probability 59%; recent news tone negative.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:JSWSTEEL",
             "yahoo": "https://finance.yahoo.com/quote/JSWSTEEL.NS"
@@ -587,7 +587,7 @@
           "yahoo_symbol": "HINDALCO.NS",
           "name": "Hindalco Industries",
           "composite_score": 87.5,
-          "up_probability": 0.55,
+          "up_probability": 0.564,
           "factors": {
             "momentum": 0.19,
             "trend": -0.24,
@@ -598,7 +598,7 @@
           },
           "news_sentiment": 1.0,
           "news_headline": "Analysts upgrade HINDALCO on margin expansion",
-          "rationale": "Ranks highly on very strong low volatility, strong news sentiment, strong news coverage; composite score 88/100; model up-probability 55%; recent news tone positive. Watch: very weak volume trend.",
+          "rationale": "Ranks highly on very strong low volatility, strong news sentiment, strong news coverage; composite score 88/100; model up-probability 56%; recent news tone positive. Watch: very weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HINDALCO",
             "yahoo": "https://finance.yahoo.com/quote/HINDALCO.NS"
@@ -609,7 +609,7 @@
           "yahoo_symbol": "HINDZINC.NS",
           "name": "Hindustan Zinc",
           "composite_score": 82.3,
-          "up_probability": 0.542,
+          "up_probability": 0.54,
           "factors": {
             "momentum": 1.14,
             "trend": 0.77,
@@ -631,7 +631,7 @@
           "yahoo_symbol": "TATASTEEL.NS",
           "name": "Tata Steel",
           "composite_score": 60.4,
-          "up_probability": 0.536,
+          "up_probability": 0.535,
           "factors": {
             "momentum": 0.48,
             "trend": 1.07,
@@ -642,7 +642,7 @@
           },
           "news_sentiment": -1.0,
           "news_headline": "Regulatory probe weighs on TATASTEEL",
-          "rationale": "Ranks highly on very strong volume trend, strong earnings growth, strong 6-month return; composite score 60/100; model up-probability 54%; recent news tone negative. Watch: very weak news sentiment.",
+          "rationale": "Ranks highly on very strong volume trend, strong earnings growth, strong 6-month return; composite score 60/100; model up-probability 53%; recent news tone negative. Watch: very weak news sentiment.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TATASTEEL",
             "yahoo": "https://finance.yahoo.com/quote/TATASTEEL.NS"
@@ -652,8 +652,8 @@
           "symbol": "VEDL",
           "yahoo_symbol": "VEDL.NS",
           "name": "Vedanta",
-          "composite_score": 53.1,
-          "up_probability": 0.518,
+          "composite_score": 58.3,
+          "up_probability": 0.533,
           "factors": {
             "momentum": -0.58,
             "trend": -0.32,
@@ -664,7 +664,7 @@
           },
           "news_sentiment": 0.0,
           "news_headline": "VEDL wins major contract",
-          "rationale": "Ranks highly on very strong low volatility, strong news coverage, strong earnings growth; composite score 53/100; model up-probability 52%. Watch: weak return on equity.",
+          "rationale": "Ranks highly on very strong low volatility, strong news coverage, strong earnings growth; composite score 58/100; model up-probability 53%. Watch: weak return on equity.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:VEDL",
             "yahoo": "https://finance.yahoo.com/quote/VEDL.NS"
