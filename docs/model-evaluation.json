@@ -1,31 +1,16 @@
 {
-  "evaluated_at": "2026-08-16T07:44:00Z",
-  "notes": "Live comparison used yfinance-only headlines (no Finnhub on runner). GitHub Actions with FINNHUB_API_KEY fetches 365d of historical news for meaningful news features.",
-  "previous_baseline": {
-    "n_samples": 13122,
-    "n_test": 10498,
-    "n_folds": 5,
-    "horizon_days": 21,
-    "feature_set": "technical_only",
-    "base_rate": 0.5727,
-    "accuracy": 0.5591,
-    "auc": 0.4655,
-    "brier": 0.2544,
-    "log_loss": 0.7044,
-    "information_coefficient": -0.0681
-  },
   "baseline_technical_only": {
     "n_samples": 13122,
     "n_test": 10498,
     "n_folds": 5,
     "horizon_days": 21,
     "feature_set": "technical_only",
-    "base_rate": 0.5665,
-    "accuracy": 0.555,
-    "auc": 0.4653,
-    "brier": 0.25,
-    "log_loss": 0.6935,
-    "information_coefficient": -0.0798
+    "base_rate": 0.5665294924554184,
+    "accuracy": 0.5549628500666793,
+    "auc": 0.4653199763354806,
+    "brier": 0.2500321756686738,
+    "log_loss": 0.6935060991705636,
+    "information_coefficient": -0.07983923480340928
   },
   "with_news": {
     "n_samples": 13122,
@@ -33,18 +18,18 @@
     "n_folds": 5,
     "horizon_days": 21,
     "feature_set": "technical+news",
-    "base_rate": 0.5665,
-    "accuracy": 0.555,
-    "auc": 0.4653,
-    "brier": 0.25,
-    "log_loss": 0.6935,
-    "information_coefficient": -0.0798
+    "base_rate": 0.5665294924554184,
+    "accuracy": 0.5531529815202896,
+    "auc": 0.4705852432454316,
+    "brier": 0.25065914120649296,
+    "log_loss": 0.694896285101918,
+    "information_coefficient": -0.06708286052451129
   },
   "delta_improvement": {
-    "accuracy": 0.0,
-    "auc": 0.0,
-    "brier": 0.0,
-    "log_loss": 0.0,
-    "information_coefficient": 0.0
+    "accuracy": -0.0018,
+    "auc": 0.0053,
+    "brier": -0.0006,
+    "log_loss": -0.0014,
+    "information_coefficient": 0.0128
   }
 }

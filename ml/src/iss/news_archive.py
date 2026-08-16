@@ -15,8 +15,10 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from dataclasses import asdict, dataclass
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 import numpy as np
@@ -73,8 +75,57 @@ class ArchivedArticle:
         )
 
 
+def fetch_google_news_rss(symbol: str, days_back: int = 90) -> list[ArchivedArticle]:
+    """Fetch recent headlines from Google News RSS (works for NSE symbols, no API key)."""
+    query = urllib.parse.quote(f"{symbol} NSE India stock")
+    url = (
+        f"https://news.google.com/rss/search?q={query}&hl=en-IN&gl=IN&ceid=IN:en"
+    )
+    cutoff = datetime.now(timezone.utc).date() - timedelta(days=days_back)
+    articles: list[ArchivedArticle] = []
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "iss-news-archive/1.0"})
+        with urllib.request.urlopen(req, timeout=30) as resp:  # noqa: S310
+            root = ET.fromstring(resp.read())
+    except (urllib.error.URLError, TimeoutError, ET.ParseError) as e:
+        log.warning("Google News RSS failed for %s (%s)", symbol, e)
+        return articles
+
+    for item in root.findall(".//item"):
+        title_el = item.find("title")
+        link_el = item.find("link")
+        pub_el = item.find("pubDate")
+        title = (title_el.text or "").strip() if title_el is not None else ""
+        if not title:
+            continue
+        published = ""
+        if pub_el is not None and pub_el.text:
+            try:
+                published = parsedate_to_datetime(pub_el.text).strftime("%Y-%m-%d")
+            except (TypeError, ValueError, OverflowError):
+                published = pub_el.text[:10]
+        if published and pd.Timestamp(published).date() < cutoff:
+            continue
+        source = "GoogleNews"
+        if " - " in title:
+            # Google News titles often end with " - Publisher Name"
+            parts = title.rsplit(" - ", 1)
+            if len(parts) == 2 and len(parts[1]) < 40:
+                source = parts[1]
+        articles.append(
+            ArchivedArticle(
+                title=title,
+                published_at=published or datetime.now(timezone.utc).strftime("%Y-%m-%d"),
+                publisher=source,
+                url=(link_el.text or "").strip() if link_el is not None else "",
+                sentiment=score_sentiment(title),
+            )
+        )
+    return articles
+
+
 class NewsArchive:
-    """Disk-backed news archive with optional Finnhub refresh."""
+    """Disk-backed news archive with Google News RSS + optional Finnhub refresh."""
 
     def __init__(self, root: Path | None = None) -> None:
         self.root = root or NEWS_ARCHIVE_DIR
@@ -153,6 +204,11 @@ class NewsArchive:
             bootstrapped = bootstrap_synthetic_archive(symbol, close)
             self._memory[symbol] = bootstrapped
             return bootstrapped
+        if not offline():
+            incoming = fetch_google_news_rss(symbol, CONFIG.news_archive_days)
+            if incoming:
+                self.merge(symbol, incoming)
+                return self.load(symbol)
         return []
 
     def to_stock_news(self, symbol: str, close: pd.Series | None = None) -> StockNews:
@@ -237,18 +293,21 @@ class NewsArchive:
         symbol: str,
         days_back: int | None = None,
         api_key: str | None = None,
-        throttle_sec: float = 1.05,
+        throttle_sec: float = 0.35,
     ) -> int:
-        """Fetch recent history from Finnhub and merge into the on-disk archive."""
+        """Fetch recent headlines and merge into the on-disk archive."""
         days_back = days_back or CONFIG.news_archive_days
-        to_date = datetime.now(timezone.utc).date()
-        from_date = to_date - timedelta(days=days_back)
-        incoming = self.fetch_finnhub(
-            symbol,
-            from_date.isoformat(),
-            to_date.isoformat(),
-            api_key=api_key,
-        )
+        incoming = fetch_google_news_rss(symbol, days_back)
+        # Finnhub free tier is US-only; optional fallback for non-NSE symbols.
+        if not incoming and (api_key or finnhub_api_key()):
+            to_date = datetime.now(timezone.utc).date()
+            from_date = to_date - timedelta(days=days_back)
+            incoming = self.fetch_finnhub(
+                symbol,
+                from_date.isoformat(),
+                to_date.isoformat(),
+                api_key=api_key,
+            )
         if throttle_sec > 0:
             time.sleep(throttle_sec)
         if not incoming:

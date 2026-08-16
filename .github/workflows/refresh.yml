@@ -38,11 +38,9 @@ jobs:
         env:
           FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
         run: |
-          if [ -n "$FINNHUB_API_KEY" ]; then
-            iss-news-archive -v --days 365
-          else
-            echo "FINNHUB_API_KEY not set; skipping archive refresh"
-          fi
+          # Google News RSS is the primary source for NSE symbols (no key required).
+          # Finnhub free tier does not include Indian stocks (403).
+          iss-news-archive -v --days 365
 
       - name: Regenerate predictions from live data
         run: iss-pipeline -v

@@ -37,9 +37,7 @@ def main() -> None:
     )
 
     if not finnhub_api_key():
-        raise SystemExit(
-            "FINNHUB_API_KEY is not set. Get a free key at https://finnhub.io and export it."
-        )
+        log.info("FINNHUB_API_KEY not set; using Google News RSS for NSE symbols")
 
     symbols = args.symbols or [s.symbol for s in load_universe()]
     archive = get_news_archive()
