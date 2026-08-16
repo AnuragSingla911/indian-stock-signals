@@ -4,6 +4,7 @@ from iss.evaluate import EvalMetrics, evaluate
 def test_evaluate_walk_forward_offline():
     m = evaluate(n_folds=4)
     assert isinstance(m, EvalMetrics)
+    assert m.feature_set == "technical+news"
     assert m.n_samples > 0
     assert 0 < m.n_test <= m.n_samples
     assert 0.0 <= m.base_rate <= 1.0
