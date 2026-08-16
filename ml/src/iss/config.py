@@ -17,6 +17,7 @@ UNIVERSE_CSV = DATA_DIR / "universe.csv"
 SECTORS_CSV = DATA_DIR / "sectors.csv"
 PRICE_CACHE_DIR = DATA_DIR / "price_cache"
 SAMPLE_PRICE_DIR = DATA_DIR / "sample_prices"
+NEWS_ARCHIVE_DIR = DATA_DIR / "news_archive"
 MODEL_PATH = DATA_DIR / "model.joblib"
 
 # Where the API reads predictions from.
@@ -50,13 +51,20 @@ class Config:
     # Factor-group weights for the cross-sectional composite (sum need not be 1).
     weights: dict[str, float] = field(
         default_factory=lambda: {
-            "momentum": 0.30,
-            "trend": 0.20,
-            "quality": 0.20,
-            "value": 0.15,
-            "lowvol": 0.15,
+            "momentum": 0.27,
+            "trend": 0.18,
+            "quality": 0.18,
+            "value": 0.14,
+            "lowvol": 0.13,
+            "sentiment": 0.10,
         }
     )
+
+    # News / external context.
+    news_max_headlines: int = 5
+    insights_max_highlights: int = 8
+    news_lookback_days: int = 7
+    news_archive_days: int = 730  # how far back Finnhub refresh pulls
 
     # Blend between factor composite and ML probability signal.
     w_factor: float = 0.7

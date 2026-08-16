@@ -31,7 +31,12 @@ def _phrase(z: float) -> str | None:
     return None
 
 
-def stock_rationale(z_row: pd.Series, up_probability: float, composite_0_100: float) -> str:
+def stock_rationale(
+    z_row: pd.Series,
+    up_probability: float,
+    composite_0_100: float,
+    news_sentiment: float | None = None,
+) -> str:
     """Build a rationale citing the largest positive and any notable negative factors."""
     ranked = z_row.sort_values(ascending=False)
     positives: list[str] = []
@@ -58,6 +63,9 @@ def stock_rationale(z_row: pd.Series, up_probability: float, composite_0_100: fl
     parts = [head]
     parts.append(f"composite score {composite_0_100:.0f}/100")
     parts.append(f"model up-probability {up_probability * 100:.0f}%")
+    if news_sentiment is not None and abs(news_sentiment) >= 0.3:
+        tone = "positive" if news_sentiment > 0 else "negative"
+        parts.append(f"recent news tone {tone}")
     text = "; ".join(parts) + "."
     if negatives:
         text += " Watch: " + ", ".join(negatives) + "."

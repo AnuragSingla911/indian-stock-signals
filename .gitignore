@@ -10,6 +10,7 @@ venv/
 
 # ML artifacts / caches
 ml/data/price_cache/
+ml/data/news_archive/*.json
 ml/data/model.joblib
 
 # Node / frontend

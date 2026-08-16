@@ -32,6 +32,16 @@ jobs:
       - name: Install ML package
         run: pip install -e ./ml
 
+      - name: Refresh news archive (optional)
+        env:
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+        run: |
+          if [ -n "$FINNHUB_API_KEY" ]; then
+            iss-news-archive -v --days 90
+          else
+            echo "FINNHUB_API_KEY not set; skipping archive refresh"
+          fi
+
       - name: Regenerate predictions from live data
         run: iss-pipeline -v
 

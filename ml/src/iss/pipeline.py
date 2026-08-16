@@ -14,8 +14,10 @@ import pandas as pd
 
 from .config import CONFIG, DISCLAIMER, PREDICTIONS_PATH
 from .data import get_fundamentals, get_price_history
+from .external import build_insights, get_macro_context, get_news_features
 from .features import build_feature_frame
 from .model import predict_up_proba, train_model
+from .news_archive import get_news_archive
 from .rationale import sector_rationale, stock_rationale
 from .scoring import (
     FACTOR_LABELS,
@@ -48,13 +50,16 @@ def run() -> dict:
     log.info("Fetching price history for %d symbols", len(symbols))
     prices = get_price_history(symbols)
     fundamentals = get_fundamentals(symbols)
+    macro = get_macro_context()
+    archive = get_news_archive()
+    news = get_news_features(symbols, prices=prices, archive=archive)
 
-    feature_frame = build_feature_frame(prices, fundamentals)
+    feature_frame = build_feature_frame(prices, fundamentals, news)
     zframe = winsorize_zscore(feature_frame)
     groups = group_scores(zframe)
     z_total = factor_composite(groups, CONFIG.weights)
 
-    model = train_model(prices, horizon=CONFIG.horizon_days)
+    model = train_model(prices, horizon=CONFIG.horizon_days, archive=archive)
     up_proba = predict_up_proba(model, feature_frame)
 
     blended = (
@@ -71,6 +76,7 @@ def run() -> dict:
 
     label_cols = [c for c in FACTOR_LABELS if c in zframe.columns]
 
+    all_picks: list[str] = []
     payload_sectors = []
     for sc in top_sectors:
         sector_symbols = [
@@ -82,6 +88,10 @@ def run() -> dict:
         stock_entries = []
         for sym in picks:
             g = groups.loc[sym]
+            sn = news.get(sym)
+            top_headline = None
+            if sn and sn.headlines:
+                top_headline = max(sn.headlines, key=lambda h: abs(h.sentiment))
             stock_entries.append(
                 {
                     "symbol": sym,
@@ -90,14 +100,18 @@ def run() -> dict:
                     "composite_score": float(round(composite[sym], 1)),
                     "up_probability": float(round(up_proba[sym], 3)),
                     "factors": {k: float(round(g[k], 2)) for k in groups.columns},
+                    "news_sentiment": float(round(sn.sentiment, 2)) if sn else 0.0,
+                    "news_headline": top_headline.title if top_headline else None,
                     "rationale": stock_rationale(
                         cast(pd.Series, zframe.loc[sym, label_cols]),
                         float(up_proba[sym]),
                         float(composite[sym]),
+                        news_sentiment=float(sn.sentiment) if sn else None,
                     ),
                     "chart_links": _chart_links(sym),
                 }
             )
+            all_picks.append(sym)
 
         payload_sectors.append(
             {
@@ -117,6 +131,9 @@ def run() -> dict:
         "model_name": model.name,
         "model_samples": model.n_samples,
         "disclaimer": DISCLAIMER,
+        "insights": build_insights(
+            macro, news, all_picks, max_highlights=CONFIG.insights_max_highlights
+        ),
         "sectors": payload_sectors,
     }
     return payload

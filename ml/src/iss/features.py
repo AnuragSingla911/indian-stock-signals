@@ -9,6 +9,9 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
+from .news_archive import NewsArchive
+from .news_types import StockNews
+
 # Technical features used by both the composite and the ML model.
 TECH_FEATURES = [
     "mom_12_1",
@@ -21,6 +24,11 @@ TECH_FEATURES = [
     "vol_trend",
     "lowvol",
 ]
+
+NEWS_FEATURES = ["news_sentiment", "news_volume"]
+
+# Full feature set for ML training and inference (technical + archived news).
+ML_FEATURES = TECH_FEATURES + NEWS_FEATURES
 
 
 def rsi(close: pd.Series, period: int = 14) -> float:
@@ -87,13 +95,18 @@ def technical_features(close: pd.Series, volume: pd.Series | None = None) -> dic
 
 
 def technical_panel_dated(
-    close: pd.Series, horizon: int, step: int = 21, min_history: int = 260
+    close: pd.Series,
+    horizon: int,
+    step: int = 21,
+    min_history: int = 260,
+    symbol: str | None = None,
+    archive: NewsArchive | None = None,
 ) -> list[tuple[dict[str, float], int, pd.Timestamp, float]]:
     """Build (features, label, as_of_date, forward_return) samples at historical points.
 
     Label = 1 if forward `horizon`-day return > 0. No look-ahead: features use only data up
-    to t; label/return use strictly future prices. The as-of date enables walk-forward
-    (time-ordered) evaluation.
+    to t; label/return use strictly future prices. When ``archive`` is provided, news
+    sentiment uses only headlines published on or before the as-of date.
     """
     close = close.dropna()
     samples: list[tuple[dict[str, float], int, pd.Timestamp, float]] = []
@@ -103,26 +116,42 @@ def technical_panel_dated(
     for t in range(min_history, n - horizon, step):
         window = close.iloc[: t + 1]
         feats = technical_features(window)
+        as_of = pd.Timestamp(close.index[t])
+        if archive is not None and symbol:
+            sent, vol = archive.sentiment_on_date(symbol, as_of, close=close.iloc[: t + 1])
+            feats["news_sentiment"] = sent
+            feats["news_volume"] = vol
+        else:
+            feats["news_sentiment"] = 0.0
+            feats["news_volume"] = 0.0
         fwd = float(close.iloc[t + horizon] / close.iloc[t] - 1.0)
-        samples.append((feats, int(fwd > 0), pd.Timestamp(close.index[t]), fwd))
+        samples.append((feats, int(fwd > 0), as_of, fwd))
     return samples
 
 
 def technical_panel(
-    close: pd.Series, horizon: int, step: int = 21, min_history: int = 260
+    close: pd.Series,
+    horizon: int,
+    step: int = 21,
+    min_history: int = 260,
+    symbol: str | None = None,
+    archive: NewsArchive | None = None,
 ) -> list[tuple[dict[str, float], int]]:
-    """Build (features, label) samples at historical points for ML training.
-
-    Label = 1 if forward `horizon`-day return > 0. No look-ahead: features use only data up
-    to t; label uses strictly future prices.
-    """
-    return [(f, y) for f, y, _, _ in technical_panel_dated(close, horizon, step, min_history)]
+    """Build (features, label) samples at historical points for ML training."""
+    return [
+        (f, y)
+        for f, y, _, _ in technical_panel_dated(
+            close, horizon, step, min_history, symbol=symbol, archive=archive
+        )
+    ]
 
 
 def build_feature_frame(
-    prices: dict[str, pd.DataFrame], fundamentals: dict[str, dict]
+    prices: dict[str, pd.DataFrame],
+    fundamentals: dict[str, dict],
+    news: dict[str, StockNews] | None = None,
 ) -> pd.DataFrame:
-    """Assemble a per-symbol raw factor frame (technical + fundamental)."""
+    """Assemble a per-symbol raw factor frame (technical + fundamental + news)."""
     rows: dict[str, dict[str, float]] = {}
     for sym, df in prices.items():
         close = df["Close"]
@@ -139,5 +168,15 @@ def build_feature_frame(
         feats["earnings_growth"] = (
             float(f["earnings_growth"]) if f.get("earnings_growth") is not None else np.nan
         )
+
+        sn = news.get(sym) if news else None
+        if sn is not None:
+            feats["news_sentiment"] = float(getattr(sn, "sentiment", 0.0))
+            count = int(getattr(sn, "article_count", 0))
+            feats["news_volume"] = float(np.log1p(count))
+        else:
+            feats["news_sentiment"] = 0.0
+            feats["news_volume"] = 0.0
+
         rows[sym] = feats
     return pd.DataFrame.from_dict(rows, orient="index")

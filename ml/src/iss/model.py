@@ -1,10 +1,8 @@
 """ML signal: probability that a stock's forward return over the horizon is positive.
 
 A histogram-based gradient-boosting classifier (sklearn's ``HistGradientBoostingClassifier``,
-the LightGBM-style GBDT) is trained on pooled historical cross-sections using only technical
-features (no look-ahead). Gradient-boosted trees are the empirically strongest, most robust
-model family for tabular cross-sectional equity signals (e.g. Gu, Kelly & Xiu 2020, "Empirical
-Asset Pricing via Machine Learning"; Krauss et al. 2017). When training data is insufficient
+the LightGBM-style GBDT) is trained on pooled historical cross-sections using technical
+features plus archived news sentiment (no look-ahead). When training data is insufficient
 (e.g. offline/CI), a deterministic logistic fallback keeps the pipeline fully functional.
 """
 
@@ -17,7 +15,8 @@ import numpy as np
 import pandas as pd
 
 from .config import CONFIG
-from .features import TECH_FEATURES, technical_panel
+from .features import ML_FEATURES, technical_panel
+from .news_archive import NewsArchive, get_news_archive
 
 log = logging.getLogger("iss.model")
 
@@ -43,14 +42,20 @@ def _sigmoid(x: np.ndarray) -> np.ndarray:
 
 
 def train_model(
-    prices: dict[str, pd.DataFrame], horizon: int, step: int | None = None
+    prices: dict[str, pd.DataFrame],
+    horizon: int,
+    step: int | None = None,
+    archive: NewsArchive | None = None,
 ) -> SignalModel:
     step = step if step is not None else CONFIG.train_step
+    archive = archive or get_news_archive()
     rows: list[list[float]] = []
     labels: list[int] = []
-    for df in prices.values():
-        for feats, label in technical_panel(df["Close"], horizon=horizon, step=step):
-            rows.append([float(feats.get(k, 0.0)) for k in TECH_FEATURES])
+    for sym, df in prices.items():
+        for feats, label in technical_panel(
+            df["Close"], horizon=horizon, step=step, symbol=sym, archive=archive
+        ):
+            rows.append([float(feats.get(k, 0.0)) for k in ML_FEATURES])
             labels.append(label)
 
     if len(labels) < 60 or len(set(labels)) < 2:
@@ -79,7 +84,7 @@ def train_model(
 
 
 def predict_up_proba(model: SignalModel, feature_frame: pd.DataFrame) -> pd.Series:
-    X = feature_frame.reindex(columns=TECH_FEATURES).astype(float).fillna(0.0)
+    X = feature_frame.reindex(columns=ML_FEATURES).astype(float).fillna(0.0)
     if model.trained:
         proba = model.estimator.predict_proba(X.values)[:, 1]  # type: ignore[attr-defined]
         return pd.Series(proba, index=feature_frame.index)

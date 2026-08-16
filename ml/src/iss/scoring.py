@@ -12,6 +12,7 @@ FACTOR_GROUPS: dict[str, list[str]] = {
     "quality": ["roe", "margin", "earnings_growth"],
     "value": ["inv_pe", "inv_pb"],
     "lowvol": ["lowvol"],
+    "sentiment": ["news_sentiment", "news_volume"],
 }
 
 # Human-readable labels for rationale generation.
@@ -29,6 +30,8 @@ FACTOR_LABELS: dict[str, str] = {
     "inv_pe": "valuation (P/E)",
     "inv_pb": "valuation (P/B)",
     "lowvol": "low volatility",
+    "news_sentiment": "news sentiment",
+    "news_volume": "news coverage",
 }
 
 

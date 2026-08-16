@@ -40,6 +40,8 @@ def test_group_and_composite():
             "inv_pe": [1.0, -1.0],
             "inv_pb": [1.0, -1.0],
             "lowvol": [1.0, -1.0],
+            "news_sentiment": [0.8, -0.6],
+            "news_volume": [1.0, 0.5],
         },
         index=["good", "bad"],
     )
