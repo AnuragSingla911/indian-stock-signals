@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T12:36:12Z",
+  "generated_at": "2026-10-09T22:16:48Z",
   "horizon_days": 21,
   "universe_size": 96,
   "model_trained": true,
@@ -8,20 +8,28 @@
   "disclaimer": "Educational and informational use only. This is NOT investment advice, a recommendation, or a solicitation to buy or sell any security. Markets are risky and model signals do not guarantee future results. Consult a SEBI-registered adviser before investing.",
   "insights": {
     "macro": {
-      "nifty_1m_return": -0.0472,
-      "usd_inr_1m_change": 0.017,
-      "brent_1m_return": -0.046,
-      "summary": "Nifty down 4.7% over 1M (cautious tape); INR weakening (+1.7% USD/INR 1M)",
-      "as_of": "2026-10-09T12:35:39Z"
+      "nifty_1m_return": -0.0651,
+      "usd_inr_1m_change": 0.0175,
+      "brent_1m_return": -0.0297,
+      "summary": "Nifty down 6.5% over 1M (cautious tape); INR weakening (+1.8% USD/INR 1M)",
+      "as_of": "2026-10-09T22:16:27Z"
     },
     "stock_highlights": [
       {
         "symbol": "TCS",
-        "headline": "TCS shares rise as AI revenue offsets sluggish growth, lifts Indian IT stocks - Yahoo Finance Australia",
+        "headline": "India's Sensex slumps to 32-month low on oil surge, foreign exodus - Reuters",
         "sentiment": 1.0,
-        "publisher": "Yahoo Finance Australia",
-        "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRFZoTlFfelVnNGIwWUpiaEs1ZlVVc1hwMEpPcllZc2FUMkhlYl9IekVQRlg2S3VfZDNWYW9LZmV1dTBvUllsVFhoLVhBUnpEcFNFemptTF9MSDNnUW9rb2lhdlA3LVQ5TWtJRzcwd3lWQXdPVFpHdVRhZEg4OFc2UA?oc=5",
-        "published_at": "2026-10-09"
+        "publisher": "Reuters",
+        "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRGc3d3VfemdCVm9OMG8tZFo3MFpXMmtQR3paUW9yMWFia0txelBIS0w2M3RSeDdRdzV2WkR0WmU2ZFdNVkUyUWJMbWQ1YVA0M3d0Y3hRQkMxa3FlMDMtSXZ1OHF6UWNaTzRmTklWVnpSNHp2bzdRT0F3SlNvVzVFQ0trU21MeHlOMmU4R3U1c0NNTmw0dGtoT1lORzRBOGdTaUMyRjFtWFc4bXdsemFV?oc=5",
+        "published_at": "2026-10-08"
+      },
+      {
+        "symbol": "SIEMENS",
+        "headline": "AMFI Reshuffle: Lenskart Solutions, Siemens Energy among 6 midcap stocks that may get upgraded to largecap - The Economic Times",
+        "sentiment": 1.0,
+        "publisher": "The Economic Times",
+        "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNeUY3MlU5VXp6aC1KOWc0SkVFYWNUcVNESy12dkxKU0VKOEdZWXlFcGZnMFZhNmFMYUZLWFFtd3pmcDZRSzEteFpRd1pWT21ac2laY09aVFRsUDY2MFpCaXFndHR0YWlTS0ZWbHFBNGE1d1pYYnpRNTRwaWJSSEJQRGFyMHF1bzZlZS1BU3I1OU1BUHhEU09meDgxeVlMR2VqU1NtWTZKM09BOEZfaENRVGdid2h3ckdIdnJYWVY2ZnJMQ2w5ZWlBRVlldXlhUnNhSWh6MkF1SHlEQk4xejdUQWN2MlVvcjZvemotNGN6R3JMUlVqb3FaX2hTc0Y?oc=5",
+        "published_at": "2026-10-07"
       },
       {
         "symbol": "ABB",
@@ -32,20 +40,12 @@
         "published_at": "2026-10-08"
       },
       {
-        "symbol": "OBEROIRLTY",
-        "headline": "Oberoi (OBEROIRLTY.NS) Rises +0.76% \u2014 Bullish Trend Intact Above \u20b91679.60 2026-10-05 - Cup and Handle - https://www.siam.in/",
-        "sentiment": 1.0,
-        "publisher": "https://www.siam.in/",
-        "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYlJhQUNPSGdEUHNZQVZ4UlBXdUs1WEpOSzFHSVY5OHBQNFVlQlA5ZDhUMTV4V2RSRlZmeU1XSGtsRTMxRFhJYVBzcXFrZmJ6OWxrak1JOEs3Yy1pQk5XbnhuTU90WDgtSzB3MjA1X0s3U3JnOGFvMHdkc3g1a2luTEI0ODV4THJVbjk2d194MjB3X25XUnF0ZFZYRkVjdlo1SWY2ZlNiUjlMalRRWWlwTVNzdVJTUQ?oc=5",
-        "published_at": "2026-10-05"
-      },
-      {
-        "symbol": "SOBHA",
-        "headline": "Sobha NSE:SOBHA Record H1 FY27 Sales Operational Update - Kalkine India",
+        "symbol": "HEROMOTOCO",
+        "headline": "Hero MotoCorp September 2026 Dispatches Rise 12% YoY - Kalkine India",
         "sentiment": 1.0,
         "publisher": "Kalkine India",
-        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNU0p1dFo0bkhFalg2ZWFtSEprdV82YWFYR1Z5QUVjOUJta3pYeGtKXzlrMEE3bmZVNGFnYmZvYzNhb1FNQ1U4eWlvZGQteGlDZTg4Rmtfa3JZSVJuWmlfSV8tSjhhTndvOUJKYW1VT3Joa1hXeDZlOS1LUlNERGEzazB0enVwaDg1c01xVllTcm1HYkZRWEN3TmNZdmxibktpcXdUZ25fNS10cjVE?oc=5",
-        "published_at": "2026-10-02"
+        "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQak5RUWJEZFNyalBxSHVUYzc4Z21qekhyNkI3Ulc3V0ozTkNRMGtnZmtvbGNrMzNjbXRkNWhfWlF6aFFJMkxoRHF6X2FhclFWQ00xYkJPdmliZHBJLVJiRW1PX0g1M1ZoS1dEYnl3STdKQlpXOXl6NEdGb2pkbUNaWU9SQURHaDlNSUpXVXg1V05vMkFQMllmTS0zMi02ZFRKanE5cWloWmwta0VORklLZmhncEREU2wzNGQtdm9oWUJCazZxem1sU1Uwdw?oc=5",
+        "published_at": "2026-10-01"
       },
       {
         "symbol": "COFORGE",
@@ -86,25 +86,25 @@
       "sector": "IT",
       "display_name": "Information Technology",
       "sector_score": 100.0,
-      "sector_rationale": "Information Technology: 3M sector momentum up 2.0%; 56% of constituents above their 200-DMA.",
+      "sector_rationale": "Information Technology: 3M sector momentum up 1.0%; 44% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "LTIM",
           "yahoo_symbol": "LTIM.NS",
           "name": "LTIMindtree",
           "composite_score": 96.9,
-          "up_probability": 0.565,
+          "up_probability": 0.569,
           "factors": {
-            "momentum": 0.28,
-            "trend": 0.87,
+            "momentum": 0.24,
+            "trend": 0.98,
             "quality": 0.22,
             "value": 1.01,
-            "lowvol": 1.15,
-            "sentiment": -0.96
+            "lowvol": 1.12,
+            "sentiment": -0.95
           },
           "news_sentiment": 0.0,
           "news_headline": null,
-          "rationale": "Ranks highly on very strong valuation (P/E), strong price vs 50-DMA, strong 3-month return; composite score 97/100; model up-probability 57%. Watch: very weak news coverage.",
+          "rationale": "Ranks highly on very strong price vs 50-DMA, very strong valuation (P/E), strong 3-month return; composite score 97/100; model up-probability 57%. Watch: weak news coverage.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:LTIM",
             "yahoo": "https://finance.yahoo.com/quote/LTIM.NS"
@@ -114,19 +114,19 @@
           "symbol": "COFORGE",
           "yahoo_symbol": "COFORGE.NS",
           "name": "Coforge",
-          "composite_score": 90.6,
-          "up_probability": 0.513,
+          "composite_score": 89.6,
+          "up_probability": 0.511,
           "factors": {
             "momentum": 2.12,
-            "trend": 1.13,
+            "trend": 1.21,
             "quality": -0.18,
             "value": -0.6,
-            "lowvol": -2.01,
+            "lowvol": -1.93,
             "sentiment": -0.37
           },
           "news_sentiment": 0.0,
           "news_headline": "Coforge (NSEI:COFORGE) Stock Forecast & Analyst Predictions - Simply Wall Street",
-          "rationale": "Ranks highly on very strong 3-month return, very strong 6-month return, very strong price vs 200-DMA; composite score 91/100; model up-probability 51%. Watch: very weak low volatility.",
+          "rationale": "Ranks highly on very strong 3-month return, very strong 6-month return, very strong price vs 200-DMA; composite score 90/100; model up-probability 51%. Watch: very weak low volatility.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:COFORGE",
             "yahoo": "https://finance.yahoo.com/quote/COFORGE.NS"
@@ -136,19 +136,19 @@
           "symbol": "PERSISTENT",
           "yahoo_symbol": "PERSISTENT.NS",
           "name": "Persistent Systems",
-          "composite_score": 67.7,
-          "up_probability": 0.456,
+          "composite_score": 62.5,
+          "up_probability": 0.497,
           "factors": {
-            "momentum": 0.86,
-            "trend": 0.95,
+            "momentum": 0.74,
+            "trend": 0.63,
             "quality": 0.13,
-            "value": -0.77,
-            "lowvol": -0.81,
-            "sentiment": -0.02
+            "value": -0.76,
+            "lowvol": -0.69,
+            "sentiment": -0.37
           },
           "news_sentiment": 0.0,
           "news_headline": "Persistent Systems (NSEI:PERSISTENT) Stock Forecast & Analyst Predictions - Simply Wall Street",
-          "rationale": "Ranks highly on very strong price vs 50-DMA, very strong 3-month return, strong price vs 200-DMA; composite score 68/100; model up-probability 46%. Watch: weak valuation (P/B).",
+          "rationale": "Ranks highly on very strong 3-month return, strong price vs 50-DMA, strong return on equity; composite score 62/100; model up-probability 50%. Watch: weak valuation (P/B).",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:PERSISTENT",
             "yahoo": "https://finance.yahoo.com/quote/PERSISTENT.NS"
@@ -158,19 +158,19 @@
           "symbol": "TECHM",
           "yahoo_symbol": "TECHM.NS",
           "name": "Tech Mahindra",
-          "composite_score": 64.6,
-          "up_probability": 0.452,
+          "composite_score": 56.2,
+          "up_probability": 0.444,
           "factors": {
-            "momentum": 0.55,
-            "trend": 0.27,
+            "momentum": 0.5,
+            "trend": 0.26,
             "quality": -0.23,
             "value": -0.31,
-            "lowvol": 0.5,
-            "sentiment": -0.02
+            "lowvol": 0.45,
+            "sentiment": 0.21
           },
           "news_sentiment": 0.0,
           "news_headline": "Tech Mahindra Share Price - Live NSE: TECHM Stock Price & Chart - Upstox",
-          "rationale": "Ranks highly on strong 3-month return, strong 50/200-DMA trend, above-average price vs 200-DMA; composite score 65/100; model up-probability 45%.",
+          "rationale": "Ranks highly on strong 3-month return, strong 50/200-DMA trend, strong news coverage; composite score 56/100; model up-probability 44%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TECHM",
             "yahoo": "https://finance.yahoo.com/quote/TECHM.NS"
@@ -180,19 +180,19 @@
           "symbol": "TCS",
           "yahoo_symbol": "TCS.NS",
           "name": "Tata Consultancy Services",
-          "composite_score": 58.3,
-          "up_probability": 0.446,
+          "composite_score": 49.0,
+          "up_probability": 0.534,
           "factors": {
-            "momentum": -0.3,
-            "trend": -0.16,
+            "momentum": -0.46,
+            "trend": -0.46,
             "quality": 1.04,
             "value": -0.1,
-            "lowvol": -1.04,
-            "sentiment": 2.06
+            "lowvol": -0.85,
+            "sentiment": 1.32
           },
           "news_sentiment": 1.0,
-          "news_headline": "TCS shares rise as AI revenue offsets sluggish growth, lifts Indian IT stocks - Yahoo Finance Australia",
-          "rationale": "Ranks highly on very strong news sentiment, very strong return on equity, strong 3-month return; composite score 58/100; model up-probability 45%; recent news tone positive. Watch: weak 12-1 month momentum.",
+          "news_headline": "India's Sensex slumps to 32-month low on oil surge, foreign exodus - Reuters",
+          "rationale": "Ranks highly on very strong return on equity, very strong news sentiment, above-average 3-month return; composite score 49/100; model up-probability 53%; recent news tone positive. Watch: weak 6-month return.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TCS",
             "yahoo": "https://finance.yahoo.com/quote/TCS.NS"
@@ -207,113 +207,113 @@
       "sector_rationale": "Infrastructure & Capital Goods: 3M sector momentum up 0.0%; 56% of constituents above their 200-DMA.",
       "stocks": [
         {
-          "symbol": "BHEL",
-          "yahoo_symbol": "BHEL.NS",
-          "name": "Bharat Heavy Electricals",
-          "composite_score": 94.8,
-          "up_probability": 0.421,
-          "factors": {
-            "momentum": 2.7,
-            "trend": 1.3,
-            "quality": -0.29,
-            "value": -0.7,
-            "lowvol": -1.48,
-            "sentiment": -0.02
-          },
-          "news_sentiment": 0.0,
-          "news_headline": "Trade Spotlight: How should you trade Laurus Labs, BHEL, ACME Solar Holdings, Indian Hotels, Britannia,... - Moneycontrol.com",
-          "rationale": "Ranks highly on very strong 6-month return, very strong 12-1 month momentum, very strong price vs 200-DMA; composite score 95/100; model up-probability 42%. Watch: weak low volatility.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BHEL",
-            "yahoo": "https://finance.yahoo.com/quote/BHEL.NS"
-          }
-        },
-        {
           "symbol": "SIEMENS",
           "yahoo_symbol": "SIEMENS.NS",
           "name": "Siemens",
-          "composite_score": 89.6,
-          "up_probability": 0.597,
+          "composite_score": 94.8,
+          "up_probability": 0.492,
           "factors": {
-            "momentum": 0.83,
-            "trend": -0.02,
+            "momentum": 0.97,
+            "trend": 0.17,
             "quality": 1.51,
             "value": -0.87,
-            "lowvol": -0.45,
-            "sentiment": -0.96
+            "lowvol": -0.42,
+            "sentiment": 1.32
           },
-          "news_sentiment": 0.0,
-          "news_headline": null,
-          "rationale": "Ranks highly on very strong earnings growth, strong 50/200-DMA trend, strong 3-month return; composite score 90/100; model up-probability 60%. Watch: very weak news coverage.",
+          "news_sentiment": 1.0,
+          "news_headline": "AMFI Reshuffle: Lenskart Solutions, Siemens Energy among 6 midcap stocks that may get upgraded to largecap - The Economic Times",
+          "rationale": "Ranks highly on very strong earnings growth, very strong news sentiment, strong 3-month return; composite score 95/100; model up-probability 49%; recent news tone positive. Watch: weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SIEMENS",
             "yahoo": "https://finance.yahoo.com/quote/SIEMENS.NS"
           }
         },
         {
+          "symbol": "BHEL",
+          "yahoo_symbol": "BHEL.NS",
+          "name": "Bharat Heavy Electricals",
+          "composite_score": 90.6,
+          "up_probability": 0.406,
+          "factors": {
+            "momentum": 2.72,
+            "trend": 1.32,
+            "quality": -0.29,
+            "value": -0.7,
+            "lowvol": -1.54,
+            "sentiment": -0.03
+          },
+          "news_sentiment": 0.0,
+          "news_headline": "Trade Spotlight: How should you trade Laurus Labs, BHEL, ACME Solar Holdings, Indian Hotels, Britannia,... - Moneycontrol.com",
+          "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, very strong 12-1 month momentum; composite score 91/100; model up-probability 41%. Watch: very weak low volatility.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BHEL",
+            "yahoo": "https://finance.yahoo.com/quote/BHEL.NS"
+          }
+        },
+        {
           "symbol": "ADANIPORTS",
           "yahoo_symbol": "ADANIPORTS.NS",
           "name": "Adani Ports & SEZ",
-          "composite_score": 86.5,
-          "up_probability": 0.561,
+          "composite_score": 80.2,
+          "up_probability": 0.56,
           "factors": {
-            "momentum": 0.77,
-            "trend": 1.05,
+            "momentum": 0.63,
+            "trend": 0.89,
             "quality": 0.42,
             "value": -0.35,
-            "lowvol": -0.97,
-            "sentiment": -0.96
+            "lowvol": -0.86,
+            "sentiment": -0.95
           },
           "news_sentiment": 0.0,
           "news_headline": null,
-          "rationale": "Ranks highly on very strong profit margin, very strong price vs 50-DMA, strong 6-month return; composite score 86/100; model up-probability 56%. Watch: very weak news coverage.",
+          "rationale": "Ranks highly on very strong profit margin, strong price vs 50-DMA, strong 6-month return; composite score 80/100; model up-probability 56%. Watch: weak news coverage.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ADANIPORTS",
             "yahoo": "https://finance.yahoo.com/quote/ADANIPORTS.NS"
           }
         },
         {
-          "symbol": "ABB",
-          "yahoo_symbol": "ABB.NS",
-          "name": "ABB India",
-          "composite_score": 66.7,
-          "up_probability": 0.47,
-          "factors": {
-            "momentum": 0.82,
-            "trend": 0.02,
-            "quality": 0.15,
-            "value": -0.96,
-            "lowvol": -0.67,
-            "sentiment": 1.46
-          },
-          "news_sentiment": 1.0,
-          "news_headline": "ABB India Shares Crash Over 12% In 5 Days Despite 275% Profit Jump; Brokerages Cautious After Q1 CY2026 Result - Goodreturns",
-          "rationale": "Ranks highly on very strong news sentiment, very strong 12-1 month momentum, strong 50/200-DMA trend; composite score 67/100; model up-probability 47%; recent news tone positive. Watch: weak volume trend.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ABB",
-            "yahoo": "https://finance.yahoo.com/quote/ABB.NS"
-          }
-        },
-        {
           "symbol": "HAL",
           "yahoo_symbol": "HAL.NS",
           "name": "Hindustan Aeronautics",
-          "composite_score": 65.6,
-          "up_probability": 0.424,
+          "composite_score": 78.1,
+          "up_probability": 0.46,
           "factors": {
-            "momentum": 0.68,
-            "trend": 0.4,
+            "momentum": 0.8,
+            "trend": 0.58,
             "quality": 0.33,
             "value": -0.58,
-            "lowvol": -0.01,
-            "sentiment": -0.02
+            "lowvol": -0.12,
+            "sentiment": -0.03
           },
           "news_sentiment": 0.0,
           "news_headline": "HAL Share Price - Upstox",
-          "rationale": "Ranks highly on strong profit margin, strong 6-month return, strong price vs 200-DMA; composite score 66/100; model up-probability 42%.",
+          "rationale": "Ranks highly on strong 3-month return, strong profit margin, strong 6-month return; composite score 78/100; model up-probability 46%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HAL",
             "yahoo": "https://finance.yahoo.com/quote/HAL.NS"
+          }
+        },
+        {
+          "symbol": "ABB",
+          "yahoo_symbol": "ABB.NS",
+          "name": "ABB India",
+          "composite_score": 51.0,
+          "up_probability": 0.421,
+          "factors": {
+            "momentum": 0.86,
+            "trend": 0.07,
+            "quality": 0.15,
+            "value": -0.96,
+            "lowvol": -0.65,
+            "sentiment": 1.32
+          },
+          "news_sentiment": 1.0,
+          "news_headline": "ABB India Shares Crash Over 12% In 5 Days Despite 275% Profit Jump; Brokerages Cautious After Q1 CY2026 Result - Goodreturns",
+          "rationale": "Ranks highly on very strong news sentiment, strong 12-1 month momentum, strong 50/200-DMA trend; composite score 51/100; model up-probability 42%; recent news tone positive. Watch: weak volume trend.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ABB",
+            "yahoo": "https://finance.yahoo.com/quote/ABB.NS"
           }
         }
       ]
@@ -322,25 +322,25 @@
       "sector": "Pharma",
       "display_name": "Pharma & Healthcare",
       "sector_score": 80.0,
-      "sector_rationale": "Pharma & Healthcare: 3M sector momentum up 1.1%; 40% of constituents above their 200-DMA.",
+      "sector_rationale": "Pharma & Healthcare: 3M sector momentum up 0.7%; 40% of constituents above their 200-DMA.",
       "stocks": [
         {
           "symbol": "DIVISLAB",
           "yahoo_symbol": "DIVISLAB.NS",
           "name": "Divi's Laboratories",
           "composite_score": 99.0,
-          "up_probability": 0.321,
+          "up_probability": 0.357,
           "factors": {
             "momentum": 3.01,
-            "trend": 1.46,
+            "trend": 1.58,
             "quality": 0.55,
             "value": -0.94,
-            "lowvol": -0.64,
-            "sentiment": 0.42
+            "lowvol": -0.61,
+            "sentiment": 0.21
           },
           "news_sentiment": 0.0,
           "news_headline": "DRREDDY Share Price Today - Dr Reddys Laboratories on NSE/BSE - scanx.trade",
-          "rationale": "Ranks highly on very strong 6-month return, very strong 3-month return, very strong price vs 200-DMA; composite score 99/100; model up-probability 32%. Watch: weak valuation (P/E).",
+          "rationale": "Ranks highly on very strong 6-month return, very strong 3-month return, very strong price vs 200-DMA; composite score 99/100; model up-probability 36%. Watch: weak valuation (P/E).",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:DIVISLAB",
             "yahoo": "https://finance.yahoo.com/quote/DIVISLAB.NS"
@@ -350,19 +350,19 @@
           "symbol": "AUROPHARMA",
           "yahoo_symbol": "AUROPHARMA.NS",
           "name": "Aurobindo Pharma",
-          "composite_score": 88.5,
-          "up_probability": 0.322,
+          "composite_score": 86.5,
+          "up_probability": 0.34,
           "factors": {
-            "momentum": 1.68,
-            "trend": 1.13,
+            "momentum": 1.4,
+            "trend": 1.02,
             "quality": -0.18,
             "value": -0.03,
-            "lowvol": 0.17,
-            "sentiment": 0.23
+            "lowvol": 0.24,
+            "sentiment": 0.55
           },
           "news_sentiment": 0.0,
           "news_headline": "Aurobindo Pharma (NSE:AUROPHARMA): What Does Its Reg 74(5) Certificate for Q2 FY27 Mean? - Kalkine India",
-          "rationale": "Ranks highly on very strong price vs 200-DMA, very strong 12-1 month momentum, very strong 6-month return; composite score 88/100; model up-probability 32%.",
+          "rationale": "Ranks highly on very strong price vs 200-DMA, very strong 12-1 month momentum, very strong news coverage; composite score 86/100; model up-probability 34%.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:AUROPHARMA",
             "yahoo": "https://finance.yahoo.com/quote/AUROPHARMA.NS"
@@ -372,66 +372,66 @@
           "symbol": "ZYDUSLIFE",
           "yahoo_symbol": "ZYDUSLIFE.NS",
           "name": "Zydus Lifesciences",
-          "composite_score": 72.9,
-          "up_probability": 0.538,
+          "composite_score": 77.1,
+          "up_probability": 0.557,
           "factors": {
-            "momentum": 0.73,
-            "trend": 0.91,
+            "momentum": 0.67,
+            "trend": 0.99,
             "quality": -0.34,
             "value": -0.25,
-            "lowvol": -0.43,
-            "sentiment": -0.96
+            "lowvol": -0.42,
+            "sentiment": -0.95
           },
           "news_sentiment": 0.0,
           "news_headline": null,
-          "rationale": "Ranks highly on very strong 6-month return, strong price vs 200-DMA, strong 50/200-DMA trend; composite score 73/100; model up-probability 54%. Watch: very weak news coverage.",
+          "rationale": "Ranks highly on strong 6-month return, strong price vs 200-DMA, strong 50/200-DMA trend; composite score 77/100; model up-probability 56%. Watch: weak news coverage.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ZYDUSLIFE",
             "yahoo": "https://finance.yahoo.com/quote/ZYDUSLIFE.NS"
           }
         },
         {
-          "symbol": "BIOCON",
-          "yahoo_symbol": "BIOCON.NS",
-          "name": "Biocon",
-          "composite_score": 63.5,
-          "up_probability": 0.603,
-          "factors": {
-            "momentum": -0.29,
-            "trend": -0.37,
-            "quality": 0.7,
-            "value": -0.04,
-            "lowvol": 0.22,
-            "sentiment": -0.96
-          },
-          "news_sentiment": 0.0,
-          "news_headline": null,
-          "rationale": "Ranks highly on very strong earnings growth, strong 50/200-DMA trend, strong valuation (P/B); composite score 64/100; model up-probability 60%. Watch: very weak news coverage.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BIOCON",
-            "yahoo": "https://finance.yahoo.com/quote/BIOCON.NS"
-          }
-        },
-        {
           "symbol": "SUNPHARMA",
           "yahoo_symbol": "SUNPHARMA.NS",
           "name": "Sun Pharmaceutical",
-          "composite_score": 62.5,
-          "up_probability": 0.461,
+          "composite_score": 76.0,
+          "up_probability": 0.572,
           "factors": {
-            "momentum": 0.07,
-            "trend": 0.12,
+            "momentum": 0.01,
+            "trend": 0.2,
             "quality": 0.15,
             "value": -0.48,
-            "lowvol": 1.36,
-            "sentiment": -0.37
+            "lowvol": 1.32,
+            "sentiment": -0.95
           },
           "news_sentiment": 0.0,
-          "news_headline": "Sun Pharma plans INR 150 billion debt issue: what it means for Sun Pharma stock - AD HOC NEWS",
-          "rationale": "Ranks highly on strong low volatility, strong 50/200-DMA trend, above-average profit margin; composite score 62/100; model up-probability 46%.",
+          "news_headline": null,
+          "rationale": "Ranks highly on strong low volatility, strong 50/200-DMA trend, above-average profit margin; composite score 76/100; model up-probability 57%. Watch: weak news coverage.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SUNPHARMA",
             "yahoo": "https://finance.yahoo.com/quote/SUNPHARMA.NS"
+          }
+        },
+        {
+          "symbol": "TORNTPHARM",
+          "yahoo_symbol": "TORNTPHARM.NS",
+          "name": "Torrent Pharmaceuticals",
+          "composite_score": 60.4,
+          "up_probability": 0.591,
+          "factors": {
+            "momentum": 0.68,
+            "trend": 0.2,
+            "quality": -0.25,
+            "value": -0.94,
+            "lowvol": -0.06,
+            "sentiment": -0.95
+          },
+          "news_sentiment": 0.0,
+          "news_headline": null,
+          "rationale": "Ranks highly on strong 12-1 month momentum, strong 50/200-DMA trend, strong price vs 200-DMA; composite score 60/100; model up-probability 59%. Watch: weak news coverage.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TORNTPHARM",
+            "yahoo": "https://finance.yahoo.com/quote/TORNTPHARM.NS"
           }
         }
       ]
@@ -446,19 +446,19 @@
           "symbol": "TATAMOTORS",
           "yahoo_symbol": "TATAMOTORS.NS",
           "name": "Tata Motors",
-          "composite_score": 93.8,
-          "up_probability": 0.45,
+          "composite_score": 88.5,
+          "up_probability": 0.436,
           "factors": {
-            "momentum": 1.39,
-            "trend": 1.16,
+            "momentum": 1.33,
+            "trend": 1.27,
             "quality": -0.06,
             "value": -0.56,
-            "lowvol": 0.43,
+            "lowvol": 0.41,
             "sentiment": -0.37
           },
           "news_sentiment": 0.0,
           "news_headline": "TMPV Share Price Target 2026, 2027, 2030, 2040, 2050 - Share Price Target",
-          "rationale": "Ranks highly on very strong price vs 200-DMA, very strong 12-1 month momentum, strong 6-month return; composite score 94/100; model up-probability 45%. Watch: weak return on equity.",
+          "rationale": "Ranks highly on very strong price vs 200-DMA, very strong price vs 50-DMA, very strong 12-1 month momentum; composite score 88/100; model up-probability 44%. Watch: weak return on equity.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TATAMOTORS",
             "yahoo": "https://finance.yahoo.com/quote/TATAMOTORS.NS"
@@ -468,19 +468,19 @@
           "symbol": "BOSCHLTD",
           "yahoo_symbol": "BOSCHLTD.NS",
           "name": "Bosch",
-          "composite_score": 81.2,
-          "up_probability": 0.637,
+          "composite_score": 70.8,
+          "up_probability": 0.583,
           "factors": {
-            "momentum": 1.09,
-            "trend": 0.27,
+            "momentum": 1.12,
+            "trend": 0.31,
             "quality": -0.49,
             "value": -0.76,
-            "lowvol": -0.35,
-            "sentiment": -0.96
+            "lowvol": -0.34,
+            "sentiment": -0.95
           },
           "news_sentiment": 0.0,
           "news_headline": null,
-          "rationale": "Ranks highly on very strong price vs 200-DMA, strong 6-month return, strong 3-month return; composite score 81/100; model up-probability 64%. Watch: very weak news coverage.",
+          "rationale": "Ranks highly on very strong 6-month return, very strong price vs 200-DMA, strong 50/200-DMA trend; composite score 71/100; model up-probability 58%. Watch: weak news coverage.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BOSCHLTD",
             "yahoo": "https://finance.yahoo.com/quote/BOSCHLTD.NS"
@@ -490,19 +490,19 @@
           "symbol": "EICHERMOT",
           "yahoo_symbol": "EICHERMOT.NS",
           "name": "Eicher Motors",
-          "composite_score": 70.8,
-          "up_probability": 0.597,
+          "composite_score": 59.4,
+          "up_probability": 0.576,
           "factors": {
-            "momentum": 0.16,
-            "trend": -0.03,
+            "momentum": 0.04,
+            "trend": -0.27,
             "quality": 0.22,
             "value": -0.58,
-            "lowvol": 0.79,
-            "sentiment": -0.96
+            "lowvol": 1.08,
+            "sentiment": -0.95
           },
           "news_sentiment": 0.0,
           "news_headline": null,
-          "rationale": "Ranks highly on strong 50/200-DMA trend, above-average low volatility, above-average profit margin; composite score 71/100; model up-probability 60%. Watch: very weak news coverage.",
+          "rationale": "Ranks highly on strong low volatility, strong 50/200-DMA trend, above-average profit margin; composite score 59/100; model up-probability 58%. Watch: weak news coverage.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:EICHERMOT",
             "yahoo": "https://finance.yahoo.com/quote/EICHERMOT.NS"
@@ -512,19 +512,19 @@
           "symbol": "TVSMOTOR",
           "yahoo_symbol": "TVSMOTOR.NS",
           "name": "TVS Motor Company",
-          "composite_score": 54.2,
-          "up_probability": 0.483,
+          "composite_score": 55.2,
+          "up_probability": 0.521,
           "factors": {
-            "momentum": 0.7,
-            "trend": -0.05,
+            "momentum": 0.74,
+            "trend": -0.0,
             "quality": -0.12,
             "value": -0.93,
             "lowvol": -0.02,
-            "sentiment": -0.02
+            "sentiment": -0.03
           },
           "news_sentiment": 0.0,
           "news_headline": "Divi's Labs, TVS Motor could replace Max Healthcare, HDFC Life in NSE's March 2027 index review - The Economic Times",
-          "rationale": "Ranks highly on strong 3-month return, strong 50/200-DMA trend, above-average price vs 200-DMA; composite score 54/100; model up-probability 48%. Watch: weak volume trend.",
+          "rationale": "Ranks highly on strong 3-month return, strong 50/200-DMA trend, above-average price vs 200-DMA; composite score 55/100; model up-probability 52%. Watch: weak volume trend.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:TVSMOTOR",
             "yahoo": "https://finance.yahoo.com/quote/TVSMOTOR.NS"
@@ -534,19 +534,19 @@
           "symbol": "HEROMOTOCO",
           "yahoo_symbol": "HEROMOTOCO.NS",
           "name": "Hero MotoCorp",
-          "composite_score": 45.8,
-          "up_probability": 0.584,
+          "composite_score": 50.0,
+          "up_probability": 0.521,
           "factors": {
-            "momentum": -0.04,
-            "trend": -0.22,
+            "momentum": 0.06,
+            "trend": -0.17,
             "quality": -0.41,
             "value": -0.07,
             "lowvol": -0.16,
-            "sentiment": -0.96
+            "sentiment": 1.32
           },
-          "news_sentiment": 0.0,
-          "news_headline": null,
-          "rationale": "Ranks highly on strong 50/200-DMA trend, above-average 3-month return; composite score 46/100; model up-probability 58%. Watch: very weak news coverage.",
+          "news_sentiment": 1.0,
+          "news_headline": "Hero MotoCorp September 2026 Dispatches Rise 12% YoY - Kalkine India",
+          "rationale": "Ranks highly on very strong news sentiment, strong 50/200-DMA trend, above-average 3-month return; composite score 50/100; model up-probability 52%; recent news tone positive. Watch: weak price vs 50-DMA.",
           "chart_links": {
             "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:HEROMOTOCO",
             "yahoo": "https://finance.yahoo.com/quote/HEROMOTOCO.NS"
@@ -555,119 +555,119 @@
       ]
     },
     {
-      "sector": "Realty",
-      "display_name": "Realty",
+      "sector": "Energy",
+      "display_name": "Energy & Oil/Gas",
       "sector_score": 60.0,
-      "sector_rationale": "Realty: 3M sector momentum up 0.0%; 25% of constituents above their 200-DMA.",
+      "sector_rationale": "Energy & Oil/Gas: 3M sector momentum up 0.0%; 20% of constituents above their 200-DMA.",
       "stocks": [
         {
-          "symbol": "OBEROIRLTY",
-          "yahoo_symbol": "OBEROIRLTY.NS",
-          "name": "Oberoi Realty",
-          "composite_score": 83.3,
-          "up_probability": 0.48,
+          "symbol": "GAIL",
+          "yahoo_symbol": "GAIL.NS",
+          "name": "GAIL India",
+          "composite_score": 92.7,
+          "up_probability": 0.565,
           "factors": {
-            "momentum": -0.03,
-            "trend": 0.46,
-            "quality": 0.87,
-            "value": -0.13,
-            "lowvol": -0.49,
-            "sentiment": 1.46
+            "momentum": 0.38,
+            "trend": 0.41,
+            "quality": 0.08,
+            "value": 1.43,
+            "lowvol": 0.48,
+            "sentiment": -0.95
           },
-          "news_sentiment": 1.0,
-          "news_headline": "Oberoi (OBEROIRLTY.NS) Rises +0.76% \u2014 Bullish Trend Intact Above \u20b91679.60 2026-10-05 - Cup and Handle - https://www.siam.in/",
-          "rationale": "Ranks highly on very strong news sentiment, very strong profit margin, strong 50/200-DMA trend; composite score 83/100; model up-probability 48%; recent news tone positive.",
+          "news_sentiment": 0.0,
+          "news_headline": null,
+          "rationale": "Ranks highly on very strong valuation (P/B), strong valuation (P/E), strong earnings growth; composite score 93/100; model up-probability 57%. Watch: weak news coverage.",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:OBEROIRLTY",
-            "yahoo": "https://finance.yahoo.com/quote/OBEROIRLTY.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:GAIL",
+            "yahoo": "https://finance.yahoo.com/quote/GAIL.NS"
           }
         },
         {
-          "symbol": "DLF",
-          "yahoo_symbol": "DLF.NS",
-          "name": "DLF",
-          "composite_score": 52.1,
-          "up_probability": 0.402,
+          "symbol": "IOC",
+          "yahoo_symbol": "IOC.NS",
+          "name": "Indian Oil Corporation",
+          "composite_score": 85.4,
+          "up_probability": 0.574,
           "factors": {
-            "momentum": 0.15,
-            "trend": 0.7,
-            "quality": 0.51,
-            "value": -0.35,
-            "lowvol": -0.47,
+            "momentum": -0.39,
+            "trend": -0.48,
+            "quality": -0.38,
+            "value": 3.24,
+            "lowvol": 0.78,
+            "sentiment": -0.95
+          },
+          "news_sentiment": 0.0,
+          "news_headline": null,
+          "rationale": "Ranks highly on very strong valuation (P/E), very strong valuation (P/B), above-average low volatility; composite score 85/100; model up-probability 57%. Watch: weak news coverage.",
+          "chart_links": {
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:IOC",
+            "yahoo": "https://finance.yahoo.com/quote/IOC.NS"
+          }
+        },
+        {
+          "symbol": "ONGC",
+          "yahoo_symbol": "ONGC.NS",
+          "name": "Oil & Natural Gas Corporation",
+          "composite_score": 84.4,
+          "up_probability": 0.509,
+          "factors": {
+            "momentum": -0.68,
+            "trend": -0.27,
+            "quality": -0.35,
+            "value": 3.24,
+            "lowvol": 1.4,
             "sentiment": -0.37
           },
           "news_sentiment": 0.0,
-          "news_headline": "Stocks to Watch Today: HDFC Bank, AceVector, Orient Cables, Manipal Payment, Pranav Constructions, DLF, Aurobindo Pharma, Knack Packaging, TCS, Hindalco in focus on 05 October - Moneycontrol.com",
-          "rationale": "Ranks highly on very strong profit margin, strong 50/200-DMA trend, strong 6-month return; composite score 52/100; model up-probability 40%.",
+          "news_headline": "ONGC Senior Management Change October 2026 | NSE:ONGC - Kalkine India",
+          "rationale": "Ranks highly on very strong valuation (P/B), very strong valuation (P/E), strong low volatility; composite score 84/100; model up-probability 51%. Watch: weak 6-month return.",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:DLF",
-            "yahoo": "https://finance.yahoo.com/quote/DLF.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:ONGC",
+            "yahoo": "https://finance.yahoo.com/quote/ONGC.NS"
           }
         },
         {
-          "symbol": "SOBHA",
-          "yahoo_symbol": "SOBHA.NS",
-          "name": "Sobha",
-          "composite_score": 50.0,
-          "up_probability": 0.517,
+          "symbol": "BPCL",
+          "yahoo_symbol": "BPCL.NS",
+          "name": "Bharat Petroleum",
+          "composite_score": 75.0,
+          "up_probability": 0.574,
           "factors": {
-            "momentum": -1.11,
-            "trend": -0.91,
-            "quality": 0.95,
-            "value": -0.3,
-            "lowvol": 1.05,
-            "sentiment": 0.9
-          },
-          "news_sentiment": 0.5,
-          "news_headline": "Sobha NSE:SOBHA Record H1 FY27 Sales Operational Update - Kalkine India",
-          "rationale": "Ranks highly on very strong earnings growth, strong news sentiment, strong low volatility; composite score 50/100; model up-probability 52%; recent news tone positive. Watch: very weak 3-month return.",
-          "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:SOBHA",
-            "yahoo": "https://finance.yahoo.com/quote/SOBHA.NS"
-          }
-        },
-        {
-          "symbol": "MAHLIFE",
-          "yahoo_symbol": "MAHLIFE.NS",
-          "name": "Mahindra Lifespace Developers",
-          "composite_score": 36.5,
-          "up_probability": 0.385,
-          "factors": {
-            "momentum": -0.1,
-            "trend": -0.03,
-            "quality": -0.14,
-            "value": 0.28,
-            "lowvol": 0.32,
-            "sentiment": -0.02
+            "momentum": -0.2,
+            "trend": -0.51,
+            "quality": -0.4,
+            "value": 2.1,
+            "lowvol": 0.69,
+            "sentiment": -0.95
           },
           "news_sentiment": 0.0,
-          "news_headline": "Mahindra Lifespace (NSE: MAHLIFE) and the RBI Rate Test - Kalkine India",
-          "rationale": "Ranks highly on strong 50/200-DMA trend, above-average valuation (P/B), above-average news coverage; composite score 36/100; model up-probability 39%. Watch: weak volume trend.",
+          "news_headline": null,
+          "rationale": "Ranks highly on very strong valuation (P/E), very strong valuation (P/B), above-average low volatility; composite score 75/100; model up-probability 57%. Watch: weak news coverage.",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:MAHLIFE",
-            "yahoo": "https://finance.yahoo.com/quote/MAHLIFE.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:BPCL",
+            "yahoo": "https://finance.yahoo.com/quote/BPCL.NS"
           }
         },
         {
-          "symbol": "GODREJPROP",
-          "yahoo_symbol": "GODREJPROP.NS",
-          "name": "Godrej Properties",
-          "composite_score": 33.3,
-          "up_probability": 0.694,
+          "symbol": "COALINDIA",
+          "yahoo_symbol": "COALINDIA.NS",
+          "name": "Coal India",
+          "composite_score": 74.0,
+          "up_probability": 0.453,
           "factors": {
-            "momentum": -1.08,
-            "trend": -0.41,
-            "quality": 0.13,
-            "value": -0.04,
-            "lowvol": -0.99,
+            "momentum": 0.01,
+            "trend": 0.09,
+            "quality": -0.06,
+            "value": 1.28,
+            "lowvol": 0.97,
             "sentiment": -0.37
           },
           "news_sentiment": 0.0,
-          "news_headline": "Godrej Properties (NSE: GODREJPROP) in Focus as Realty Faces a Higher-Rate Backdrop - Kalkine India",
-          "rationale": "Ranks highly on very strong profit margin, strong 50/200-DMA trend, above-average volume trend; composite score 33/100; model up-probability 69%. Watch: very weak 3-month return.",
+          "news_headline": "Coal India Share Price - Live NSE: COALINDIA Stock Price & Chart - Upstox",
+          "rationale": "Ranks highly on very strong valuation (P/E), strong price vs 50-DMA, strong low volatility; composite score 74/100; model up-probability 45%. Watch: weak 50/200-DMA trend.",
           "chart_links": {
-            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:GODREJPROP",
-            "yahoo": "https://finance.yahoo.com/quote/GODREJPROP.NS"
+            "tradingview": "https://www.tradingview.com/chart/?symbol=NSE:COALINDIA",
+            "yahoo": "https://finance.yahoo.com/quote/COALINDIA.NS"
           }
         }
       ]
